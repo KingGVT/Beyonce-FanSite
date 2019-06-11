@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name = "viewport" content = "width = device-width, initial-scale=1, maximum-scale = 1, user-scalable = no">
+	<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+	<meta name = "HandheldFriendly" content = "true">
+	<link rel = "stylesheet" href = "style-tours.css" type = "text/css">
+	<script src = "script-tours.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$('.trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		});
+		
+		window.onscroll = function() {scrollFunction()};
+	</script>
+	<link rel = "shortcut icon" href = "beyonce.ico" type = "image/x-icon">
+	<link rel = "icon" href = "beyonce.ico" type = "image/x-icon">
+	<title> Formation World Tour </title>
+	<style>
+		.parts, .button, #caption, .dropbtn, .topnavi {color: #ACADAF!important}
+		.parts:hover, .sidevnav a:hover {color: white!important}
+		.dropbtn:hover, #text, .button:hover, #currentpage {color: white}
+		.dropdown-content {background-color: white; border-bottom: 2px solid #ACADAF}
+		.dropdown-content a {color: black}
+	</style>
+	</head>
+	<body> 
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours</a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+		</div>	
+		<!--Main page-->	
+		<!--Navigation bar for mobile devices-->
+		<div class = "mobile">
+			<div class = "trigger-icon1">
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+			</div>
+			<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+		</div>
+		<div id = "mobilem">
+			<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+		</div>
+		<!--Navigation bar for desktop devices-->
+		<div id = "topnavi">  
+			<div class = "trigger-icon" onclick="openNav()">
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+			</div>
+			<a href = "#intro" style = "margin-left: 70px" class = "parts"> Introduction </a> 
+			<a href = "#background" class = "parts"> Background and development </a> 
+			<a href = "#stage" class = "parts"> Stage </a>
+			<a href = "#style" class = "parts"> Style </a> 
+			<a href = "#synopsis" class = "parts"> Concert synopsis </a> 
+			<div class="dropdown">
+				<button onclick = "myFunction()" class = "dropbtn"> Commercial performance &#x25BC; </button>
+				<div id = "myDropdown" class = "dropdown-content">
+					<a href = "#ticketsales"> Ticket sales</a>
+					<a href = "#boxscore"> Boxscore </a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button onclick = "myFunction1()" class = "dropbtn"> Critical reception &#x25BC; </button>
+				<div id = "myDropdown1" class="dropdown-content">
+					<a href = "#reception-america"> North America </a>
+					<a href = "#reception-europe"> Europe </a>
+				</div>
+			</div>
+		</div>
+		<div id = "content">
+			<div>
+				<img src = "https://2.bp.blogspot.com/-B8REg8NLBxg/VyJnTVmOd8I/AAAAAAAAN0Y/kkF_WvHDdHM_KNvCb8Z7qFnN5Rh4FvKMQCLcB/w1200-h630-p-k-no-nu/beyoncetour.jpg" id = "image" class = "imagecover">
+			</div>
+			<div id = "intro" class = "textcontainer">
+				<h2 id = "caption"> The Formation World Tour </h2>
+				<p id = "text" style = "padding-top: 30px"> <strong>The Formation World Tour</strong> was the seventh concert tour by American singer Beyoncé in support of her sixth studio album, Lemonade. 
+				The all-stadium tour was announced following her guest appearance at the Super Bowl 50 halftime show. The tour started on April 27, 2016 in Miami, 
+				Florida and concluded on October 7, 2016 in East Rutherford, New Jersey. The tour's title is in reference to Beyoncé's 2016 song "Formation".
+				The tour's production and staging consisted of a 60 foot tall rotating LED cuboid referred to as the 'Monolith', a treadmill runway and a secondary 
+				stage that stores and produces 2,000 gallons of water. The theme of the tour was described as following the same linear chapters to that of the tour's 
+				supporting album Lemonade, with each rotation of the aforementioned 'Monolith' representing a new chapter of the show. Several music critics gave the show 
+				positive reviews, with a variety of publications praising both the tour's production and Beyoncé's performance and vocal abilities. The tour had a variety 
+				of notable opening acts, including a number of special guests joining prominent opener DJ Khaled on stage. Supporting acts also included artists signed 
+				to Beyoncé's own management company, Parkwood Entertainment, who were relatively unknown at the time. The Formation World Tour ranked at #1 and #2 on 
+				Pollstar's 2016 mid-year Top 100 Tours chart both in North America and worldwide respectively, with a total mid-year worldwide gross of $137.3 million 
+				from the first 25 shows (including $126.3 million from the first North American leg of the tour). In total, the tour grossed $256 million from 49 sold 
+				out shows according to Billboard Boxscore, and ranked at #2 on Pollstar's 2016 Year End Tours chart. </p>
+			</div>		
+			<div>
+				<img src = "http://i0.wp.com/media.melty.fr/article-3006500-fb/beyonce-the-formation-world-tour-teaser-promo.jpg" id = "image">
+			</div>			
+			<div id = "background" class = "textcontainer">
+				<h2 id = "caption"> Background and development </h2>
+				<p id = "text"> On February 6, 2016, Beyoncé released "Formation" for free on the music streaming service TIDAL and its accompanying music video on her official 
+				YouTube. The following day on February 7, 2016, Beyoncé performed "Formation" during her guest appearance at the Super Bowl 50 halftime show. Immediately after 
+				the performance, a commercial aired announcing The Formation World Tour, which kicks off in Miami on April 27, with the first pre-sales going on sale just two 
+				days after the announcement on February 9, 2016. Leading up to the tour announcement, Beyoncé was praised and criticized over her new song and Black 
+				Panther-influenced costume for the Super Bowl halftime performance. As a result of this, the hashtags "#BoycottBeyonce" and "#IStandWithBeyonce" begun
+				trending on social media platforms such as Twitter. A group of protesters also planned to stage an "anti-Beyoncé" rally outside of the NFL's headquarters 
+				in New York City on the day general sale of tickets went for sale. However, the planned rally was met with zero protesters and instead dozens of Beyoncé 
+				supporters who held a counter-protest. The tour's associated album Lemonade was released four days prior to the start of the tour. In a press release by 
+				Live Nation Entertainment following the tour's announcement, it was revealed that The Formation World Tour would be supporting local United Way of America programs, 
+				as well as the Flint water crisis. After the first North American leg of the tour was completed, it was announced that fans, who had the option to add a donation 
+				to the Flint water crisis when purchasing tickets, had raised $82,234 for the cause. In the same press release, Beyoncé's partnership with THX was announced, 
+				with the purpose of providing the highest level of audio quality at concerts for the duration of the tour. Following on from the aforementioned controversy 
+				over "Formation", The Miami Fraternal Order of Police were reported to be pushing for a national boycott of police officers working the security for the concert, 
+				ahead of the tour's opening night in Miami. Other police departments reportedly pushing to avoid the concert included Tampa and Nashville, Tennessee; however a 
+				Tampa police spokesperson stated that these 'boycotts' had been blown "way out of proportion". </p>
+			</div>					
+			<div>
+				<img src = "http://www.billboard.com/files/media/Beyonce-Formation-World-Tour-Germayn-2-2016-July-Billboard-1548.jpg" id = "image">
+			</div>					
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Rehearsals for the tour took place at Tampa's Raymond James Stadium, which was rented by Live Nation for $745,000. TSA board member Thomas Scott spoke on 
+				the large-scale production of the tour after seeing the stage during rehearsals, stating "that's one of the largest stages they ever put up, I don't think I've seen a 
+				stage that size". During the same rehearsal period, members of Beyoncé's team met with more than 20 Tampa leaders, including the Tampa Police Chief, for a private luncheon 
+				in Ybor City, in which they discussed ways to make Tampa a better city, resulting in Beyoncé making multiple financial pledges to certain initiatives. </p>
+			</div>				
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/04/cache/gzuFYvljTzdD_800x800_74tHK9Wi.jpg" id = "image">
+			</div>					
+			<div id = "stage" class = "textcontainer">
+				<h2 id = "caption"> Stage </h2>
+				<p id = "text"> The stage for the tour was described by Brian Levine, senior project manager from Tait Towers, as "a game-changer for what can be achieved 
+				in a stadium touring environment. The entire collaboration from scenic, to structure, to mechanics was custom-made to create an epic experience for 
+				both Beyoncé and her fans". Designed by Es Devlin and engineered and built collaboratively by Stageco and Tait Towers, the tour's stage features a 
+				centrepiece of a revolving 60 foot tall box, made with video screen walls. Known as the 'Monolith', Devlin spoke on the box stating of "wanting this 
+				to be the tallest object in the stadium, a piece of kinetic stadium architecture the equivalent of a seven-story, revolving LED building". Devlin 
+				also commented the box was perceived as "a giant 3D billboard, a huge LED armor within which Beyoncé is revealed as an all-too-human-scale, real-life 
+				figure" and noted that Beyoncé was heavily involved in the creative process of every inch of stages design. The rotations of the box were said to 
+				represent a new chapter of the show, in a similar chapter line to that of Lemonade. The box takes approximately 4 minutes to achieve one rotation. </p>
+			</div>					
+			<div>
+				<img src = "http://static-12.sinclairstoryline.com/resources/media/9e5a6cee-9e6c-418f-bcaa-80a50a0fa4c7-large16x9_Beyonce1.jpg?1463689806971" id = "image">
+			</div>							
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> The stage also consists of a runway, which also acts as a treadmill leading onto a B-stage that fills with a pool 
+				of water. The treadmill on the catwalk was designed to be waterproof in order to withstand unpredictable weather found in outdoor stadiums. The B-stage stores 
+				2,000 gallons of water inside of it and takes approximately 10 minutes to fill up, which occurs without the audience even realising. The inspiration for the 
+				water within the B-stage was inspired by the tour's supporting album Lemonade, in particularly the song "Forward", as the songs message is described as a 
+				turning point from anger to forgiveness. "The pool of water is the antithesis to the fire-spitting monolith; the most joyful, redemptive sequence of the 
+				show takes place here, from "Freedom" through to "Halo"", stated Devlin. The tour's stage and production was said to be so large that the maximum capacity 
+				of some venues was reduced in order to make space for it. A writer for the Belfast Telegraph stated that the maximum capacity for Beyoncé's concert in 
+				Dublin at Croke Park was reduced from 82,500 to 75,000 people to allow for the size of the stage, with event organiser Eamon Fox stating "It's a jaw-dropping 
+				production and stage show and one of the biggest that's ever been in Croke Park". </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/04/cache/3glujFcCREF0_800x800_74tHK9Wi.jpg" id = "image">
+			</div>		
+			<div id = "style" class = "textcontainer">
+				<h2 id = "caption"> Style </h2>
+				<p id = "text"> Beyoncé worked with a variety of designers for her on-stage costumes during the tour. All styled by Beyoncé's stylist, Marni Senofonte, references 
+				of the tour's costumes were compared to that of the wild west, the "antebellum south", Africa and BDSM. The opening outfit consisted of a Victorian-inspired look 
+				created by Dean and Dan Caten (DSQUARED2), complete with a crystal embroidered bustier and an oversized western style hat. The hats for Beyoncé and her dancers 
+				were made by Baron Hats. The outfit also included leather gloves and a "tattoo lace" bodysuit. Balmain too produced a Victorian themed floral white bodysuit, 
+				which contained hand-embroidered pearls, crystals and glass beads. The outfit was accompanied with matching suede boots. Peter Dundas of Roberto Cavalli 
+				produced an all over black crystal embroidered bodysuit for the tour, which also included gold metallic thread and accompanying knee high tiger print 
+				boots in a military style. Alessandro Michele working for Gucci designed a sequinned bodysuit for Beyoncé, incorporating a geometric print and a red mink 
+				fur coat. London based designer Atsuko Kudo designed and produced a more simple bodysuit for the tour, creating an all red latex outfit with shoulder pads 
+				and a ruffled neckline. Kudo also stated that in order to make the outfit, a life sized cast of Beyoncé was used in order to fit the latex accurately 
+				to her body. Beyoncé also requested to Kudo that the outfit was in sync with the antebellum theme which runs through the tour's supporting album Lemonade, 
+				which influenced the inclusion of frills across the chest and scooping neckline. It was also noted how Beyoncé performed barefoot in water during one 
+				performance, whilst wearing a simple sequinned bodysuit. Beyoncé also sported a Givenchy haute couture by Riccardo Tisci bronze bodysuit, showing an exposed midriff. </p>
+			</div>			
+			<div>
+				<img src = "https://media1.popsugar-assets.com/files/thumbor/eyZpkFz39SXmJQSLUzH2SV9ydr0/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/02/23/899/n/1922283/36f6b2bd9106b638_GettyImages-531491318.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> During Beyoncé's hometown performance in Houston, Texas, Gucci provided another costume for Beyoncé: a custom bodysuit created 
+				with "ruched tulle and sequins and embellished with a black-beaded panther". Notable merchandise sold to fans during the tour included "Boycott Beyoncé" T-shirts, 
+				which were a nod to the aforementioned controversy Beyoncé received after her Super Bowl 50 halftime show. During the London shows of the tour, Beyoncé debuted a 
+				gold leotard covered in 70,000 Swarvoski crystals, designed by Julien Macdonald. The outfit also contained 24 carat gold embroidered components. Fishnet tights worn 
+				in accompaniment with the tour's outfits were hand dyed in crock pots in order to correctly match the varying skin tones of Beyoncé's dancers. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/05/cache/df5GgErdd4Hs_800x800_74tHK9Wi.jpg" id = "image">
+			</div>		
+			<div id = "synopsis" class = "textcontainer">
+				<h2 id = "caption"> Concert synopsis </h2>
+				<p id = "text"> Throughout the concert, a large, rotating LED screen is featured centre stage, projecting live images of Beyoncé and her twenty backup dancers 
+				to the audience. The concerts begins with Beyoncé performing "Formation", alongside her all female dancers shadowing her and performing a choreography. "Angry" 
+				red lighting and pyrotechnics are displayed as "Sorry", "Bow Down" and "Run the World (Girls)" are subsequently performed. "Mine", "Baby Boy" and "Hold Up" are 
+				performed next, which then seamlessly transition into "Countdown". During this performance, Beyoncé and her dancers perform and walk down a catwalk leading to 
+				the middle of the crowd. Between sets and costume changes, video clips from Lemonade are projected onto the LED cuboid, as well as aerial dancers performing a 
+				choreography. Before performing "Me Myself and I" Beyoncé would often stop and talk to the crowd, speaking on the relationship she and the audience have with God 
+				and themselves. This act of the show was ended with a performance of "All Night" which Beyoncé stated was her favourite song from her aforementioned new album. 
+				"Don't Hurt Yourself" was performed with many interchangeable snippets of other songs including "Ring the Alarm" and "Independent Women". The next act consisted of 
+				Beyoncé and her dancers performing more up-tempo numbers, such as "Feeling Myself", "Yoncé", "Drunk in Love" and "Partition". Another costume change took place, 
+				and the show continued with Beyoncé and her dancers performing "Daddy Lessons" and "1+1". This was then followed by Beyoncé performing an a cappella rendition of 
+				"Love on Top", which was said to connect Beyoncé with her fans and break down the space between them. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/05/cache/Ti5PdNX47OdP_800x800_74tHK9Wi.jpg" id = "image">
+			</div>		
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> The first of two tributes to Prince is seen as Beyoncé performs a rendition of "The Beautiful Ones". This is then 
+				followed by the large LED cuboid on stage lighting up in complete purple, as an original recording of "Purple Rain" is played to the audience. The stage is 
+				then seen to contain human sized boxes, in which Beyoncé and her dancers perform inside of, in sync to the 2014 remix of "Crazy in Love", which is then 
+				followed by "Naughty Girl". The final act of the show is performed in a large pool of water on the tour's secondary stage. Here Beyoncé and her dancers 
+				perform a choreography and splash in the water to "Freedom", "Survivor", "End of Time" and the shows closing number, "Halo". During "Halo" Beyoncé sings 
+				alone, starting the performance on her knees in the pool of water. As the concert concludes, Beyoncé was described as standing on stage "drenched, hair 
+				sopping, makeup running and her exhausted body looking at once all but human". </p>
+			</div>		
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/05/cache/xdw3GvPWrmbI_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "ticketsales" class = "textcontainer">
+				<h2 id = "caption"> Commercial performance </h2>
+				<h4 id = "caption"> Ticket sales </h4>
+				<p id = "text"> Following the announcement of the tour, Beyoncé's website temporarily crashed, as a result of the post-Super Bowl advertisement. After the first 
+				round of North American ticket pre-sales, a second show at New York City's Citi Field was added to the itinerary, due to the high demand. During the first round 
+				of the European general sale, Beyoncé's performance at Amsterdam Arena sold out within 20 minutes, prompting a waiting list to be opened and promoters attempting 
+				to organise a second show. Some Swedish fans were left unhappy due to the speed tickets sold out for the Friends Arena date of the tour, with complaints being made 
+				about the queueing system implemented by Ticketmaster. Ticketmaster apologised and stated "unfortunately, there were more who wanted tickets than what was available. 
+				"The UK shows were met with huge commercial success, with all tickets being sold in under 30 minutes, including 90,000 tickets at London's Wembley Stadium. Many 
+				fans shared their displeasure online with not being able to secure tickets, and, as is usual with in-demand concert tours, many tickets found their way onto the 
+				secondary market place with a large markup on the original price. As a result of this, a second London show was added to the schedule, set for July 3, 2016. After 
+				the first round of dates for the North American general sale opened to the public, an additional show was added at Chicago's Soldier Field, due to the "overwhelming 
+				demand". Jesse Lawrence of Forbes reported that on the secondary market, tickets for The Formation World Tour were averaging at $432 before the tickets hit the 
+				general public. On February 17, 2016, Live Nation gave a press release announcing that nearly 1 million tickets had already been sold for the tour in 48 hours, 
+				including sell-outs in Miami, Arlington, Pasadena, Toronto, Chicago, Foxborough, Philadelphia, New York City, Baltimore, Sunderland, London, Manchester, Dublin, 
+				Amsterdam and Stockholm. On May 5, 2016, a second wave of US dates were announced, including 7 new shows and a rescheduled date for the previously postponed 
+				Nashville show. After her performance in Minneapolis, it was announced that Beyoncé was the first female to headline a stadium show in the Minneapolis–Saint Paul 
+				area, held at TCF Bank Stadium. </p>
+			</div>			
+			<div>
+				<img src = "http://images.newindianexpress.com/uploads/user/imagelibrary/2016/9/30/original/Beyonce2-AP.jpg" id = "image">
+			</div>		
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> After the first round of dates for the North American general sale opened to the public, an additional show was added at 
+				Chicago's Soldier Field, due to the "overwhelming demand". Jesse Lawrence of Forbes reported that on the secondary market, tickets for The Formation World Tour were 
+				averaging at $432 before the tickets hit the general public. On February 17, 2016, Live Nation gave a press release announcing that nearly 1 million tickets had 
+				already been sold for the tour in 48 hours, including sell-outs in Miami, Arlington, Pasadena, Toronto, Chicago, Foxborough, Philadelphia, New York City, Baltimore, 
+				Sunderland, London, Manchester, Dublin, Amsterdam and Stockholm. On May 5, 2016, a second wave of US dates were announced, including 7 new shows and a rescheduled 
+				date for the previously postponed Nashville show. After her performance in Minneapolis, it was announced that Beyoncé was the first female to headline a stadium 
+				show in the Minneapolis–Saint Paul area, held at TCF Bank Stadium. </p>
+			</div>		
+			<div>
+				<img src = "http://missbish.com/wp-content/uploads/2016/09/what-its-like-to-experience-beyonces-formation-world-tour-in-360-or-less-21-1680x1125.jpg" id = "image">
+			</div>						
+			<div id = "boxscore" class = "textcontainer">
+				<h2 id = "caption"> Commercial performance </h2>
+				<h4 id = "caption"> Boxscore </h4>
+				<p id = "text"> Chairman of Live Nation Global Touring Arthur Fogel confirmed in an article with Billboard that The Formation World Tour had already exceeded 
+				$100 million in gross revenue, as well as stating that Nashville's Nissan Stadium date of the tour, which had gone on sale the day of the article, had already 
+				sold 33,000 tickets and grossed $4 million. In July 2016, Pollstar's top 100 worldwide and North American tours charts were announced. Beyoncé ranked at #1 in 
+				North America with a domestic gross of $126.3 million from the first North America leg of the tour, and at #2 with $137.3 million on the worldwide chart, 
+				accounting for the first 25 shows of the tour. </p>
+			</div>		
+			<div>
+				<img src = "https://pbs.twimg.com/media/Cn9DM45UEAA2crg.jpg" id = "image">
+			</div>
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> According to Billboard Boxscore, the first North American leg of the tour generated $123 million in ticket sales and 
+				played to 972,719 fans over 23 sold out shows. These included a two night stint at Chicago's Soldier Field, playing for 89,270 people and two nights at New York 
+				City's Citi Field, playing for 73,486. The highest grossing single show of the leg was at Los Angeles' Rose Bowl, playing for 55,736 and grossing $7.1 million. 
+				In Europe, the tour continued to be a success, with another 17 sold out shows being reported by Billboard. The leg included two sell out nights at London's Wembley 
+				Stadium, playing for 142,500 fans and grossing $15.3 million, the sixth largest boxscore of the year reported by Billboard at the time of the article. The highest 
+				attended stop of the European stint, and the tour overall, was at Paris' Stade de France, which played to a crowd of 75,106 people. The leg grossed $86.9 million 
+				and played for 867,025 people in total. Following the final leg of the tour being reported to Billboard Boxscore, the tour's total gross revenue reached 
+				$256,084,556, with total attendance topping out at 2,242,099. Beyoncé, with The Formation World Tour, also ranked at #2 on Pollstar's annual Year End Top 
+				Worldwide Tours chart. Other Pollstar year end charts showed that Beyoncé's two performances at Wembley Stadium during the tour were the 6th largest grossing 
+				shows of the year worldwide, whilst the tour's two stops at New York City's Citi Field were the 5th highest grossing concerts within the US. Chris Hunt, writing 
+				for ticket merchant AXS, reported that The Formation World Tour was one of the top 20 highest grossing tours of all time. Hunt also noted that within the same 
+				top 20, the tour had the least amount of shows. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/05/cache/1urqXCaDBbQq_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "reception-america" class = "textcontainer">
+				<h2 id = "caption"> Critical reception </h2>
+				<h4 id = "caption"> North America </h4>
+				<p id = "text"> The opening night of the tour received rave reviews from critics. Hermione Hoby of The Guardian awarded the concert 5 stars, stating "She sounds, 
+				moves and looks like a goddess and most of us 'bow down' accordingly". Kelli Kennedy writing for the Associated Press noted that Beyoncé "slays at tour opening" 
+				and further commented "her commanding performance of "Freedom" served as reminder to the world that she 'breaks chains all by myself. I'm gonna keep running because 
+				a runner don't quit on herself'". Becky Randel of Billboard felt that emotion guided the mood for the evening and stated that "Bey was overcome when the audience 
+				knew all the lyrics to her new song, "Hold Up" and she often stopped to smile or nod at her exuberant BeyHive. Writing for Rolling Stone, Kat Bein said Beyoncé was 
+				"a prime example of entertainment and a vision of an artist at her apex" and later commented "the show was a visual feast as well as an emotional tour de force, 
+				packed with fireworks, confetti, rearranging stage designs and aerial dancers". </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/05/cache/8aX4prt5hQy-_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Other reviews from the North American leg of the tour included Melissa Ruggierie writing for The Atlanta 
+				Journal-Constitution online blog. Ruggierie praised Beyoncé's performance, particularly the strong vocals demonstrated in "1+1" and concluded "watching her 
+				command a stadium stage for two hours was another reminder of her limitless ambition". However, it was noted that Beyoncé did not speak to the crowd very often. 
+				After Beyoncé's hometown performance in Houston, Brandon Caldwell of the Houston Press introduced his article stating "Hours after the slaying, the wig snatching, 
+				the fitted snatching, the life getting, the boy byes and various curses of shock, amazement and confusion, I stood with a perplexed look on my face. How? How does 
+				Beyoncé do this? On this level? With this magnitude?". Lorraine Ali of the Los Angeles Times concluded her positive review of the Pasadena stop of the tour with 
+				"Soaking wet and sitting onstage alone, she left the audience with the closing number, "Halo". She'd been baptized and reborn into a less-perfect version of 
+				Queen Bey, allowing a more powerful Beyoncé to arise from that imperfection". Jim Harrington of the San Jose Mercury News began his article stating "there 
+				were so many moving parts – a tremendous swirl of sharply choreographed dance routines, cool special effects, brilliant fireworks and other tactics for delighting 
+				tens of thousands", Harrington noted however that too many snippets of songs rather than their full versions were performed, feeling quality over quantity 
+				was missed. The first Canadian show of the tour in Edmonton was performed in cold and rainy conditions, with Beyoncé stating "Can you feel your fingers? I can't 
+				feel mine" and "I have to say this is the coldest show I've ever done". Despite this, Sandra Sperounes of the Edmonton Journal commented "not even rain or bitter 
+				wind could stop our Ms. Flawless, our Survivor, our Queen Bey from dazzling an estimated 40,000 fans at Commonwealth Stadium on a stormy Friday night." Sperounes 
+				concluded "the sun was nowhere to be found, but thanks to Bey's brilliant set, the crowd left beaming with giddiness, girl power and generosity". </p>
+			</div>		
+			<div>
+				<img src = "https://pmcfootwearnews.files.wordpress.com/2016/05/beyonce-formation-world-tour.jpg?w=1170" id = "image">
+			</div>			
+			<div id = "reception-europe" class = "textcontainer">
+				<h2 id = "caption"> Critical reception </h2>
+				<h4 id = "caption"> Europe </h4>
+				<p id = "text"> For the opening night of the European leg of the tour in Sunderland, England, Angela Upex of the Evening Chronicle awarded the concert 5 stars, 
+				stating "from beginning to end, Beyoncé's Stadium of Light date was an utter triumph dazzling 50,000 loyal North East fans" and added "As a stalwart of Stadium of 
+				Light gigs, I've seen them all but last night was one of the most mesmerising concerts I've ever witnessed". Charlotte Runcie of The Daily Telegraph also awarded the 
+				same show 5 stars and opened her positive review with "When it comes to sheer innovation, showmanship and creativity in contemporary pop, Beyoncé has everyone else beaten". 
+				Reviewing the first show in London, Lewis Corner of Digital Spy awarded the show 5 stars, noting "Her often formidable and fearsome choreography throughout numbers like 
+				"Run The World (Girls)", "Bow Down" and "End Of Time" is powerful and mesmerising, but is then offset by the tenderness of "1+1", "Me, Myself and I" and "Runnin (Lose It All)". 
+				Beyoncé's dynamic ability to be both vigorous and vulnerable can't be matched by her contemporaries. In fact, we'd go as far to say she's effortlessly proven herself to be 
+				this generation's Michael Jackson". </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2016/05/cache/_HiNNTH4pEmT_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> A writer for Radio DeeJay reviewing the tour's stop in Milan, Italy, introduced their article saying "Those who were 
+				there will remember for years: Beyoncé [at] the San Siro stadium in Milan was more than a concert". The writer continued to praised the shows stage, visuals and 
+				Beyoncé's choreography and live singing before concluding the review with "Beyoncé has proven beyond doubt to be one of the best performers and singers of our 
+				time". Mathilde Doiezie of Le Figaro ended his positive review of the Paris show with "A moment of grace concluded by Halo sung open heart, kneeling in water, 
+				face still dripping. Cannons plan glitter to indicate the end of the siege. After two hours of concert, not a minute more, Beyoncé returned backstage. 
+				Leaving there speechless tens of thousands of spectators who came to worship their pop idol". A writer for Metro International France speaking on the same show 
+				praised the tour's production stating it was the greatest show the Stade de France had seen since the U2 360° Tour. However, the article also felt the show 
+				lacked emotion in certain parts, noting Beyoncé did not mention the 2016 Nice attack that happened one week prior to the concert. </p>
+			</div>			
+			<div>
+				<img src = "https://cdn.vox-cdn.com/uploads/chorus_asset/file/6008593/tour.0.jpg" id = "image">
+			</div>
+		</div>
+	</body>
+</html>

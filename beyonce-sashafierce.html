@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+		<meta name = "HandheldFriendly" content = "true">
+		<link rel = "stylesheet" href = "style-discography.css" type = "text/css">
+		<script src = "script-discography.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+		$(document).ready(function(){
+			$('#trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		$("#topnavi a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1200, function(){
+				window.location.hash = hash;
+			  });
+			}
+			});
+		});
+		</script>
+		<link rel = "shortcut icon" href = "sasha.ico" />
+		<title> I Am... Sasha Fierce </title>
+		<style>
+			body, .sidenav, .parallaxtext, #topnavi {background-color: #DEDEDE}
+			.parts, .button, .button1, #parallaxcaption {color: #ACADAF}
+			.sidenav a, #listitem {color: #ADACAA}
+			.sidenav a:hover, .button:hover, .button1:hover, .parts:hover, #listitem:hover, #currentpage {color: white}
+			#topnavi {border-bottom: 3px solid #ACADAF; color: #eab9d9}
+			#parallaxtext {color: black}
+			#mySidenavSide {background-color: #ADACAA}
+		</style>
+	</head>
+	<body> 
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a>  
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography: </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-lemonade.html';" id = "listitem"> &nbsp; &#9679; Lemonade </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-beyonce.html';" id = "listitem"> &nbsp; &#9679; Beyoncé (album) </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-4.html';" id = "listitem"> &nbsp; &#9679; 4 </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-sashafierce.html';" id = "currentpage"> &nbsp; &#9679; I Am... Sasha Fierce </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-bday.html';" id = "listitem"> &nbsp; &#9679; B'Day </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-dangerouslyinlove.html';" id = "listitem"> &nbsp; &#9679; Dangerously in Love </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer; padding-bottom: 80px" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a>  
+		</div>
+		<div id = "mySidenavSide">
+			<img src = "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/7c/da/4e/7cda4ea5-094c-bb7a-e53d-6760b674d191/source/600x600bf.jpg" id = "albumcover">
+		</div>
+			<!--Main page container-->
+				<!--Desktop navigation menu-->
+				<div id = "content">	
+					<div id = "topnavi"> 
+						<div class = "trigger-icon" onclick = "openNav()">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a href = "#section-intro" style = "margin-left: 55px" class = "parts"> Introduction </a>
+						<a href = "#section-recording" class = "parts"> Recording and production </a> 
+						<a href = "#section-music" class = "parts"> Music and lyrics </a> 
+						<a href = "#section-release" class = "parts"> Release </a>
+						<a href = "#section-reception" class = "parts"> Critical reception </a> 
+					</div>	
+					<!--Mobile navigation menu-->
+					<div class = "heading">
+						<div id = "trigger-icon1">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+					</div>
+					<div id = "mobilem">
+						<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+					</div>
+					<div id = "head">
+						<img src = "sashafierce.png" style = "width: 100%; height: 100%; object-fit: cover;" id = "header" >
+						<img src = "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/7c/da/4e/7cda4ea5-094c-bb7a-e53d-6760b674d191/source/600x600bf.jpg" id = "albumcover1">
+						<img src = "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/7c/da/4e/7cda4ea5-094c-bb7a-e53d-6760b674d191/source/600x600bf.jpg" id = "mobilealbum">
+					</div>				
+					<div id = "section-intro" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> I Am... Sasha Fierce </h2>
+						<p id = "parallaxtext" style = "padding-top: 30px"> <strong>I Am... Sasha Fierce</strong> is the third studio album by American singer Beyonce. It was released on November 18, 2008 through Columbia
+						Records and Music World Entertainment. In its initial release, the album was formatted as a double album, intending to market Beyonce's contrasting facets of artistry. 
+						The first disc, I Am..., contains slow and midtempo pop and R&B ballads, while the second, Sasha Fierce (named after Beyonce's on-stage alter ego), focuses on more uptempo
+						beats that blend electropop and Europop genres. In composing the songs' lyrics, Beyonce worked with writers, with each session accompanied by live orchestration. Beyonce
+						credited both her husband, rapper Jay-Z, and jazz singer Etta James for inspiring her to push the limits of her songwriting and artistry. Musically, I Am... drew inspiration 
+						from folk and alternative rock, while blending acoustic guitar elements into contemporary ballads. The tracks on the first disc were written and produced by Beyonce, during 
+						collaborative efforts with Babyface, Tricky Stewart, The-Dream and Ryan Tedder. Sasha Fierce boasted production from Darkchild and Sean Garrett. I Am... Sasha Fierce debuted 
+						at number one on the US Billboard 200 chart with first-week sales of 482,000 units, earning Beyonce her third consecutive US number-one solo album. The album earned over thirty
+						platinum and one diamond certifications in separate worldwide markets, being certified double platinum by the Recording Industry Association of America (RIAA) on January 16, 2009,
+						selling over three million copies in the United States. As of 2016, I Am... Sasha Fierce has sold over eight million copies worldwide. The album garnered seven Grammy Award
+						nominations at the 52nd Annual Grammy Awards (2010) ceremony, winning five and eventually collecting a record setting six wins—the most awards won in one night by a female.
+						To promote the album, Beyonce made several award show and televised appearances across Europe and America, and embarking on the worldwide I Am... World Tour (2009–10). The album 
+						spawned several singles; some served as international and stateside releases, while others were purely for promotional purposes. The two lead singles from I Am... Sasha Fierce,
+						"If I Were a Boy" and "Single Ladies (Put a Ring on It)", both charted highly internationally. The former topped the charts in over eight countries and reached number
+						three on the Billboard Hot 100, with the latter becoming her fifth number-one single on the Hot 100 chart. "Diva" and "Ego" were released exclusively in the United States, 
+						while "Halo" and "Sweet Dreams" were promoted internationally as the third and fourth singles, respectively. "Broken-Hearted Girl" was released internationally as the fifth 
+						single, while "Video Phone" was released in September 2009, and "Why Don't You Love Me" was released in July 2010 as the seventh international (ninth overall) single. </p>
+					</div>	
+				</div>
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2014/04/cache/qU8thwwfuDnF_1280x1280_KaMXZQjO.jpg');"></div>				
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2014/04/cache/qU8thwwfuDnF_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-recording" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Recording and production </h2>
+						<p id = "parallaxtext"> The recording of the album took place over an eight-month period. Beyonce recorded the album in sessions at Bangladesh Studios, PatchWerk 
+						Recording Studios, Silent Sound Studios and Tree Sound Studios in Atlanta, Georgia; Chung King Studios, Electric Lady Studios, Roc the Mic Studios and Strawberrybee 
+						Productions in New York City, New York; GAD Studios in Ibiza, Spain; Mansfield Studios and The Campground in Los Angeles, California; South Beat Studios in Miami
+						Beach, Florida; and The Boom Boom Room in Burbank, California. Beyonce either co-wrote or co-produced all material on I Am... Sasha Fierce. She collaborated with 
+						several record producers and songwriters, including Babyface, Stargate (production duo composed of Tor Erik Hermansen and Mikkel Storleer Eriksen), Tricky Stewart,
+						The-Dream, Darkchild, Sean Garrett, Solange Knowles, Jim Jonsin, Rico Love, Ryan Tedder, Bangladesh, Ian Dench, Dave McCracken, Wayne Wilkins and Blac Elvis. Beyonce
+						also collaborated with some musicians she had never worked with in the past, such as Toby Gad and BC Jean on "If I Were a Boy"; she also worked again with Amanda Ghost on 
+						"Disappear". For the I Am... disc, Beyonce was influenced by folk and alternative rock genres, while incorporating other instruments she had not normally used previously,
+						such as the acoustic guitar. Tedder specifically assisted Beyonce with crafting the album's balladry. The ballads were crafted in a way to combine "the best elements"
+						of pop and soul music, while simultaneously "expanding the possibilities of both genres". Beyonce attempted something different as people had strong expectations from her;
+						she experimented with stronger lyrics. Beyonce worked with Ghost to re-write Franz Schubert's "Ave Maria" after having co-written "Disappear" in London, England. Ghost
+						told The Daily Telegraph that they were both inspired by their then-recent marriages and had walked down the aisle to "Ave Maria". </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/rNM5HW13_O8/maxresdefault.jpg');"></div>				
+					<div>
+						<img src = "https://i.ytimg.com/vi/rNM5HW13_O8/maxresdefault.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> During the eight-month period, Beyonce recorded over seventy songs and decided during the editing process that she did not want to 
+						reconcile the two approaches into one disc. If a song was meaningless to her, she cut them off during the process of elimination for the final track listing. 
+						After a process of elimination, twelve tracks were selected to be placed on the standard edition of the album, while five additional tracks were chosen to
+						make the final cut for the deluxe edition of the album. Beyonce later revealed that songs from established producers like The Neptunes and Danja were not able to
+						make the final cut. Making comparisons to a magazine, Beyonce further elaborated that the record was a double album and that it had two covers. The black-and-white 
+						cover artworks for the standard, deluxe and platinum editions of I Am... Sasha Fierce were all shot by German photographer Peter Lindbergh. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2014/04/cache/bZJ4P-Ts-qm4_1280x1280_KaMXZQjO.jpg');"></div>					
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2014/04/cache/bZJ4P-Ts-qm4_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-music" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Music and lyrics </h2>
+						<p id = "parallaxtext"> In an interview for Billboard magazine, Beyonce described I Am... Sasha Fierce as a double album. She said, "One side has songs that
+						are more mainstream and another has my more traditional R&B songs for my fans who've been there the whole time. Some of it sounds like Barbra Streisand, Karen 
+						Carpenter and The Beatles around the 1970s." Music writer Andy Kellman of AllMusic viewed its first disc as, "essentially a small set of adult contemporary ballads.
+						Acoustic guitars, pianos, strings, contemplative soul searching, and grand sweeping gestures fill it out, with more roots in '70s soft rock than soul." The second disc,
+						Sasha Fierce, contains consistent electro influences, which are displayed in songs like "Radio" and "Sweet Dreams". Kellman said in his review that "Diva" resembles 
+						B'Day's "Freakum Dress" or "Ring the Alarm" in terms of audacity. Despite being on the Sasha Fierce disc, "Ego", "Why Don't You Love Me" and "Scared of Lonely" 
+						were noted to be a meeting ground between the album's halves. According to Jennifer Vineyard of MTV News, they resemble Sasha Fierce musically, but thematically and
+						lyrically, they are vulnerable like Beyoncé on the I Am... disc. The album formally introduces Beyonce's alter ego Sasha Fierce. She revealed that Sasha was born during the making
+						of her hit single "Crazy in Love" (2003). In an interview with Emmet Sullivan of People magazine, Beyonce affirmed that her alter ego is strictly for the stage, with the editor
+						describing Sasha Fierce as the singer's sensual, aggressive alter ego. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://images5.fanpop.com/image/photos/31900000/Halo-Music-Video-beyonce-31926143-1149-646.jpg');"></div>				
+					<div>
+						<img src = "http://images5.fanpop.com/image/photos/31900000/Halo-Music-Video-beyonce-31926143-1149-646.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> "If I Were a Boy", the first single of I Am..., stands as the only song on either disc that Beyonce did not co-write. 
+						BC Jean, who wrote most of the song's lyrics, took inspiration from the product of a poor relationship. Beyonce explained in Essence that "If I Were a Boy" is 
+						different from her previous songs in the sense that it is not a traditional R&B song. Music critics remarked that the song seemed to be a mixture of her hit 
+						single "Irreplaceable" (2006), Fergie's single "Big Girls Don't Cry" (2007), and Ciara's single "Like a Boy" (2007). Ann Powers of the Los Angeles Times saw 
+						the song's theme of female empowerment as an expansion on that of "Irreplaceable". Musically, "Single Ladies" is an upbeat-dance-pop and R&B song, and features 
+						dancehall and bounce influences. According to Jonah Weiner of Blender, the song makes a clear reference to marriage while Greg Kot of the Chicago Tribune felt that 
+						the lyrics had a connection with "post-breakup". "Halo", composed by Ryan Tedder and Evan Bogart, was initially intended for Beyonce but was almost recorded by Leona 
+						Lewis due to Beyonce's schedule. According to Christian Williams of Billboard, "Halo" has a mainstream pop sound, with subtle R&B undertones. "Ave Maria" samples Franz 
+						Schubert's "Ave Maria". Critics noted "Diva" as a variation on Lil Wayne's "A Milli" and coined it as its female counterpart. "Diva" carries a stuttering beat.
+						"Sweet Dreams" was critically acclaimed for its use of electronic bassline, which some critics compared to Michael Jackson's "Beat It" because of its electropop sound. 
+						"Sweet Dreams" is derived from contemporary R&B and incorporates influences from the classic 1980s funk. "Broken-Hearted Girl" is a midtempo piano ballad.
+						Its production and melody is backed by strings and a drum machine beat. According to Spence D. of IGN Music, "Hello" comes off like another ballad that "populate[s]
+						the first part of the album." It contains the Jerry Maguire line - "You had me at hello" - as part of its chorus. It essentially consists of "sweet guitar-picking 
+						and delicate harmonies." According to critics, "Video Phone" contains lyrics that are in reference to "a celebration of Skype sex and putting on a solo show, on camera, 
+						for a guy you just met at the club". The remixed version featured both Beyonce and Lady Gaga trading verses with one another. Musically the song consists of simple lyrics, 
+						with hidden innuendos, and is backed by thin-spread beats; Beyoncé and Gaga uttering gasps and groans while singing the song. "Disappear" consists of "sweet guitar-picking 
+						and delicate harmonies". "That's Why You're Beautiful" is a slow-tempo soft rock and rock power ballad, which consists of a "grungy" guitar riff and stuterring drums.
+						Critics compared the song with the materials by Alice in Chains and Jill Scott. The platinum edition of the album also included a cover version of Billy Joel's song "Honesty"
+						(1979). </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2014/04/cache/oP6ibK2WTnO3_1280x1280_KaMXZQjO.jpg');"></div>					
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2014/04/cache/oP6ibK2WTnO3_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Release </h2>
+						<p id = "parallaxtext"> I Am... Sasha Fierce was released worldwide on November 18, 2008. Deluxe edition of the album was released simultaneously with the standard edition. 
+						Mathew Knowles, Beyonce's father and then-manager, held a listening party for the album in New York City on October 22, 2008. On June 16, 2009, Above and Beyonce: Video 
+						Collection & Dance Mixes was released as a combined CD and DVD. The release included a CD of dance remixes to the singles of the album (including the remix of "Ego" with 
+						rapper Kanye West) and the DVD features videos previously released for these singles. Finally, the platinum edition of I Am... Sasha Fierce was released in a list of 
+						selected countries in September 2009, featuring a CD and a DVD. It included a cover version of Billy Joel's song "Honesty" (1979). The deluxe edition of the album was 
+						re-issued in the United States on November 23, 2009, including all of the previously released songs in addition to the new songs "Poison", "Why Don't You Love Me", and 
+						the remix of "Video Phone" with Lady Gaga. An extended play (EP) titled I Am...Sasha Fierce – the Bonus Tracks was released the same day, in several countries featuring 
+						aforementioned three new songs. In February 2010, the bonus track from the album's multiple re-releases, "Why Don't You Love Me", which served as a promotional single, 
+						climbed up the US Hot Dance Club Songs chart, eventually taking the top spot and becoming Beyoncé's thirteenth number-one dance hit. On May 4, 2010, a full-length music 
+						video appeared online after its release as a promotional single. </p>
+					</div>
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/GFi9vSs5GkM/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/GFi9vSs5GkM/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-reception" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Critical reception </h2>
+						<p id = "parallaxtext"> I Am... Sasha Fierce received mixed reviews from critics. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream 
+						publications, the album received an average score of 62, based on 24 reviews. Slant Magazine's Sal Cinquemani wrote that the album's "strength" is "its individual songs 
+						... a testament to Beyonce as one of today's most reliable singles artists", but felt that "the real disparity is her inability to reconcile the adult-contemporary 
+						schmaltz of I Am with the more modern, edgy sounds of Sasha Fierce." Adam Mattera of The Observer felt that both discs lack depth, observing that the first is "too busy 
+						chasing radio formats to expose any genuine soul", and criticizing the second disc's "succession of independent woman anthems such as 'Single Ladies' and 'Diva', which 
+						will no doubt inspire drag queens the world over but leave most others bemused." AllMusic's Andy Kellman called its double-disc "gimmick" "flimsy" and favored its 
+						second disc's "decent, if easily forgettable, upbeat pop." He expressed that on the I Am... disc, "Beyonce feels each line to the fullest extent, which almost rescues 
+						the set's staidness." In his consumer guide for MSN Music, Robert Christgau named it the "dud of the month", indicating "a bad record whose details rarely merit further 
+						thought". He found its "split-personality bit" to be "deeply vapid", only observing "three good songs on this 11-track artifact". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/JXmUYdOVJtc/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/JXmUYdOVJtc/maxresdefault.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> Jonah Weiner of Blender commented that "Beyonce is still a beauty-shop feminist, quick with the smack-downs, 
+						and she still describes the rattling rush of love with preternatural poise". Stacey Anderson of Spin commented that its first disc "meanders over [...] down-tempo 
+						cuts" and called ... Sasha "an intriguing but diluted direction". The Village Voice's Nana Ekua Brew-Hammond felt that the I Am... disc lacks cohesion, but 
+						complimented "Sasha Fierce as "brassy, big-headed, confrontational, and witty," and stated, "each incendiary track challenges you to leave your inhibitions at 
+						coat-check." Christian Hoard of Rolling Stone noted that its slow songs are "full of bland self-affirmation and saggy lines", but wrote that "the "Sasha" 
+						disc boasts Beyonce's most adventurous music yet". Colin McGuire of PopMatters called the album "a little rough around the edges at times" and viewed its Sasha 
+						Fierce disc as "a far more compelling trip down dance-lane". Leah Greenblatt of Entertainment Weekly wrote that the album offers "two compelling sides" of Beyonce
+						and stated: "The collection might have been better served had she edited it down to one disc, rather than belabor what ultimately seems like a marketing gimmick. 
+						And while fans will surely speculate, there's little in the lyrics that feels more revealing than previous emotional fire-starters." Sasha Frere-Jones from The New Yorker
+						found the album to be "something of a mess", mostly because the alter ego "trips on the idea of redefinition". </p>
+					</div>
+					<div class = "parallax" style = "background-image: url('http://sirensofsong.com/blog/wp-content/uploads/2010/02/Beyonce_VideoPhone01.jpg');"></div>				
+					<div>
+						<img src = "http://sirensofsong.com/blog/wp-content/uploads/2010/02/Beyonce_VideoPhone01.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Critical reception </h2>
+						<h4 id = "parallaxcaption"> Accolades </h4>
+						<p id = "parallaxtext"> Leah Greenblatt of Entertainment Weekly ranked I Am… Sasha Fierce at number two on her list of the 10 Best Albums of 2008, stating that "'If I 
+						Were a Boy' and 'Single Ladies (Put a Ring on It)' are undoubtedly album highlights; still, the surprise here is how consistently satisfying the rest of it is - 
+						even the less showy tracks blossom on repeated listening." Mark Edward Nero of About.com ranked it at the ninth place on his list of the Best R&B Albums of 2008. 
+						Christian Gerard of NBC Washington placed I Am... Sasha Fierce on his list of "Honorable Mentions" while writing the list for the Best Albums of 2008. 
+						Agence France-Presse, as reported by ABS-CBN News and Current Affairs, recognized I Am... Sasha Fierce as the twelfth best-selling album of 2008. 
+						On The Village Voice's Pazz & Jop year-end lists, I Am... Sasha Fierce was ranked at numbers three-hundred-and-thirty-three and five-hundred-and-eighty in 2008 and 
+						2009, respectively. The album was ranked at number twelve on the list of Best Albums of the Decade in Rolling Stone's Reader's Poll. The writers of Entertainment 
+						Weekly ranked I Am... Sasha Fierce at number eight on their list of The Best Albums of the 2000s. I Am... Sasha Fierce won a Soul Train Music Award for Best Album 
+						of the Year at the 2009 Soul Train Music Awards ceremony. Beyonce won the American Music Award for Favorite Soul/R&B Female Artist at the 2009 ceremony, where the album 
+						also garnered a nomination for Favorite Soul/R&B Album. Beyonce also won a BET Award for Best R&B Artist at the 2009 ceremony. However, she lost the same award to 
+						Alicia Keys at the following ceremony. Similarly, Beyonce was nominated for Brit Award for International Female Solo Artist at the 2009 ceremony, at the 2009 
+						Meteor Awards (Ireland), and at the 2010 International Dance Music Awards. At the 2009 ceremony, Beyonce won the MOBO Award for Best International Act, where I Am... 
+						Sasha Fierce was also nominated for Best Album. At the 2009 MTV Europe Music Awards, Beyonce won the award for Best Female and "Single Ladies (Put a Ring on It)" won 
+						Best Video with "Halo" winning Best Song. I Am... Sasha Fierce was nominated for the NAACP Image Award for Outstanding Album award at the 40th ceremony (2009), 
+						and for International Album of the Year at the 2010 NRJ Music Awards. At the 2010 OVMA World Awards, Beyonce won Artist of the Year as well as Best R&B Artist, 
+						however, the album lost in the category Album of the Year. Beyonce was also nominated for People's Choice Award for Favorite Female Artist and Favorite R&B Artist 
+						at the 36th ceremony (2010) as well as winning a Teen Choice Award for Choice Music: R&B Artist at the 2010 ceremony, and being nominated for World's Best R&B Artist 
+						at the 2010 World Music Awards. I Am... Sasha Fierce and its singles earned Beyonce seven Grammy Award nominations at the 52nd Annual Grammy Awards (2010), including 
+						Album of the Year. She won a record-setting six Grammy Awards out of seven, and an award for her rendition of the classic Etta James' song "At Last", from the Cadillac 
+						Records soundtrack. </p>
+					</div>								
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/QczgvUDskk0/maxresdefault.jpg');"></div>
+	</body>
+</html>
+

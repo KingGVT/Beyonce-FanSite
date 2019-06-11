@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+		<meta name = "HandheldFriendly" content = "true">
+		<link rel = "stylesheet" href = "style-discography.css" type = "text/css">
+		<script src = "script-discography.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+		$(document).ready(function(){
+			$('#trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		$("#topnavi a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1200, function(){
+				window.location.hash = hash;
+			  });
+			}
+			});
+		});
+		</script>
+		<link rel = "shortcut icon" href = "bday.ico" />
+		<title> B'Day </title>
+		<style>
+			body, .parallaxtext {background-color: white}
+			.parts, .button, #listitem, button1 {color: white!important}
+			.parts:hover, .sidenav a:hover, #listitem:hover, .button:hover, .button1:hover, #currentpage, #parallaxtext {color: black}	
+			.sidenav {background-color: #61A188}
+			#topnavi {border-bottom: 3px solid white; background-color: #6EADD0}
+			#parallaxcaption {color: #61A188}
+			#mySidenavSide, #container {background-color: #8AD4F1}
+		</style>
+	</head>
+	<body> 
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography: </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-lemonade.html';" id = "listitem"> &nbsp; &#9679; Lemonade </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-beyonce.html';" id = "listitem"> &nbsp; &#9679; Beyoncé (album) </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-4.html';" id = "listitem"> &nbsp; &#9679; 4 </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-sashafierce.html';" id = "listitem"> &nbsp; &#9679; I Am... Sasha Fierce </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-bday.html';" id = "currentpage"> &nbsp; &#9679; B'Day </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-dangerouslyinlove.html';" id = "listitem"> &nbsp; &#9679; Dangerously in Love </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer; padding-bottom: 80px" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+		</div>
+		<div id = "mySidenavSide">
+			<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Beyonc%C3%A9_-_B%27Day.png/220px-Beyonc%C3%A9_-_B%27Day.png" id = "albumcover">
+		</div>
+			<!--Main page container-->
+				<!--Desktop navigation menu-->
+				<div id = "content">	
+					<div id = "topnavi"> 
+						<div class = "trigger-icon" onclick = "openNav()">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a href = "#section-intro" style = "margin-left: 55px" class = "parts"> Introduction </a>
+						<a href = "#section-background" class = "parts"> Background </a>
+						<a href = "#section-recording" class = "parts"> Recording and production </a> 
+						<a href = "#section-music" class = "parts"> Music and lyrics </a> 
+						<a href = "#section-release" class = "parts"> Release </a>
+						<a href = "#section-reception" class = "parts"> Critical reception </a>
+					</div>	
+					<!--Mobile navigation menu-->
+					<div class = "heading">
+						<div id = "trigger-icon1">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+					</div>
+					<div id = "mobilem">
+						<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+					</div>
+					<div id = "head">
+						<img src = "bday.png" style = "width: 100%; height: 100%; object-fit: cover;" id = "header">
+						<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Beyonc%C3%A9_-_B%27Day.png/220px-Beyonc%C3%A9_-_B%27Day.png" id = "albumcover1">
+						<img src = "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Beyonc%C3%A9_-_B%27Day.png/220px-Beyonc%C3%A9_-_B%27Day.png" id = "mobilealbum">
+					</div>				
+					<div id = "section-intro" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> B'Day </h2>
+						<p id = "parallaxtext" style = "padding-top: 30px"> <strong>B'Day</strong> is the second studio album by American singer Beyonce. It was released to coincide with her twenty-fifth birthday on September 4, 
+						2006 through Columbia Records, Music World Entertainment, and Sony Urban Music, and three days earlier in Latin America through Sony BMG Music Entertainment. The record was 
+						originally planned as a 2004 follow-up to Beyonce's debut studio album Dangerously in Love (2003), however it was delayed to accommodate the recording of Destiny's Child's final
+						studio album Destiny Fulfilled (2004) and her starring role in the film Dreamgirls (2006). While on vacation after filming Dreamgirls, Beyonce began contacting various producers; 
+						she rented Sony Music Studios, and completed B'Day in three weeks. Most of the lyrical content of the album was inspired by Beyonce's role in the film. The album's musical style 
+						ranges from 1970s-80s funk influences and balladry to urban contemporary elements such as hip hop and R&B. Live instrumentation was employed in recording most of the tracks as 
+						part of Beyonce's vision of creating a record using live instruments. Upon its release, B'Day received generally positive reviews from most music critics and has since earned 
+						Beyonce several accolades, including the Grammy Award for Best Contemporary R&B Album at the 49th Annual Grammy Awards (2007). The album debuted at number one on the US Billboard 
+						200 chart, selling 541,000 copies in its first week, the second-highest debut-week sales for Beyonce. The album has been certified triple platinum by the Recording Industry 
+						Association of America (RIAA). It was also successful in international music markets and yielded six singles, including three commercial hits: "Dejs Vu", "Irreplaceable" and 
+						"Beautiful Liar". B'Day Anthology Video Album, which features thirteen music videos to accompany the songs, was released alongside the deluxe edition of B'Day. Beyonce then 
+						embarked on her second solo concert tour The Beyonce Experience (2007). A live album, titled The Beyonce Experience Live, was released and featured footage from the tour. 
+						As of June 2015, B'Day has sold eight million copies worldwide. </p>
+					</div>	
+				</div>
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2014/04/cache/TeoevcPjKQmC_1280x1280_KaMXZQjO.jpg');"></div>	
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2014/04/cache/TeoevcPjKQmC_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-background" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Background </h2>
+						<p id = "parallaxtext"> In 2002, Beyonce had productive studio sessions while making her debut album, Dangerously in Love, recording up to forty-five songs. After the release 
+						of Dangerously in Love in 2003, Beyonce had planned to produce a follow-up album using several of the leftover tracks. However, on January 7, 2004, a spokesperson for her 
+						record label, Columbia, announced that Beyonce had put her plans on hold in order to concentrate on the recording of Destiny Fulfilled, the final studio album by Destiny's 
+						Child, and to sing the US national anthem at the Super Bowl XXXVIII in Houston, which was a childhood dream of hers. In late 2005, Beyonce decided to postpone the recording 
+						of her second album because she had landed a lead role in Dreamgirls, a film adaptation of the 1981 Tony Award-winning Broadway musical of the same name. As she wanted to 
+						focus on one project at a time, Beyonce decided to wait until the movie was completed before returning to the recording studio. Beyonce later told Billboard magazine: "I'm not 
+						going to write for the album until I finish doing the movie." While having a month-long vacation after filming Dreamgirls, Beyonce went to the studio to start working on the 
+						album. She said: "[When filming ended] I had so many things bottled up, so many emotions, so many ideas", prompting her to begin working without telling her father and 
+						then-manager, Mathew Knowles. Beyonce kept the recording of B'Day somewhat quiet, telling only her artists and repertoire man Max Gousse, and the team of producers they 
+						contacted to collaborate for the album. She began working with songwriter-producers Rich Harrison, Rodney Jerkins, Sean Garrett, Cameron Wallace; the Neptunes, Norwegian 
+						production duo Stargate, American hip hop producer-rapper Swizz Beatz, and Walter Millsap. Two female songwriters were also included in the production team who helped 
+						structure the album: Beyonce's cousin Angela Beyince, who had previously collaborated in Dangerously in Love, and up-and-coming songwriter Makeba Riddick, who made her 
+						way onto the team after writing "Deja Vu", the lead single off the album. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('http://www.beyoncetribe.it/gallery/wp-content/uploads/2012/11/Beyonc%C3%A9-BDay-promotional-pics-by-Max-Vadukul-34.jpg');"></div>	
+					<div>
+						<img src = "http://www.beyoncetribe.it/gallery/wp-content/uploads/2012/11/Beyonc%C3%A9-BDay-promotional-pics-by-Max-Vadukul-34.jpg" id = "image">
+					</div>
+					<div id = "section-recording" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Recording and production </h2>
+						<p id = "parallaxtext" style = "padding-bottom: 0px"> Beyonce rented the Sony Music Studios in New York City, and was influenced by her husband Jay-Z's method of
+						collaborating with multiple record producers; she used four recording studios simultaneously. She booked Harrison, Jerkins and Garrett, each with a room to work 
+						in. During the sessions, Beyonce would move from studio to studio to check her producers' progress, later claiming this fostered "healthy competition" 
+						among producers. When Beyonce conceived a potential song, she would tell the group who would deliberate, and after three hours the song would be created. 
+						While Beyonce and the team brainstormed the lyrics, other collaborators such as the Neptunes, Jerkins and Swizz Beatz would simultaneously produce the tracks. 
+						They would sometimes begin working at eleven o'clock, spending up to fourteen hours a day in the studios during the recording process. Beyonce arranged, co-wrote 
+						and co-produced all the songs. Makeba Riddick, in an interview with MTV News, recounted her experience in the production: </p>
+						<blockquote style = "padding: 10px 25px; font-style: italic">
+							[Beyonce] had multiple producers in Sony Studios. She booked out the whole studio and she had the biggest and best producers in there. She would 
+							have us in one room, we would start collaborating with one producer, then she would go and start something else with another producer. We would
+							bounce around to the different rooms and work with the different producers. It was definitely a factory type of process.
+						</blockquote> 
+						<p id = "parallaxtext"> B'Day, which is titled as a reference to Beyonce's birthday, was completed in three weeks, ahead of the originally scheduled six weeks.
+						Swizz Beatz co-produced four songs for the album, the most from a single producer in the team. Beyonce recorded three songs a day, finishing recording within 
+						two weeks. Twenty-five songs were produced for the album; ten of the tracks were selected for the standard edition track listing, and mastered in early July by 
+						Brian "Big Bass" Gardner in Los Angeles. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/3QpjCnlIyb0/maxresdefault.jpg');"></div>	
+					<div>
+						<img src = "https://i.ytimg.com/vi/3QpjCnlIyb0/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-music" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Music and lyrics </h2>
+						<p id = "parallaxtext"> Many of the themes and musical styles of the album were inspired by Beyonce's role in Dreamgirls. The plot of the film revolves around The Dreams, 
+						a fictional 1960s group of three female singers who attempt success in the mainstream music industry with the help of their manager, Curtis Taylor. Beyonce portrays 
+						Deena Jones, the lead singer of the group and the wife of Taylor, and is emotionally abused by him. Because of her role, Beyonce was inspired to produce an album with an 
+						overriding theme of feminism and female empowerment. In the bonus track, "Encore for the Fans", Beyonce says, "Because I was so inspired by Deena, I wrote songs that 
+						were saying all the things I wish she would have said in the film. "B'Day was influenced by a variety of American genres, and, like Beyonce's previous album, incorporated 
+						urban contemporary elements including contemporary R&B and hip hop. Some songs have 1970s and 1980s styles, inspired through record sampling. "Suga Mama", which employs 
+						blues-guitar samples from Jake Wade and the Soul Searchers' "Searching for Soul", contains a 1970s funk- and 1980s go-go-influenced melody. "Upgrade U" is sampled from 
+						the 1968 Betty Wright song "Girls Can't Do What the Guys Do". "Resentment" used Curtis Mayfield's 1972 "Think (Instrumental)", from the Super Fly soundtrack. "Deja Vu" has 
+						1970s influence, "Green Light" is a classic groove, and "Get Me Bodied" features twang, a musical style that originated from Texas. Beyonce crafted most songs on B'Day 
+						through live instrumentation and diverse techniques. This is evident on "Deja Vu", which utilizes bass guitar, conga, hi-hat, horns and the 808 drum; it also features 
+						rap vocals by Jay-Z. In an interview with MTV, Beyonce said, "When I recorded 'Deja Vu' [...] I knew that even before I started working on my album, I wanted to 
+						add live instruments to all of my songs..." The album's second single "Ring the Alarm" is noted for the use of a siren in its melody. It was called a song that "shows a 
+						harder edge to Beyonce's sound". "Freakum Dress" is a crescendo that uses a two-note riff and galloping beats. The song "advises women who have partners with straying 
+						eyes to put on sexy dresses and grind on other guys in the club to regain their affections." Meanwhile, the use of the "uh-huh huh huh" vocals and brassy stabs in the song 
+						"Green Light" is a direct echo to "Crazy in Love", according to Peter Robinson of The Guardian. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/QrOe2h9RtWI/maxresdefault.jpg');"></div>		
+					<div>
+						<img src = "https://i.ytimg.com/vi/QrOe2h9RtWI/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Release and promotion </h2>
+						<p id = "parallaxtext"> In collaboration with Sony Urban Music and Music World Entertainment, B'Day was first released outside of North America through Columbia 
+						Records on September 4, 2006 to coincide with Beyonce's twenty-fifth birthday. The following day, it was released in North America. Seven months after the release 
+						of the standard edition, an expanded double-disc deluxe edition of the album was released in the United States on April 3, 2007. In addition to the original track 
+						listing, the deluxe edition features five new songs, including "Beautiful Liar", a duet with Colombian singer Shakira. The single made Billboard Hot 100 history 
+						when it moved ninety-one positions—from number ninety-four to number three-on April 7, 2007. "Amor Gitano" ("Gypsy Love"), a Spanish-language flamenco-pop duet with 
+						Mexican singer Alejandro Fernandez served as a soundtrack for Telemundo's "El Zorro" telenovela, was included in the deluxe edition, alongside Spanish re-recordings 
+						of "Listen" ("Oye"), "Irreplaceable" ("Irreemplazable") and "Beautiful Liar" ("Bello Embustero"). The idea of recording songs in a foreign language emanated from her 
+						experience when Destiny's Child collaborated with Alejandro Sanz for "Quisiera Ser" (2000). Beyonce worked with producer Rudy Perez for these recordings in order to 
+						retain the same feeling of the English version of the song into the Spanish translation. The Spanish language EP on the deluxe edition was later released independently 
+						under the title Irreemplazable. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/RQ9BWndKEgs/maxresdefault.jpg');"></div>	
+					<div>
+						<img src = "https://i.ytimg.com/vi/RQ9BWndKEgs/maxresdefault.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> B'Day Anthology Video Album was released simultaneously with the deluxe edition; the anthology features thirteen 
+						videos including the director's cut of "Listen" and the extended mix of "Get Me Bodied". Most of the videos were accompaniments for the up-tempo tracks on B'Day; 
+						which featured retro stylization, use of color and black hair styles, as Beyonce thought it would create a resemblance between herself and the character she played in 
+						Dreamgirls, Deena Jones. The shooting of the videos was completed in two weeks; they were directed by Jake Nava, Anthony Mandler, Melina Matsoukas, Cliff Watts, Ray 
+						Kay, Sophie Muller, Diane Martel and Beyonce. Initially, the DVD was available exclusively in Walmart, but was later released to other markets. The Spanish songs were 
+						not included on international releases of the deluxe edition, but instead feature the thirteen music videos from the anthology DVD. In mid-2006, Beyonce looked for an 
+						all-female band for her 2007 tour, The Beyonce Experience, to promote the album. She held an audition for keyboard players, bassists, guitarists, horn players, 
+						percussionists and drummers around the world. Beyonce named the band the Suga Mamas, after the song from the album, titled "Suga Mama". Although the band only 
+						consisted of women, both male and female backup dancers performed onstage. As well as singing songs from B'Day, Beyonce also performed songs from Dangerously in Love
+						and gave a medley of Destiny's Child songs. She embarked on the tour in Japan on April 10, 2007 and concluded it in Tapei, Taiwan on November 12, 2007. At the 
+						Los Angeles show Jay-Z and Destiny's Child bandmates Rowland and Williams made guest appearances. Footage from this show was filmed and released on November 20, 2007 
+						as a live album titled The Beyoncé Experience Live. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/eY_mrU8MPfI/maxresdefault.jpg');"></div>	
+					<div>
+						<img src = "https://i.ytimg.com/vi/eY_mrU8MPfI/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-reception" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Critical reception </h2>
+						<p id = "parallaxtext"> B'Day received generally positive reviews from music critics. At Metacritic, which assigns a weighted mean rating out of 100 to reviews from 
+						mainstream critics, the album received an average score of 70, based on 23 reviews. Jody Rosen, writing for Entertainment Weekly, commented that the album's songs 
+						"arrive in huge gusts of rhythm and emotion, with Beyonce's voice rippling over clattery beats". Jonah Weiner of Blender commented that "sweaty up-tempo numbers prove 
+						the best platform for Beyonce's rapperly phrasing and pipe-flaunting fireballs". Andy Kellman of Allmusic felt that, despite "no songs with the smooth elegance" of 
+						"Me, Myself and I" or "Be with You", the album is "lean in a beneficial way". The Boston Globe's Sarah Rodman commented that the production team helped Beyonce "focus on 
+						edgier, up-tempo tracks that take her sweet soprano to new places". Caroline Sullivan of The Guardian felt that, "apart from a few pop-R&B space-fillers, there's not much 
+						to dislike about B'Day". Robert Christgau from MSN Music said "on most of [the songs] she's wronged yet still in control because she's got so much money" and felt that Beyonce 
+						"earns her props" if "opulence can signify liberation in this grotesquely materialistic time, as in hip-hop it can". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://trueclef.files.wordpress.com/2010/02/beyonce-get-me-bodied.jpg');"></div>
+					<div>
+						<img src = "https://trueclef.files.wordpress.com/2010/02/beyonce-get-me-bodied.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> In a mixed review, Jon Pareles of The New York Times found the album "tense, high-strung and obsessive", and said 
+						that it was neither "ingratiating or seductive". Richard Cromelin of the Los Angeles Times observed that Beyonce "heads into a new, more challenging terrain", but "some 
+						of the experiments don't click". Although he found the album "solid", Mike Joseph of PopMatters said that "aside from its relatively short running time, it sounds 
+						suspiciously under produced". Brian Hiatt of Rolling Stone averred that "while the mostly up-tempo disc never lacks for energy, some of the more beat-driven tracks 
+						feel harmonically and melodically undercooked, with hooks that don't live up to 'Crazy in Love' or the best Destiny's Child hits". Priya Elan of NME cited only 
+						"Freakum Dress" and "Ring the Alarm" as highlights and criticized that "too many tracks sound like updated versions of former glories", with no song on-par with 
+						"Crazy in Love". </p>
+					</div>
+					<div class = "parallax" style = "background-image: url('http://s1.dmcdn.net/KQv05/1280x720-Y3t.jpg');"></div>
+	</body>
+</html>

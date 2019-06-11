@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+		<meta name = "HandheldFriendly" content = "true">
+		<link rel = "stylesheet" href = "style-discography.css" type = "text/css">
+		<script src = "script-discography.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+		$(document).ready(function(){
+			$('#trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		$("#topnavi a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1200, function(){
+				window.location.hash = hash;
+			  });
+			}
+			});
+		});
+		</script>
+		<link rel = "shortcut icon" href = "beyoncealbum.ico" />
+		<title> Beyoncé (album) </title>
+		<style>
+			body, #topnavi, .parallaxtext, #mySidenavSide, .sidenav {background-color: black}
+			.parts, .button, .button1, .sidenav a:hover, #listitem:hover, #parallaxtext, #parallaxcaption, #currentpage {color: #eab9d9}
+			.parts:hover, .button:hover, .button1:hover {color: white}	
+			#topnavi {border-bottom: 3px solid #eab9d9}
+		</style>
+	</head>
+	<body> 
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography: </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-lemonade.html';" id = "listitem"> &nbsp; &#9679; Lemonade </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-beyonce.html';" id = "currentpage"> &nbsp; &#9679; Beyoncé (album) </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-4.html';" id = "listitem"> &nbsp; &#9679; 4 </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-sashafierce.html';" id = "listitem"> &nbsp; &#9679; I Am... Sasha Fierce </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-bday.html';" id = "listitem"> &nbsp; &#9679; B'Day </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-dangerouslyinlove.html';" id = "listitem"> &nbsp; &#9679; Dangerously in Love </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer; padding-bottom: 80px" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a>  
+		</div>
+		<div id = "mySidenavSide">
+			<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Beyonc%C3%A9_-_Beyonc%C3%A9.svg/1200px-Beyonc%C3%A9_-_Beyonc%C3%A9.svg.png" id = "albumcover">
+		</div>
+			<!--Main page container-->
+				<!--Desktop navigation menu-->
+				<div id = "content">	
+					<div id = "topnavi"> 
+						<div class = "trigger-icon" onclick = "openNav()">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a href = "#section-intro" style = "margin-left: 55px" class = "parts"> Introduction </a>
+						<a href = "#section-background" class = "parts"> Background </a>
+						<a href = "#section-recording" class = "parts"> Recording </a> 
+						<a href = "#section-visuals" class = "parts"> Visuals </a> 
+						<a href = "#section-composition" class = "parts"> Composition </a>
+						<a href = "#section-release" class = "parts"> Release </a> 
+						<a href = "#section-reception" class = "parts"> Critical reception </a> 
+					</div>	
+					<!--Mobile navigation menu-->
+					<div class = "heading">
+						<div id = "trigger-icon1">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+					</div>
+					<div id = "mobilem">
+						<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+					</div>
+					<div id = "head">
+						<img src = "beyonce-beyonce.png" style = "width: 100%; height: 100%; object-fit: cover;" id = "header">
+						<img src = "http://wikitesti.com/wp-content/uploads/2016/06/Beyonce-Beyonce-1-1024x1024.jpg" id = "albumcover1">
+						<img src = "http://wikitesti.com/wp-content/uploads/2016/06/Beyonce-Beyonce-1-1024x1024.jpg" id = "mobilealbum">
+					</div>				
+					<div id = "section-intro" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Beyoncé (album) </h2>
+						<p id = "parallaxtext" style = "padding-top: 30px"> <strong>Beyoncé</strong> is the fifth studio album by American singer Beyonce, released on December 13, 2013, by Parkwood Entertainment and
+						Columbia Records. Developed as a "visual album", Beyonce's songs are accompanied by non-linear short films that illustrate the musical concepts 
+						conceived during production. Its dark, intimate subject material includes feminist themes of sex, monogamous love, and relationship issues, inspired by Beyonce's 
+						desire to assert her full creative freedom. The album's initial recording began in New York, where Beyonce invited producers and songwriters to live with her for a month.
+						During extensive touring the following year, the album changed as she conceived of creating a visual accompaniment to its songs and resumed recording sessions with 
+						electronic producer and rock musician Boots. Their collaboration led to more sonically experimental material, which combined contemporary R&B with electronic and soul 
+						music. Throughout this period, the album's songs and videos were composed in strict secrecy as Beyonce devised an unexpected release. Beyonce was released digitally to
+						the iTunes Store without prior announcement or promotion. It debuted at number one on the US Billboard 200, earning Beyonce her fifth consecutive number-one 
+						album in the country. The record sold 617,000 copies in the US, and 828,773 copies worldwide in its first three days of availability, becoming the fastest-selling
+						album in the history of the iTunes Store, before being surpassed by Adele's 25 in 2015. It was reissued in November 2014 as part of a platinum edition, along with an 
+						extended play of new songs. It received acclaim from critics, who praised its production, exploration of sexuality, and Beyonce's vocals. As of November 2016, Beyonce 
+						has sold 8 million copies worldwide[2] and has spawned the singles "XO", "Drunk in Love", "Partition" and "Pretty Hurts. </p>
+					</div>
+				</div>
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/3IeOmXZ95i8/maxresdefault.jpg');"></div>	
+					<div>
+						<img src = "https://i.ytimg.com/vi/3IeOmXZ95i8/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-background" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Background </h2>
+						<p id = "parallaxtext"> Following the release of 2011's 4, Beyonce gave birth to her first child, Blue Ivy Carter, at Lenox Hill Hospital in New York City in January 2012.
+						Just four months after labor, she pursued a three-night residency at Revel Atlantic City's Ovation Hall, entitled Revel Presents: Beyonce Live. The choice to hold concerts so soon was purposeful; Beyonce
+						intended to demonstrate to mothers that they need not halt their careers despite having had children. She also debuted a portion of a line from "Bow Down" which featured on "***Flawless"
+						during the performance of "Countdown (Beyonce song)". Most of the summer following the residency was spent in The Hamptons, New York, where she took time out from the public to spend
+						time with her daughter and to begin sessions for her next album. She resumed work in early 2013, performing "The Star-Spangled Banner" at President Obama's second inauguration and 
+						headlining the Super Bowl XLVII halftime show where there was expectation she would debut new music, although these rumors never materialized.
+						She also released a self-directed autobiographical documentary in February entitled Life Is But a Dream. Problems playing this file? See media help.
+						In March 2013, a two-part hip hop track entitled "Bow Down/I Been On" was released onto Beyoncé's Soundcloud account. "Bow Down", produced by Hit-Boy, was written after Beyonce
+						woke up one morning with a chant stuck in her head, feeling angry and defensive. This was melded with a Timbaland-produced second half, "I Been On", that makes prominent use 
+						of a pitch-distorted vocal as a homage to the Houston hip hop scene. Michael Cragg of The Guardian described the song as "brilliantly odd", commending its loud, 
+						abrasive production, while Pitchfork's Lindsay Zoladz noted the song's assertiveness and believed it served as an introduction of what was to come. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('https://i.pinimg.com/originals/43/f1/cf/43f1cfa524c55bc82f773ab0f3fcd8a0.jpg');"></div>	
+					<div>
+						<img src = "https://i.pinimg.com/originals/43/f1/cf/43f1cfa524c55bc82f773ab0f3fcd8a0.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> "Bow Down/I Been On" was perceived as a significant departure from Beyonce's existing catalogue,
+						particularly for its aggressive nature. The song's atmosphere and its controversial "Bow down, bitches" refrain drew a mixed reaction from those who 
+						questioned whether the lyric was aimed at women or merely a moment of braggadocio. Beyonce clarified after the album's release, where elements of "Bow Down"
+						appear on the track "Flawless", that the song and its refrain were intended as a statement of female empowerment. Neither Beyonce or her representatives 
+						commented on the release of "Bow Down/I Been On", and many journalists questioned the nature of its release in the context of the release of her upcoming album.
+						Further confusion was created when portions of other tracks, "Grown Woman" and "Standing on the Sun", were used for television advertising campaigns, with a 
+						similar lack of explanation as to their purpose. Through much of 2013 the media intermittently reported that the album was delayed or scrapped, 
+						with one story alleging Beyonce had scrapped fifty songs in favor of starting again. In July 2013, a spokesperson for Beyonce denied speculation that her
+						album had been delayed, stating there was no official release date to begin with and that when a date is set, it would be announced via an official press release.
+						There was considerable confusion among music journalists and fans as Beyonce engaged in extensive touring, while not discussing the album or its release. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://x.imagefapusercontent.com/u/nietniet/5691632/1754336719/bey_p-2015-06-29-12h00m21s35.jpg');"></div>
+					<div>
+						<img src = "http://x.imagefapusercontent.com/u/nietniet/5691632/1754336719/bey_p-2015-06-29-12h00m21s35.jpg" id = "image">
+					</div>
+					<div id = "section-recording" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Recording </h2>
+						<p id = "parallaxtext" style = "padding-top: 30px"> Recording sessions began in the summer of 2012 in The Hamptons, New York, where Beyonce and her husband Jay-Z 
+						were living. She invited producers and songwriters to accompany them, including Sia, Timbaland, Justin Timberlake and The-Dream. Beyonce described the atmosphere 
+						as unconventional, saying, "we had dinners with the producers every day, like a family... it was like a camp. Weekends off. You could go and jump in the pool
+						and ride bikes... the ocean and grass and sunshine... it was really a safe place." She would spend the majority of her day with her newborn daughter, taking some 
+						hours out to record music. The album's opening track "Pretty Hurts", co-written by Sia, was completed during these sessions. The project was suspended until 2013 and
+						relocated to New York City's Jungle City and Oven studios where most of the album was recorded. In an interview for Vogue in January 2013, Jason Gay described Beyonce's attention 
+						to detail as "obsessive" when observing her studio, noting the vision boards she created for inspiration, which contained potential song titles, old album covers and pictures of performances.
+						In mid-2013, a relatively unknown artist Boots, signed a publishing deal with Jay-Z's Roc Nation. In an interview for Pitchfork after the album's release, Boots was coy when 
+						answering questions about how Beyonce discovered his demo or of his work previous to the project, only confirming his signing. In June 2013, they met in person 
+						for the first time and Boots presented Beyonce with material he felt would resonate with her. However, Beyonce was more interested in his experimental material, and he
+						reluctantly played her his song "Haunted" on his cellphone. She refused to ignore its potential. At a later meeting, he played her a stream of consciousness rap called
+						"Ghost", which he wrote after an exasperating meeting with a potential record label. Boots began by composing a melody that reminded him of a hypnotic state, then layering 
+						guitar arpeggios to resemble the work of English electronic musician Aphex Twin. Subsequently, "Ghost" became the first half of "Haunted"; he later described Beyonce as the "only visionary in the
+						room" for her ability to find potential in scraps of songs. Following these sessions, Boots would go on to work on eighty percent of Beyonce.  </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://images.jovempanfm.uol.com.br/EhljaUDA51U3GQbuMMrScCG5CP4=/top/smart/media.jovempanfm.uol.com.br/archives/2014/02/08/1916135130-beyonce-flawless.jpg');"></div>				
+					<div>
+						<img src = "http://images.jovempanfm.uol.com.br/EhljaUDA51U3GQbuMMrScCG5CP4=/top/smart/media.jovempanfm.uol.com.br/archives/2014/02/08/1916135130-beyonce-flawless.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext"> While recording in New York City, the previously released "Bow Down" was incorporated into a track that became "Flawless". During its composition, Beyonce
+						chose to interpolate a portion of Chimamanda Ngozi Adichie's TED talk "We Should All Be Feminists" into it as she identified with her interpretations of feminism.
+						Organic approaches were taken when writing and recording "Drunk in Love" and "Partition". When working with Detail and Timbaland on a beat that became "Drunk in Love",
+						she was inspired by what she described as pure enjoyment, as both she and Jay-Z free-styled their verses for the track in the studio. Similarly, the bassline of "Partition", which Beyonce
+						found reminiscent of hip hop music during her early romance with Jay-Z, influenced her to accompany the track with sexual lyrics. She took to a microphone without pen and paper and rapped the first verse,
+						finding herself initially embarrassed by the explicitness of the lyrics. When composing "Partition", a rap known as "Yonce" was used as the opening of the track, the beat of which was built by Justin 
+						Timberlake banging on buckets in the studio. Only four songs were not recorded entirely in New York studios: "Superpower" and "Heaven" which were partially recorded in California,
+						as well as "No Angel" which was composed in London and "XO" in Berlin and Sydney. Although the demo of "XO" was recorded when Beyonce had contracted a sinus infection, the vocals
+						were never rerecorded as she felt their imperfections fit more appropriately. In October, the album began taking shape and "Standing on the Sun" and "Grown Woman" were removed songs which had been 
+						previewed in 2013 on television advertisements—from Beyonce to fit in with its minimalist approach. During Thanksgiving week, the vocals on the album were edited and producers were notified to submit their final cuts.
+						Beyonce spent less time on vocal production than she had done with her previous projects, instead focusing on perfecting the album's music. Beyonce was mastered at Sterling Sound in New York.
+						In total, 80 songs were recorded for the album. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://www.nhb.de/uploads/pics/SuperPower_03.jpg');"></div>					
+					<div>
+						<img src = "http://www.nhb.de/uploads/pics/SuperPower_03.jpg" id = "image">
+					</div>
+					<div id = "section-visuals" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Visuals </h2>
+						<p id = "parallaxtext"> Beyonce first considered the idea of creating a "visual album" in June 2013, when only three or four songs had been completed. Explaining her motivation, 
+						she said she would often connect images, childhood memories, emotions and fantasies to songs she was in the midst of composing, and that she "wanted people to hear the songs with
+						the story that's in my head as that's what makes it mine". She highlighted the "immersive experience" of Michael Jackson's Thriller (1982) as the principal influence for creating a body 
+						work that would mean "people would hear things differently and [...] actually be able to see the whole vision of the album". The videos were filmed between June and November 2013 in 
+						various countries as the singer traveled on her world tour. Todd Tourso, who directed the videos for "Jealous" and "Heaven", served as the creative director for the entire project.
+						Much of his role concerned liaising between Beyonce, who for most videos already had concepts, and the respective directors who also had propositions. As most videos were shot outside of the US,
+						the crew surrounding the videos was small, consisting only of Tourso, the director of photography and producer, as well as Beyonce and her stylist, make-up artist and security.
+						When filming in public, Beyonce would wear in-ear headphones instead of having the music played out loud, in order to maintain the secrecy of the project and prevent any songs leaking.
+						By the time of post-production, the songwriting process began to converge with the content of the visuals and Beyonce would watch unedited footage to fit the music to them. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('http://www.actusmediasandco.com/wp-content/uploads/2014/11/Capture-d%E2%80%99%C3%A9cran-2014-11-28-%C3%A0-16.28.15.png');"></div>					
+					<div>
+						<img src = "http://www.actusmediasandco.com/wp-content/uploads/2014/11/Capture-d%E2%80%99%C3%A9cran-2014-11-28-%C3%A0-16.28.15.png" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> "***Flawless", "Rocket" and "Mine" were noted as having been changed by their visual counterparts, Tourso commenting that "she would rewrite some lines,
+						or she would add certain audio, or she would add bridges" and believed that "it would complete the picture of where the audio needed to go". Several videos were intended to demonstrate 
+						the album's central theme of "finding the beauty in imperfection". While working on "Flawless", Beyonce was reminded of her loss on television competition Star Search as a child,
+						which she saw as a defining moment in her career, and believed that the competition had taught her how to embrace imperfection in the future. The theme was represented in the videos by the 
+						recurring use of trophies, which the singer saw as referencing "all of the sacrifice I have made as a kid, all of the time that I lost". It was also carried into how the visuals were 
+						created, with the videos for "Drunk in Love", "Yonce", "No Angel", "XO" and "Blue" shot without prior preparation, as the singer found enjoyment in the spontaneity of the filming 
+						locations and in resisting the urge to perfect them. Noting some of the visuals' explicit content and exposure of her body, Beyonce said she found shooting them liberating and expressed her
+						intention to demonstrate sexuality as a power that women should have, and not lose after becoming a mother. She went on to say, "I know finding my sensuality, getting back into my body, 
+						being proud of growing up, it was important to me that I expressed that... I know that there are so many women who feel the same way". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i1.imgiz.com/rshots/7940/beyonc-rocket_7940242-0562_1200x630.jpg');"></div>					
+					<div>
+						<img src = "https://i1.imgiz.com/rshots/7940/beyonc-rocket_7940242-0562_1200x630.jpg" id = "image">
+					</div>
+					<div id = "section-composition" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Composition and themes </h2>
+						<p id = "parallaxtext"> Beyonce is a fourteen track set with seventeen short films: a video for each audio track, two extra videos to accompany the two-part tracks 
+						"Haunted" and "Partition", as well as a bonus video for "Grown Woman", which lacks an equivalent audio counterpart. Departing from the traditional R&B leanings of its
+						predecessor, 4 (2011), Beyonce's songs are predominantly alternative R&B. Hence, musically, the album may be located in the post-dubstep era, fusing electronic music with R&B 
+						and soul. The album's dark, moody production is more textured than previous releases and songs are characterized by heavy bass and loud hi-hats, as well as prominent synthesizers.
+						A quality of restraint features among most songs "with subdued pulses, ambient effects and throbbing grooves that sneak up on you, threatening to explode but only occasionally transforming". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://cfile21.uf.tistory.com/image/255B6A4A53B52334179955');"></div>					
+					<div>
+						<img src = "http://cfile21.uf.tistory.com/image/255B6A4A53B52334179955" id = "image">
+					</div>
+					<div id = "section-impact" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Composition and themes </h2>
+						<h4 id = "parallaxcaption"> Music and lyrics </h4>
+						<p id = "parallaxtext"> The album adopts unconventional song structure and as Evan Rytlewski of The A.V. Club notes, many songs "[emphasize] moody, shifting beats and drawn-out vibe 
+						sessions" and are left to slowly unfurl. This is particularly prominent on "Haunted" and "Partition" which function as two-part suites. The dream-like state created on "Haunted"
+						is ushered in with a stream of consciousness rap entitled "Ghost" which transitions from "smoky ethereality to off-kilter club beat", amid a shifting bassline and ghostly keyboards.
+						"Partition" begins with "Yonce", a slick rap set over a simple Middle Eastern rhythm. The song is divided by a brief interlude of camera clicks and the
+						whirring of a car window, before launching into a second-half that melds synthesizer pulses with finger snaps to create a Southern hip hop bassline.
+						Over this, the song follows a candid narrative that describes sex in the back of a limousine when travelling to a nightclub. Several critics noted the album's
+						extensive exploration of sexuality. Having been a singer since the age of nine, Beyonce felt "stifled" by the perception she was a role model for young children,
+						and now into her thirties, believed she had "earned the right to [...] express any and every side of [her]self". Addressing the album's sexual content specifically,
+						the singer said "I don't at all have any shame about being sexual and I'm not embarrassed about it and I don't feel like I have to protect that side of me."
+						Several critics described Beyonce's sex songs as a celebration of monogamous love. "Drunk in Love" is a duet with her husband Jay-Z, and features lyrics
+						heavily laden with double entendres that explore lust within their sexual relationship. It fuses intermittent trap beats with heavy bass, skittering synthesizers 
+						and drums, and Arabic-scale vocal arpeggios. Beyonce's vocals are diverse, including a melodramatic chorus sung in her upper register and a
+						half-rapped second verse. "Blow" veers from a thumping jazz beat created with sparse piano chords and guitars to a "swinging electro-funk groove"
+						with elements of neo-disco. Its erotic, tongue-in-cheek lyrics include a running cunnilingus metaphor of "licking Skittles" in its chorus.
+						The slow-jam "Rocket" is a homage to D'Angelo's soul-infused "Untitled (How Does It Feel)" (2000). Described by Entertainment Weekly's Nick 
+						Catucci as a "slippery, six-and-a-half-minute funk excursion", Beyonce adopts a slow, harmonious vocal as she instructs her love interest to watch 
+						her perform a striptease. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://harpersbazaaruk.cdnds.net/15/37/1600x800/1600x800-beyonce-haunted-jpg-53da4606.jpg');"></div>					
+					<div>
+						<img src = "http://harpersbazaaruk.cdnds.net/15/37/1600x800/1600x800-beyonce-haunted-jpg-53da4606.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> Much like her previous albums, the record is feminist, with greater exploration of gender
+						issues and conflated with "an unwavering look at black female sexual agency." Soraya McDonald of The Washington Post viewed Beyonce as significant
+						to black feminism as it celebrates black female sexuality in mainstream music and in the context of hip hop, where it is typically only shown 
+						through the male perspective. The album's most explicit commentary on gender is the three-part "***Flawless". It opens with the earlier released "Bow Down",
+						before seguing into an excerpt of a speech by Chimamanda Ngozi Adichie on the socialization of girls. The final part uses a staccato, trap beat as Beyonce
+						reflects on her own feminist attitudes, encouraging self-acceptance among women and criticizing misogynist sentiments. Other songs allude to darker 
+						themes of fear and personal insecurities. Beyonce noted that the album displayed "sides of [her] that only a few people had seen", 
+						adding that "all of us want happiness... sometimes you have to take the insecurities to get to the secure place. And all of those things 
+						I feel happy to express". Caitlin White of The 405 believed the songs as "hold forth on the most important issues in a woman's life by
+						delving into [the singer's] personal experience with them". "Jealous" addresses fidelity and features lyrics in which the protagonist experiences 
+						"promises, suspicion and potential revenge". It contains an "uncanny mix of tones and styles", most prominently a morose bassline replete
+						with electronic yelps. "Mine", a futuristic R&B song with jazz elements, is self-reflective, with lyrics that reference marital strife and
+						difficulties with postnatal depression. The neo soul song "Pretty Hurts" is a self-empowerment anthem that decries society's obsession
+						with harmful and unattainable standards of beauty. The song uses audio snippets of beauty pageants which Beyonce contested in to frame the song 
+						in the context of her childhood. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i2.wp.com/www.celebritiesreallife.com/wp-content/uploads/2015/11/Beyonce-Favorite-Color-Drink-Book-Movies-Actor-Makeup-Product-Sport-things.jpg');"></div>					
+					<div>
+						<img src = "https://i2.wp.com/www.celebritiesreallife.com/wp-content/uploads/2015/11/Beyonce-Favorite-Color-Drink-Book-Movies-Actor-Makeup-Product-Sport-things.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> Beyonce's vocal production is diverse; several songs are half-rapped and half-sung with particular
+						use of falsetto and head voice. The Telegraph's Neil McCormick notes that while the singer uses her expansive vocal range, unlike her previous releases, 
+						she restrains from belting and vocal runs as to increase tension in the music. "No Angel", a chillwave song with influences of minimalist hip hop music,
+						is noted for its use of the falsetto vocal register, with a delivery that is "threatening to fray". The doo wop-inspired duet with Frank Ocean "Superpower" 
+						is sung in the lower register of both singers, while employing girl group harmonies similar to Beyonce's work in Destiny's Child.
+						The love song "XO" uses several vocal techniques to evoke a celebration of love and life, including echo and several hooks.
+						Its ascending chorus lines use call and response, as well as backing vocals of a sing-along crowd, as Beyonce sings of how her "darkest nights" 
+						are enlightened by her lover's face. The album's closing tracks are midtempo ballads "Heaven" and "Blue". "Heaven" is an emotive, piano-led hymn
+						with gospel elements, while "Blue" is built on a piano melody over which Beyonce sings of the love for her daughter, using her full vocal range. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://videos.company3.com/2014/03/Header_Beyonce.jpg');"></div>					
+					<div>
+						<img src = "http://videos.company3.com/2014/03/Header_Beyonce.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Release and reaction </h2>
+						<p id = "parallaxtext"> Throughout 2013, Beyonce worked on the project in strict secrecy, sharing details of the album with a small circle of people and 
+						continually shifting the deadline, which was only finalized a week before its release. She later explained that her intent was to reinstate the idea of 
+						an album release as a significant, exciting event which had lost meaning in the face of hype created around singles. Tourso was tasked with designing Beyonce's
+						album cover, which he found difficult considering it was a visual album and thus "inundated with imagery". Over three months he considered over a hundred 
+						options, only to proceed with his very first idea. He was inspired by the cover of Metallica's 1991 eponymous fifth album to create a bold statement, 
+						specifically to deviate from a "beauty shot" of Beyonce which he felt would be expected. He used a font similar to placards used in boxing matches to represent
+						abrasive masculinity, which was contrasted by the greyish-pink font which he described as "a subversion of femininity". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2014/04/cache/OYl3Uik0wQf-_700x470_KaMXZQjO.jpg');"></div>					
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2014/04/cache/OYl3Uik0wQf-_700x470_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> In early December 2013, Beyonce and her management company Parkwood Entertainment held meetings concerning its release with
+						executives from Columbia Records and the iTunes Store, using the code name "Lily" for the album. Meetings were also held with Facebook executives in
+						regard to advertising that resulted in the album benefiting from the social network's then new "Auto Play" feature for videos. On December 9, 2013, 
+						Rob Stringer, Chairman of Columbia Records, knowingly told media that the album would be released at some point in 2014 and it would be "monumental".
+						On December 13, 2013, the album was released in the early hours of the morning without any prior announcement or promotion exclusively on the iTunes Store.
+						The singer commented that she was "bored" of her music being marketed as it had been done previously, and wanted its release to be a different
+						experience for her fans. The album was available exclusively on iTunes Stores until December 20, 2013, when physical copies were distributed to other 
+						retailers. Parkwood Entertainment had a 72-hour turnaround from the moment the album was released online to prepare its physical release.
+						As soon as the album became exclusively available to iTunes Stores, Sony Music Entertainment handed down an edict that forbade retailers to put the
+						album up for pre-order, as to further protect the exclusivity with iTunes. It was then reported that US retailers Target and Amazon refused to sell 
+						the physical copy of the album. According to a Target spokesperson, the store was only interested in retailing albums which were released digitally
+						and physically simultaneously. On December 21, 2013, all the videos from the album were screened at the SVA Theater in New York. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://image.luxurycheckout.com/blog/2013/12/beyonce-in-fur-.jpg');"></div>					
+					<div>
+						<img src = "http://image.luxurycheckout.com/blog/2013/12/beyonce-in-fur-.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> The surprising release caused "hilarious, honest and hysterical" reaction among Beyonce's fans,
+						and "shock" among other musicians. According to data provided by Twitter, the release generated over 1.2 million tweets in 12 hours. Rolling Stone's Rob 
+						Sheffield wrote, "Beyonce has delivered countless surprises in her 15 years on top of the music world, but she's never dropped a bombshell like this... 
+						The whole project is a celebration of the Beyonce Philosophy, which basically boils down to the fact that Beyonce can do anything the hell she wants to."
+						Peter Robinson of The Guardian hailed the shock release as "Beyoncegeddon", describing it as a "major triumph [...] a masterclass in both exerting 
+						and relinquishing control." Forbes' Zack O'Malley Greenburg included Beyoncé on his "Music Industry Winners 2013" list, noting that the singer 
+						"didn't make use of any of the perks of [being signed to a large record label]—the "machine" we're told is so necessary. There was no radio promotion,
+						no single, no advance press of any kind". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://i.huffpost.com/gen/1515253/images/o-PRETTY-HURTS-facebook.jpg');"></div>					
+					<div>
+						<img src = "http://i.huffpost.com/gen/1515253/images/o-PRETTY-HURTS-facebook.jpg" id = "image">
+					</div>
+					<div id = "section-reception" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Critical reception </h2>
+						<p id = "parallaxtext"> Beyonce received widespread acclaim from critics. At Metacritic, which assigns a weighted mean rating out of 100 to reviews 
+						from mainstream publications, the album received an average score of 85, based on 34 reviews. Critics generally commended the album as thematically 
+						and musically bold, as well as emphasizing its visual aspect and surprise release; many said it was her magnum opus. The album's exploration of sexuality
+						was particularly well received by reviewers. The New York Times' chief critic Jon Pareles described the tracks as "steamy and sleek, full of erotic 
+						exploits and sultry vocals" noting that "every so often, for variety, they turn vulnerable, compassionate or pro-feminist". Caitlin White, writing for 
+						The 405, characterized Beyonce as a feminist text. She noted that the tracks demonstrate Beyonce's desire to retain complete sexual agency, while also 
+						forgoing the expectations of pop songcraft by placing female pleasure at the forefront unquestioningly. Robert Christgau admired the album's "sex sequence" of
+						songs, where for "over seven well-differentiated tracks", Beyonce "performs the unlikely feat of conveying an open-ended eroticism that varies because 
+						[she] knows eroticism does, for each of us in our individual responses as well as for her". PopMatters' David Amidon similarly praised the album's honest, 
+						highly sexual nature, observing it was "her first attempt at bridging an audience, making music that makes the men want to hear what she has to say and the 
+						women feel like they can say it to men as well". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/34xCpMRF92o/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/34xCpMRF92o/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> Other reviews recognized that the album eschewed contemporary R&B in favor of more experimental
+						compositions. Pitchfork writer Carrie Battan wrote that Beyonce was "exploring sounds and ideas at the grittier margins of popular music" and rejecting
+						"traditional pop structures in favor of atmosphere". Spin's Anupa Mistry felt it was "more textured than its predecessors in both sound and content", 
+						and applauded the singer's transition to a maturer sound of "big-hook message pop, multi-directional, mood-shifting suites and delicately resonant R&B
+						ballads". Noting the lack of "guaranteed hits", NME believed that the "low-key, moody production throws the spotlight on the words and the images brought 
+						to play" and described it as her most experimental work to date. Rolling Stone's pop critic Rob Sheffield found Beyonce's boldness among its best attributes,
+						believing the album is at its "strongest when it goes for full-grown electro soul with an artsy boho edge". Mikael Wood of Los Angeles Times highlighted a
+						desire to push creative boundaries among the tracks and admired "how the music similarly blends the intimate and the extravagant", while Entertainment Weekly
+						writer Nick Catucci concluded that the album was characterized by "clashing impulses—between strength and escape, megapop and fresh sounds, big messages and 
+						resonant lyrics". Praise was also reserved for Beyonce's vocal performance. The Telegraph's Neil McCormick declared Beyonce as "one of the most technically
+						gifted vocalists in pop" favoring her "gospel power, hip-hop flow and [huge] range". He was particularly complementary of the vocal restraint displayed 
+						across the tracks that was absent from previous releases. Kitty Empire of The Observer noted the diverseness of her vocals on the album's up-tempo songs 
+						and found the singer ranging between "squeaky sexed-up falsettos, hood rat rapping, wordless ecstasies and effortless swoops". Clash regarded her voice most 
+						effective on the album's ballads, where they commented on how diversely her vocals conveyed feelings of love and described her "power and control [as]
+						breathtaking". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.pinimg.com/originals/87/98/c1/8798c15b9dea32a08b8b9ead056eb982.jpg');"></div>
+	</body>
+</html>
+
+

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+		<meta name = "HandheldFriendly" content = "true">
+		<link rel = "stylesheet" href = "style-discography.css" type = "text/css">
+		<script src = "script-discography.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+		$(document).ready(function(){
+			$('#trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		$("#topnavi a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1200, function(){
+				window.location.hash = hash;
+			  });
+			}
+			});
+		});
+		</script>
+		<link rel = "shortcut icon" href = "dangerously.ico" />
+		<title> Dangerously in Love </title>
+		<style>
+			body, .parallaxtext {background-color: white}
+			.parts, .button, .button1, .sidenav a, #listitem {color: #c5d1e2}
+			.parts:hover, .button:hover, .button1:hover, .sidenav a:hover, #listitem:hover {color: white}	
+			.sidenav {background-color: #627D92}
+			#topnavi {border-bottom: 3px solid #c5d1e2; color: #2D235F}
+			#currentpage {color: white}
+			#parallaxcaption {color: #92A3B7}
+			#parallaxtext {color: #627D92}
+			#mySidenavSide, #topnavi, #container {background-color: #92A3B7}
+		</style>
+	</head>
+	<body> 
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography: </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-lemonade.html';" id = "listitem"> &nbsp; &#9679; Lemonade </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-beyonce.html';" id = "listitem"> &nbsp; &#9679; Beyoncé (album) </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-4.html';" id = "listitem"> &nbsp; &#9679; 4 </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-sashafierce.html';" id = "listitem"> &nbsp; &#9679; I Am... Sasha Fierce </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-bday.html';" id = "listitem"> &nbsp; &#9679; B'Day </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-dangerouslyinlove.html';" id = "currentpage"> &nbsp; &#9679; Dangerously in Love </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer; padding-bottom: 80px" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+		</div>
+		<div id = "mySidenavSide">
+			<img src = "https://images.rapgenius.com/b253c352aebd0d65457a7169a21de7c7.800x800x1.jpg" id = "albumcover">
+		</div>
+			<!--Main page container-->
+				<!--Desktop navigation menu-->
+				<div id = "content">	
+					<div id = "topnavi"> 
+						<div class = "trigger-icon" onclick = "openNav()">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a href = "#section-intro" style = "margin-left: 55px" class = "parts"> Introduction </a>
+						<a href = "#section-background" class = "parts"> Background </a>
+						<a href = "#section-recording" class = "parts"> Recording </a> 
+						<a href = "#section-music" class = "parts"> Music and lyrics </a> 
+						<a href = "#section-release" class = "parts"> Release and promotion</a>
+						<a href = "#section-reception" class = "parts"> Critical reception </a>
+					</div>	
+					<!--Mobile navigation menu-->
+					<div class = "heading">
+						<div id = "trigger-icon1">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+					</div>
+					<div id = "mobilem">
+						<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+					</div>
+					<div id = "head">
+						<img src = "dangerouslyinlove.png" style = "width: 100%; height: 100%; object-fit: cover;" id = "header">
+						<img src = "https://images.rapgenius.com/b253c352aebd0d65457a7169a21de7c7.800x800x1.jpg" id = "albumcover1">
+						<img src = "https://images.rapgenius.com/b253c352aebd0d65457a7169a21de7c7.800x800x1.jpg" id = "mobilealbum">
+					</div>				
+					<div id = "section-intro" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Dangerously in Love </h2>
+						<p id = "parallaxtext" style = "padding-top: 30px"> <strong>Dangerously in Love</strong> is the debut solo studio album by American singer Beyonce. It was released worldwide on June 24, 
+						2003 through Columbia Records and Music World Entertainment and in the United Kingdom on June 23, 2003. During the recording of Destiny's Child's third studio 
+						album Survivor (2001), the group announced that they would produce solo albums to be released. Recording sessions for the album took place from March 2002 to 
+						March 2003 at several studios, during the hiatus of her then-group Destiny's Child. As executive producer of the album, Beyonce took a wider role in its 
+						production, co-writing a majority of the songs, choosing which ones to produce and sharing ideas on the mixing and mastering of tracks. The tracks in the album 
+						are a mixture of uptempo songs and ballads, which are basically inspired by R&B and soul genres; it also features elements of hip hop and Arabic music. 
+						Although Beyonce remained discreet about her interpretation of the songs, its underlying meanings were attributed by music writers as an allusion to her 
+						intimate relationship with then-boyfriend and well-known music mogul Jay-Z. Dangerously in Love received positive reviews from music critics upon its release, 
+						with critics praising Knowles' "artistic leap". The album also received numerous accolades, earning Beyonce five Grammy Awards at the 46th Annual Grammy 
+						Awards on February 8, 2004. Dangerously in Love reached a worldwide commercial success, earning multi-platinum certifications in Australia, the United 
+						Kingdom, and the United States. The album debuted at number one on the US Billboard 200 chart, selling 317,000 copies in its first week, earning Beyonce the 
+						highest debut sales among Destiny's Child members' solo albums. Dangerously in Love has sold over eleven million copies worldwide and produced two US Billboard 
+						Hot 100 number-one singles – "Crazy in Love" and "Baby Boy" – and two top five singles – "Me, Myself and I" and "Naughty Girl". </p>
+					</div>	
+				</div>
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2014/04/cache/P-NRDOZVSPrU_1280x1280_KaMXZQjO.jpg');"></div>				
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2014/04/cache/P-NRDOZVSPrU_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-background" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Background </h2>
+						<p id = "parallaxtext"> Beyonce launched her career as lead singer to R&B group Destiny's Child in the late 1990s. According to Corey Moss of MTV News, "fans are eager 
+						to see" how Beyonce, after years with the group, performs solo. While recording their third album, Survivor, in late 2000, Beyonce announced the group would be put on 
+						hiatus in order for the members to produce solo albums in the coming years, which they hoped would boost interest in Destiny's Child. The idea of individual releases 
+						emanated from the group's manager and Beyonce's father, Mathew. With different types of music for each member to produce, the albums were not intended to compete on 
+						the charts. Destiny's Child's management strategically planned to stagger the release of each group member's album to maximise sales. Michelle Williams was the first 
+						to release a debut solo album, Heart to Yours, in April 2002. Meanwhile, Beyonce debuted on the big screen, starring in the comedy film Austin Powers in Goldmember, 
+						and recorded her debut single, "Work It Out", which is featured on the soundtrack to the film. Rowland collaborated with American rapper Nelly on the song "Dilemma" as 
+						a featured artist; it became a hit that year, leading the label to advance the release date of her debut solo album, Simply Deep, in late 2002. Beyonce also starred in 
+						The Fighting Temptations and recorded another solo single. In August 2002, she collaborated with boyfriend Jay-Z as featured vocalist on the song "'03 Bonnie & Clyde". 
+						The single earned Beyonce credibility and paved the way for the release of Dangerously in Love. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/ViwtNLUqkMY/maxresdefault.jpg');"></div>				
+					<div>
+						<img src = "https://i.ytimg.com/vi/ViwtNLUqkMY/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-recording" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Recording </h2>
+						<p id = "parallaxtext"> Before Beyonce began recording for Dangerously in Love, she selected the producers with whom she would collaborate. For two days, 
+						she held meetings with prospective producers from the West Coast across the East Coast, and had interviews with them. Beyonce went to Miami, Florida to 
+						begin sessions with Canadian record producer Scott Storch, her first collaborator, and lived in a Miami hotel in the following months. As she wanted 
+						to concentrate on the album, Beyonce took her time to avoid pressure build-up, significantly different from the hasty productions of Destiny's Child.
+						As she did on Survivor, Beyonce took a wider role in the production of Dangerously in Love, co-writing a majority of the songs, choosing which ones 
+						to produce and sharing ideas on the mixing and mastering of tracks. Although Beyonce did not create beats, she came up with melodies and ideas she 
+						shared with the producers. With 43 songs completed - 15 of which made it to the album - Beyonce is credited as co-writer and co-producer, as well 
+						as the album's executive producer alongside Matthew Knowles. Beyonce felt that recording an album without her group mates was "liberating and 
+						therapeutic", coming into the studio and freely expressing her ideas with her collaborators. The dependency she developed with Destiny's Child, 
+						however, meant it was harder "to be on [her] own creatively". As she wanted to grow as an artist Beyonce contacted other artists with a view to 
+						forming a collaborative partnership. When the collective finished writing several songs, she printed copies of each and sent them to prospective 
+						guest artists. She talked to them by phone for possible collaboration, eventually gaining their approval. Besides Jay-Z, Beyonce was able to work with 
+						Jamaican artist Sean Paul, American rapper Missy Elliott, among others. In contrast, some artists sent copies of songs to Beyoncé, which were eventually 
+						produced. Additionally, Beyonce also worked with Timbaland and Missy Elliott on a track titled "Wrapped Around Me" for the album. Eventually, however, 
+						for reasons unknown, the song failed to appear on the album. Dangerously in Love was originally a song of the same title which Beyonce had written for 
+						Survivor. The song was deemed too sophisticated compared to other songs on Survivor, and the group decided not to release it as a single off the album. 
+						After recording several tracks for Dangerously in Love, Beyoncé decided to add "Dangerously in Love", after realizing that it fit the overriding theme 
+						of the album. Since the album's release date was postponed to capitalize on the success of "Dilemma", Beyonce had been offered the chance to further 
+						enhance the album. Although she was disappointed with the move, Beyonce realized that "everything happens for a reason", agreeing to return to the 
+						recording studio to work with other songwriters. This allowed her to record more songs, including the album's lead single, "Crazy in Love". 
+						In late 2002, Beyonce paused working on Dangerously in Love for a holiday tour with Destiny's Child. With a few weeks left for recording in March 2003, 
+						Beyonce was still collaborating with other guests on the album, including Sean Paul and P. Diddy. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://i67.tinypic.com/xn83vc.png');"></div>					
+					<div>
+						<img src = "http://i67.tinypic.com/xn83vc.png" id = "image">
+					</div>
+					<div id = "section-music" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Music and lyrics </h2>
+						<p id = "parallaxtext"> Beyonce's mother-manager Tina Knowles said that Dangerously in Love showcases her musical roots. While Williams and 
+						Rowland were on gospel and alternative pop, respectively, Beyonce focused on recording R&B songs. Songs in the album are varied: from mid-tempo 
+						and club-oriented tracks in the first half, and ballads in the second half. Beyonce commented: "My album is a good balance of... ballads and... 
+						mid-tempos with just ridin'-in-your-car feels, to a lot of... up-tempo club songs, to really sexy songs, to songs that make you feel emotional. 
+						It's a nice mixture of different types of tracks." Although the album contains high-energy songs like "Crazy in Love" and "Naughty Girl", the 
+						album's focal mode, however, is slow and moody. Beyonce said that she had written lots of ballads for the album. According to Beyonce, she wanted to 
+						be understood as an artist and showcase her range, and by doing so, she blended various genres and musical influences in the album. The album incorporates 
+						R&B, hip hop, soul and reggae influences. The album took hip hop influences from Jay-Z, Outkast, and Lil' Kim; the reggae is from Sean Paul; and courtesy 
+						of Storch, the album explores Arabic music. His personal study of that kind of music gave the album a Middle Eastern vibe. Beyonce and the producers also 
+						used a wide array of instrumentations. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://s2.dmcdn.net/Lz7e0/1280x720-TqN.jpg');"></div>				
+					<div>
+						<img src = "http://s2.dmcdn.net/Lz7e0/1280x720-TqN.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> When "'03 Bonnie & Clyde" was released as a single in late 2002, critics and the public had speculated that 
+						Beyonce and Jay-Z were having a mutual affair. Despite widespread rumors, they remained silent about their relationship. According to critics, the title itself 
+						of the album sounded "more intriguing" with Beyonce singing personal songs. Though love is the theme Beyonce had incorporated in the album, "most the material 
+						is vague enough to be about any relationship"; however, there are songs that suggested affirmation of their relationship. In the song "Signs", Beyonce sings about 
+						being in love with a Sagittarius, which coincidentally is Jay-Z's zodiac sign. In response to the persistent rumors about them, Beyonce stated, "People can come to 
+						whatever conclusion they like... That's the beauty of music... I'm a singer, I'll talk about writing songs all you want. But when it comes to certain personal 
+						things any normal person wouldn't tell people they don't know, I just feel like I don't have to [talk about it]." Beyonce said that Dangerously in Love is lyrically 
+						similar to Destiny's Child's albums. But because she only had to write for herself, Beyonce had the chance to compose personally deeper songs than her previous 
+						records with the group. With a theme that is based upon different stages of a romantic relationship, Dangerously in Love contains songs that speak of love and 
+						honesty. In addition, Beyonce admitted that there are songs about love-making. The personal content of the album, however, was not generally attributed to 
+						Beyonce's own experiences-although some were based from hers-instead, the theme kept recurring in her mind. Beyonce later explained: "I wanted to have an 
+						album that everyone could relate to and would listen to as long as I'm alive and even after... Love is something that never goes out of style. It's something 
+						everybody experiences, and if they are not in love, people usually want to feel that..." While some songs merely focus on the "beauty of love", the album also 
+						explores another side of love, with songs that "celebrate breakup" and songs that narrate a woman's desire to have a degree of control in a relationship. The album's 
+						hidden track, "Daddy", is a tribute to Beyonce's father, Mathew Knowles, who fronted Destiny's Child as their manager. The song is an account of Beyonce wanting her 
+						future husband and child to possess qualities similar to her father's. Originally, Beyonce did not intend to include the track in the album, having thought its 
+						lyrics would make her appear immature. However, considering it one of the songs that reflected her life at that transitional moment, she instead relegated "Daddy" 
+						as the closing track. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/SxbysvhLSgE/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/SxbysvhLSgE/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-release" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Release and promotion </h2>
+						<p id = "parallaxtext"> Beyonce said that she had trouble convincing executives at Columbia Records to release the album. The singer recounted that it 
+						almost was not released: "In 2003, I had my first solo album. But when I played it through for my record label, they told me I didn't have one hit on my 
+						album. I guess they were kinda right, I had five. "Dangerously in Love", "Naughty Girl", "Me, Myself and I", "Baby Boy" and "Crazy in Love"." Since "Dilemma" 
+						was concurrently charting atop the Billboard Hot 100, Beyonce's management released, "Work It Out", one of the songs on the soundtrack to Austin Powers in 
+						Goldmember, instead of a single from Dangerously in Love to preclude it from possibly competing with the former. From the original release date of October 
+						2002, the album was pushed to December in the same year, and to May in the following year. Beyonce recorded a version of "In da Club", and served its way 
+						to mixtapes before its original release date. The single failed to dominate as a "dancefloor favorite"; Mathew Knowles, however, confirmed that it was 
+						just a "buzz cut" and was not included in the album. Nonetheless, it earned enough airplay to appear on the Billboard Hot R&B/Hip-Hop Singles & Tracks 
+						chart. While Beyonce was wrapping up the album, several of its songs had leaked online. In efforts to prevent more tracks in the album from being spread 
+						illegally, as well as being a victim of bootlegging, Columbia Records, with high commercial expectations from the album, pulled the release of 
+						Dangerously in Love to June 24, 2003, two weeks ahead of the planned July 8 release. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/RZuJ_OHBN78/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/RZuJ_OHBN78/maxresdefault.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> Buyers who pre-ordered the album online received links where they could download a song called "I Can't 
+						Take No More"; the promo lasted until the album's release. On June 14, 2003, Beyonce premiered songs from the album during her first solo concert and the 
+						pay-per-view TV special, "Ford Presents Beyonce, Friends & Family, Live From Ford's 100th Anniversary Celebration in Dearborn, Michigan". By the night of 
+						the album's release, Beyonce's concert was broadcast in more than twenty theaters across the United States. Kelly Rowland, Michelle Williams, Tyrese, 
+						Solange Knowles and girl group Ramiyah also performed in the show. Beyonce also promoted the album by performing in television shows such as the 
+						Saturday Night Live, Late Show with David Letterman, The Today Show, The Early Show, and The View. By April 2003, Beyonce's management was choosing the 
+						album's lead single between two songs. Sent to clubs, the song that would receive positive reception would be considered the lead single. Finally, 
+						"Crazy in Love" was released as the lead single off the album. With commercial success that included crossover music markets, the single spent eight 
+						consecutive weeks at number one on the Billboard Hot 100. "Baby Boy" followed, and received greater success than "Crazy in Love". With its dominance 
+						on radio airplays, the single surpassed "Crazy in Love"'s chart performance, remaining on the top spot for nine consecutive weeks. "Me, Myself and I" 
+						was released as the third single and "Naughty Girl" as fourth and last; although the last two releases only reached the top five on the Hot 100, they 
+						all attained immediate commercial success and helped the album earn multi-platinum certifications. Beyonce further promoted Dangerously in Love 
+						with her Dangerously in Love Tour in November 2003, performing in the United Kingdom, Ireland and the Netherlands. Her concert at Wembley Arena in 
+						London, England on November 10, 2003 was featured on the DVD included on her live album Live at Wembley, released on April 26, 2004. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/8ucz_pm3LX8/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/8ucz_pm3LX8/maxresdefault.jpg" id = "image">
+					</div>
+					<div id = "section-reception" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Critical reception </h2>
+						<p id = "parallaxtext"> Dangerously in Love received generally positive reviews from music critics. At Metacritic, which assigns a normalized 
+						rating out of 100 to reviews from mainstream critics, the album received an average score of 64, based on 16 reviews. Anthony DeCurtis of 
+						Rolling Stone viewed that it presents Beyonce in two styles, one "far more flattering" than the other, and found the ballad-oriented songs on 
+						the album least flattering, commenting that Beyoncе has "plenty of time" to develop the style maturely that would "[make] sense for her". 
+						Entertainment Weekly's Neil Drumming commented that the album validates Beyoncе's "taste in innovation". He also viewed that Beyoncе's 
+						collaboration with various record producers explores new directions in contemporary music, doing more reinventing than revisiting. 
+						Like DeCurtis' review, however, Drumming pointed out that "most of the disc's missteps" are in its latter part. Slant Magazine's Sal 
+						Cinquemani wrote that "[Beyoncе] is allowed more room to experiment vocally as a solo artist, exploring softer registers and lathering 
+						on the coquettish persona that was only hinted at on Destiny's Child tracks like 'Bootylicious.'". Steve Jones of USA Today stated, 
+						"Beyoncе succeeds by showing greater depth as a songwriter and broader range as a singer". Blender's Ben Ratliff complimented 
+						Beyoncе's performance and stated, "She's playing the cool-hunter but covering the bases with seraphic arrangements of multiple 
+						voices. Her reach is remarkable". Mark Anthony Neal of PopMatters called it an "artistic leap" and wrote that it "finds Ms. 
+						B in the midst of a fully flowering womanhood and doing the best singing of her career". </p>
+					</div>
+					<div class = "parallax" style = "background-image: url('https://i.ytimg.com/vi/4S37SGxZSMc/maxresdefault.jpg');"></div>					
+					<div>
+						<img src = "https://i.ytimg.com/vi/4S37SGxZSMc/maxresdefault.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> In a mixed review, Vibe magazine's Jason King said that the album occasionally 
+						"sounds desperate to reach every demographic". Kelefa Sanneh, writing in The New York Times, felt that it missed the harmonies Beyonce 
+						had in Destiny's Child records and that she is more effective "when she's got a posse behind her". Rob Fitzpatrick of NME called it 
+						"a cruel glimpse of a talent that occasionally blazes but is frustratingly inconsistent". Uncut called its ballads "self-pitying/self-mythologising", 
+						while Q stated, "She has good songs, but no great songs". Los Angeles Times writer Natalie Nichols expressed that it "demonstrates vocal finesse 
+						[...] But, especially on the ballads, [Beyonce] often drags things out with diva acrobatics". The Guardian's Adam Sweeting wrote that "the desperate 
+						urge to cover every musical base from dancefloor to soul-ballad means that there is barely a track here with any distinctive identity or even a tune". 
+						In his consumer guide for The Village Voice, Robert Christgau cited "Yes" and "Baby Boy" as the album's highlights and quippedly remarked, "Dangerously 
+						in Love ... with her daddy, the bonus cut reveals—as if we didn't know." He gave the album a one-star honorable mention, indicating "a worthy effort 
+						consumers attuned to its overriding aesthetic or individual vision may well like." In a retrospective review, AllMusic editor Stephen Thomas Erlewine 
+						commented that "the first half is good enough to make Dangerously in Love one of the best mainstream urban R&B records released in 2003, and makes a 
+						strong case that Beyoncé might be better off fulfilling this destiny instead of reuniting with Destiny". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://img11.nnm.me/4/3/6/4/5/43645676f32ae08d4924035c1aa74fa1_full.jpg');"></div>
+	</body>
+</html>
+

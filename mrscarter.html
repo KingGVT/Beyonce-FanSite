@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+	<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+	<meta name = "HandheldFriendly" content = "true">
+	<link rel = "stylesheet" href = "style-tours.css" type = "text/css">
+	<script src = "script-tours.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$('.trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		});
+		
+		window.onscroll = function() {scrollFunction()};
+	</script>
+	<link rel = "shortcut icon" href = "beyonce.ico" type = "image/x-icon">
+	<link rel = "icon" href = "beyonce.ico" type = "image/x-icon">
+	<title> The Mrs. Carter Show World Tour </title>
+	<style>
+		.parts:hover {background-color: #C5B358; color: white}
+		.sidenav a, #text, .topnavi, #caption, .parts, .dropbtn {color: #FAFAD2!important}
+		.dropbtn:hover {background-color: #C5B358}
+		.dropdown-content {background-color: white; border-bottom: 2px solid #ACADAF}
+		.dropdown-content a {color: #C5B358}
+	</style>
+	</head>
+	<body  onload = "myFunction0()" style = "margin:0;"> 
+	<div id = "loader"></div>
+	<div id = "loadingscreen"></div>
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours</a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a>  
+		</div>	
+		<!--Main page-->
+		<!--Navigation bar for mobile devices-->
+		<div class = "mobile">
+			<div class = "trigger-icon1">
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+			</div>
+			<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+		</div>
+		<div id = "mobilem">
+			<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+		</div>
+		<!--Navigation bar for desktop devices-->
+		<div id = "topnavi"> 
+			<div class = "trigger-icon" onclick="openNav()">
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+			</div>
+			<a href = "#intro" style = "margin-left: 70px" class = "parts"> Introduction </a> 
+			<a href = "#background" class = "parts"> Background </a> 
+			<a href = "#development" style = "cursor: pointer" class = "parts"> Development </a>
+			<a href = "#fashion" class = "parts"> Fashion </a> 
+			<a href = "#reception" class = "parts"> Critical reception </a> 
+			<a href = "#performance" class = "parts"> Comercial performance </a> 
+			<div class = "dropdown">
+				<button onclick = "myFunction1()" class = "dropbtn"> Concert synopsis &#x25BC; </button>
+				<div id = "myDropdown1" class="dropdown-content">
+					<a href = "#2013"> 2013 Shows </a>
+					<a href = "#2014"> 2014 Shows </a>
+				</div>
+			</div>
+		</div>
+		<div id = "content">
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/03/cache/v0hBP-GI0DMf_1280x430_74tHK9Wi.jpg" id = "image" class = "imagecover">
+			</div>
+			<div id = "intro" class = "textcontainer">
+				<h2 id = "caption"> The Mrs. Carter Show World Tour </h2>
+				<p id = "text" style = "padding-top: 30px"> <strong>The Mrs. Carter Show World Tour</strong> was the fifth concert tour by American singer Beyoncé. Announced in February 2013 
+				with initial dates in Europe and North America, the tour contained seven legs and 132 shows. It began in Belgrade, Serbia on April 15, 2013 and concluded in Lisbon, 
+				Portugal on March 27, 2014. Its title is a reference to her marriage with American rapper Shawn "Jay-Z" Carter, who made multiple guest appearances throughout the 
+				tour. The tour featured royal themes with the singer emulating different queens through her fashion for which she collaborated with numerous designers and fashion 
+				houses. The set list of the shows in 2013 included songs from all four studio albums of Beyoncé's solo career. After the release of her eponymous fifth studio 
+				album, the 2014 shows were changed to incorporate tracks from the album. The tour was lauded by music critics who praised Beyoncé for her energetic performances, 
+				dancing and vocal abilities. Following the announcement of the tour, all the tickets made available for the shows sold out, which prompted more dates to be added to 
+				the itinerary. The tour grossed $188.6 million in 2013 and the 2014 shows grossed $41.1 million, bringing the tour's total gross revenue to $229.7 million. This made 
+				The Mrs. Carter Show World Tour the highest-grossing female and solo tour of 2013, and one of the highest-grossing tours of the decade. Performances of numerous 
+				songs from the tour were broadcast and behind-the-scenes footage was released. </p>
+			</div>				
+			<div>
+				<img src = "http://i.imgur.com/FBuZXS9.jpg" id = "image">
+			</div>				
+			<div id = "background" class = "textcontainer">
+				<h2 id = "caption"> Background </h2>
+				<p id = "text"> During a press conference for Super Bowl XLVII on January 31, 2013, Beyoncé revealed that she would make an announcement after her performance at 
+				the halftime show and added that "fans should just stay tuned to see". Beyoncé announced the tour and its name after her performance the Super Bowl XLVII halftime 
+				show on February 3. The tour's title refers to her marriage with Shawn 'Jay-Z' Carter. However, the official poster of the tour with the name written on it was 
+				leaked on the ticket's website Live Nation prior to the official announcement. It shows Beyoncé wearing a Victorian golden royal top and a crown, referencing 
+				Queen Elizabeth I. Rosie Swash of The Guardian described it as a "visual stamp of authority". Along with the tour's name, initial dates in Europe and North 
+				America were announced, and later more were added in Latin America, Australia, and New Zealand. Following the announcement of the tour's title, Beyoncé was 
+				criticized by several critics and feminists alike for entitling it after her husband's name as she has been regarded as a feminist. Questions were raised 
+				about how Beyoncé agreed to be known as a bride of another celebrity person. During an interview with Vogue, Beyoncé described herself as a "modern-day 
+				feminist" and further spoke about her decision to reference her husband's name: "I feel like Mrs. Carter is who I am, but more bold and more fearless than 
+				I've ever been..... It comes from knowing my purpose and really meeting myself once I saw my child. I was like, 'OK, this is what you were born to do'. 
+				The purpose of my body became completely different." After the second European leg was announced on December 11, 2013, a new poster was revealed and used for 
+				the promotion of all the newly added shows. </p>
+			</div>					
+			<div>
+				<img src = "https://i.ytimg.com/vi/M4ruaeozGfU/maxresdefault.jpg" id = "image">
+			</div>					
+			<div id = "development" class = "textcontainer">
+				<h2 id = "caption"> Development </h2>
+				<p id = "text"> The concert at The O2 Arena in London was announced on February 3, along with a short advertisement for the tour; an extended version of the 
+				clip appeared in late February. It shows Beyoncé dressed with a golden corset and a royal gown with jewels. She is seen walking into a dance hall in slow-motion 
+				with several servants and a DJ, dressed as a jester tries to distract her. The end of the advertisement shows black-and-white snippets of behind-the-scenes 
+				footage of the video. Alexis L. Loinaz of E! compared her aristocratic look in the video to Marie Antoinette, Queen Elizabeth I, and Lady Gaga. In March 2013, 
+				Beyoncé posted a new poster for the tour on her official Facebook page showing her striking four different poses, wearing a blond wig, a white top and blue shorts. 
+				In May 2013, Beyoncé launched an online store for the tour in which different clothes were available for purchase. The following month, she added a limited edition 
+				to her Heat line of perfumes, titled Heat: The Mrs. Carter Show World Tour. Inspired by the tour, Beyoncé stated that the fragrance was meant to "give them [fans] 
+				a special remembrance of this tour and... reflect the power, passion and playfulness I put into my performances". On April 24, 2013, it was announced by Beyoncé's 
+				publicist that all photographers except Beyoncé's personal photographer Frank Micelotta, were banned from the tour stating that "no photo credentials" will be 
+				present. The ban was interpreted as a reaction to the "unflattering" pictures from Beyoncé's Super Bowl XLVII halftime performance showing her "jubilant 
+				exertions", that appeared on websites such as Gawker and BuzzFeed. The pictures were not removed even after her publicist Yvette Noel-Schure asked the websites 
+				through an e-mail to change their articles, using "some better photos". On May 13, 2013, the general counsel of the National Press Photographers Association 
+				(NPPA) Mickey H. Osterreicher, wrote a letter to Noel-Schure on behalf of 19 other organizations requesting from him to "immediately revise your guidelines to 
+				restore photo credentialing" for the rest of the tour in Europe and the US. For the tour, the singer took part in "Miss A Meal", a food-donation campaign and 
+				supported the charity Goodwill during her tour, where fans were asked to bring food, clothes and household goods at the stops. Throughout the tour, an auction 
+				for the campaign was held by Beyoncé and her mother, Tina Knowles on the website Charitybuzz in which the auction value was $25,000. The winner got a chance to work 
+				behind the scenes of Beyoncé's concert in Los Angeles and assist Knowles in the wardrobe department, got a VIP ticket for the concert and had a personal meeting 
+				with the singer. </p>
+			</div>					
+			<div>
+				<img src = "http://saintheron.com/wp-content/uploads/2014/07/beyonce.jpg" id = "image">
+			</div>					
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Eight hundred dancers auditioned to be included in Beyoncé's performance at the Super Bowl XLVII halftime show and a 
+				selected group of them, consisting only of females, were chosen for the performance as well as for the tour. French dancing duo Les Twins also accompanied 
+				Beyoncé on stage performing street dances. Three backing singers The Mamas, and an eleven-piece female band who had also supported the singer during her previous 
+				tours performed during the concerts. Two stages were used during the performances: a main stage where the singer performed throughout most of the concert and a 
+				B-stage closer to the audience where she was transferred with a rope, flying over the crowd midway through the set, performing three songs there. The set list 
+				of the 2013 portion of the tour included approximately twenty five songs from Beyoncé's four solo studio albums: Dangerously in Love (2003), B'Day (2006), 
+				I Am... Sasha Fierce (2008), and 4 (2011). The majority of the songs originated from 4 – seven songs were performed from that album. Many of the tracks performed 
+				contained different choreographies and arrangements compared to the previous performances by the singer; several of them were intertwined with other artists' 
+				material. For the 2014 shows many of the previously performed songs were removed and eight new songs from Beyoncé's fifth self-titled studio album were 
+				added to the concert's set list. </p>
+			</div>					
+			<div>
+				<img src = "http://68.media.tumblr.com/5822a6bdd8f1b40e85b5f23edf3ecaf6/tumblr_n2v2th5mH91rqgjz2o1_1280.jpg" id = "image">
+			</div>			
+			<div id = "fashion" class = "textcontainer">
+				<h2 id = "caption"> Fashion </h2>
+				<p id = "text"> For the 2013 shows, Beyoncé worked with multiple designers for the tour's costumes including Emilio Pucci, Riccardo Tisci from Givenchy, 
+				The Blonds, Julien MacDonald, Dean and Dan Caten (DSQUARED2), creative director Tamara Ralph of Ralph & Russo who was personally requested by the singer to 
+				design an outfit, David Koma, Alon Livne, Vrettos Vrettakos designers from Kenzo, Gucci, Roberto Cavalli and Dennis Kolpodinos. For the performance at the 
+				2013 Made in America, Beyoncé wore a new costume designed by Timothy White, accomponied with shoes made by Reed Krakoff. The outfit designed by DSQUARED2 
+				was from their spring/summer 2013 collection at the Glamazon catwalk show and was inspired by models of the '90s. Several costumes were also designed by 
+				Emilio Pucci's Peter Dundas who described them as a "modern take on glamour", taking them from his fall/winter 2013 collection. He focused on the singer 
+				being able to perform the choreography during her performances. Stuart Weitzman designed the shoes for Beyoncé, her back-up dancers and band collaborating 
+				with stylists Ty Hunter, Raquel Smith, and Beyoncé's mother Tina Knowles. Weitzman created them in different colors with military elements. Beyoncé wanted 
+				Weitzman to focus on her being able to dance wearing the shoes without noticing they were on her feet. One of Beyoncé's costumes which was worn during the 
+				first concerts was a gold bodysuit designed by The Blonds embellished with golden breasts complete with a nipple detail. The costume was a collaboration 
+				between the group, Beyoncé, Knowles, and Hunter. It was hand embroidered in 600 hours with approximately 30,000 Swarovski crystals. According to The Blonds, 
+				it was meant to give the illusion of being covered in crystallized honey and reflect Beyoncé's personality for the tour. They were inspired by Beyoncé's songs 
+				of female empowerment and female nudes painted by Tamara de Lempicka. The costume received wide media and fan attention and divided critics' opinions. 
+				InStyle's Meghan Blalock described the costume as the "most scandalous" that the singer has worn in her career. For the 2014 shows, the singer wore 
+				numerous new designs collaborating again with DSQUARED2, Givenchy, Pucci and Weitzman as well as with new designers such as Tom Ford, Versace and Karen Langley. </p>
+			</div>			
+			<div>
+				<img src = "https://i.ytimg.com/vi/sQkCSDbIWUg/maxresdefault.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Beyoncé's makeup for the tour focused on trying to emulate cosmic stars with the underlying themes based on 
+				the stratosphere. Other references used as inspiration for the makeup included: film noir, 60's London, cyber beauty, cosmic constellations, and felines. 
+				The tourbook for The Mrs. Carter Show was meant to artistically illustrate all the different visual aspects of the tour through multi-media collage and 
+				image manipulation. By using collage, Beyoncé's team created images inspired by the singer and her songs and image manipulation was explored, with photos 
+				being solarized, layered and stacked. With the tourbook, fans had an opportunity to "bring a part of the tour home with them", as Beyoncé's team stated. 
+				A dress created by Amato Haute Couture's Furne One which was worn by Beyoncé for the tour book was originally designed and worn by Estonian singer-songwriter 
+				Kerli during her Utopia EP photoshoot who praised the look after seeing it. The concert included several costume changes during which video interludes were 
+				projected on the screen during the singer's absence. An 18th Century France influence was found in the white-powder makeup and the opening costume as 
+				well as a Louis XVI theme throughout the show with oversized wigs and bustiers. The dresses and looks were also noted to channel queens Marie Antionette, 
+				Cleopatra, and Elizabeth I by several critics. The Observer's Kitty Empire described the concert as a fashion show with a regal, Dangerous Liaisons theme. 
+				Jocelyn Vena of MTV News described the costumes as "Eye-catching... dazzling... [and] provocative". Rosa Silverman of The Daily Telegraph commented that 
+				Beyoncé was "mesmerizing the crowds with her showstopping outfits... she took to the stage in a series of racy costumes that made no attempt to hide her 
+				famous curves." Erika Ramirez of Billboard commented that most of Beyoncé's "stunning" costumes were dazzled with sequins. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/06/cache/q4OGt71om0oF_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "reception" class = "textcontainer">
+				<h2 id = "caption"> Critical reception </h2>
+				<p id = "text"> Mike Wass from the website Idolator called the show a "concert extravaganza in the style of Michael Jackson or Madonna" praising the 
+				fact that the singer made a progress in the production values compared with her previous performances, mostly due to the expensive and high-quality 
+				visual projections which "create atmosphere and add another layer to the production". He further praised the singer's "extraordinary talent" during the 
+				performances hailing her as "the greatest entertainer of her generation" after seeing the show which showcased "an icon at top of her game". Tiffany Poole 
+				from The Oklahoman praised the fashion, video backdrops and "some of the most impersonated dance moves on YouTube" concluding, "To say that Beyoncé 
+				puts on a good show would be grossly understated." Billboard writer Gail Mitchell hailed the concert as a "musical and visual extravaganza" 
+				complete with a kaleidoscope of colorful imagery and dancing, which according to him enhanced the music complete with the singer's strong vocals, 
+				rather than overshadowing it. He concluded that the tour claimed "the multi-talented artist's intent to join the rarefied ranks of ultimate entertainer". 
+				Nick Hasted of The Independent wrote that the tour followed the stadium trends containing "big-budget movie clips and Broadway musical dance moves, 
+				with platoons of backing singers and dancers acting as extras" further hailing it as a "Cecil B. DeMille spectacle". He finished his reviews by concluding, 
+				"what makes this show's largely enervating juggernaut breathe is Beyoncé's tireless physical effort. She has created a literal body of work". Alexis Petridis 
+				of The Guardian who compared the singer's performance with Tina Turner praised the show's "bombastic" opening and wrote that "there's something powerful 
+				and relentless" about it. He concluded "while onstage Beyoncé feels weirdly unassailable". Mikael Wood of Los Angeles Times noted, "What left the deepest 
+				impression was something far more elemental: Beyoncé's ability to make self-aggrandizement seem like an expression of humility... [Her] ambition seemed 
+				in proportion with her fans' expectations; she came by the sense of scale honestly." The Observer's Kitty Empire highlighted the art direction of the show 
+				as "nothing short of breathtaking, making awesome and repeated use of silhouette, of great white blocks of video screens, of live dancers interacting 
+				with video". She praised the singer's "fierce" tireless dancing and concluded, "But for all the hauteur here, in couture and bearing, Beyoncé delivers 
+				genuine warmth at close range." Bernadette McNulty from The Daily Telegraph found "air of an ancient goddess worship ceremony... [and] of an expensive 
+				revue show" in the concert. Although she felt that the choreographies often outshined the music, McNulty concluded: "Yet Beyonce was never less than 
+				compelling to watch, and often blistering in her vocal attack". </p>
+			</div>			
+			<div>
+				<img src = "http://68.media.tumblr.com/308f60269a23f8b34bcc50a178e58e8a/tumblr_n2jir23dfj1rqgjz2o1_1280.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Philip Matusavage of musicOMH praised Beyoncé's abilities to perform live, calling her "insanely talented" 
+				and considered the performance at the B-stage a show highlight; however he commented that the production values of the show, consisting solely of a 
+				video screen were "relatively low-key" compared to other pop arena concerts. Matusavage further criticized the repetition of the songs and dance 
+				routines which had been previously performed during the singer's other concerts as the tour's "most notable problem". Shirley Halperin of The Hollywood 
+				Reporter felt that the singer "tore through her... set with the ferocity of a grown woman who has something to prove" and felt that she tried "her 
+				damnedest to win the crowd over with an equal dose of sex appeal and good old-fashioned hyping" further showcasing "unequaled showmanship and those 
+				killer vocals" which placed her at the top of R&B music. However Halperin criticized the show's set list mainly due to the majority of the songs from 
+				the album 4, writing, "Bey sounded terrific on all, of course, but with a... ready-to-party audience angling to groove in the aisles, rather than sway 
+				with their hands to the heavens, overall it missed the mark." Digital Spy's Robert Copsey praised the high-energy nature of the show with vigorous 
+				dancing and "blistering" pace but felt that there was a lack of hits performed in the show's first half. NME editor Emily Mackay echoed his statements 
+				giving a mixed review for the tour, further criticizing the lack of hits in the set list and adding that only a "paucity of material" was incorporated in 
+				the set. She further dismissed the placement of interlude films in the show. A negative review came from San Jose Mercury News' Jim Harrington who called the 
+				tour "flawed", criticized its set list consisting of "plenty of filler[s]" and the many dissipating costume changes she went through for the show. He further 
+				noted that the singer looked and sounded well but blamed the way the show and the production were choreographed. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2015/03/cache/dqCyhTp1qgbY_800x800_74tHK9Wi.png" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> The revamped show in 2014 received acclaim by critics. Isabel Mohan from The Daily Telegraph acclaimed the 
+				revamped show praising the singer's sex appeal and noted that although the set included many new songs, the singer "remained strikingly composed and 
+				confident throughout a show which proved her talent, charisma and awe-inspiring thighs". Sidney Madden who praised the upgraded set list further 
+				commended the show's fashion. Digital Spy's Robert Copsey felt that the show's set list was better than the original one describing the tour as 
+				"wall-to-wall amazing Beyoncé". He concluded in his review, "The relentless pace, ever-changing visuals and sheer amount of songs crammed into 
+				the set is a lot to take in, let alone the fact that Beyoncé delivers the entire thing with power yet impeccable ease. When it comes to 
+				putting on a show of this calibre, these days she's really only competing with herself." The Observer's Kitty Empire praised the singer's ranuchiness 
+				during the tour different from the other performers and concluded by writing, "There is no question as to Beyoncé's own powers. She can stop and start 
+				her all-female band... with a click of her fingers, and keep climbing octaves until you think her lungs are about to jump out of her chest. 
+				She sings (with a range that only gets wider and deeper with every tour) and dances (flawlessly) for more than one and a half hours." 
+				David Pollock of The Independent felt that, "this near two-hour epic is a ferocious distillation of musical styles old and new and a stunning 
+				declaration of intent that Knowles intends to be recognised as the defining pop artist of her era. It was, at the very least, one of the hardest 
+				working shows likely to be witnessed on a stage this year, and with barely a drop of minutely-choreographed sweat to be seen." The tour received a nomination 
+				in the category for Choice Summer Tour at the 2013 Teen Choice Summer Tour losing to One Direction's Take Me Home Tour. It was also nominated for Concert 
+				Marketing & Promotion Award and Eventful Fans' Choice Award at the 2013 Billboard Music Awards. The tour is nominated in the category for Best Tour at the 2014 
+				Billboard Mid-Year Music Awards. </p>
+			</div>			
+			<div>
+				<img src = "https://i.pinimg.com/originals/9e/e6/f6/9ee6f674b804c448e849e53ed190df33.jpg" id = "image">
+			</div>			
+			<div id = "performance" class = "textcontainer">
+				<h2 id = "caption"> Commercial performance </h2>
+				<p id = "text"> Following the general on-sale of tickets, tour stops in several cities across America sold out in minutes after being announced. Due to the 
+				high demand, one extra show was added in Amsterdam, one extra show in Antwerp, two extra shows in London and a third date in Manchester. In North America, 
+				extra dates were added in Washington, D.C. Los Angeles and New York City. Phone firm O2, which was behind the pre-sale of the UK shows, said it could have sold 
+				out London's O2 Arena 150 times with the number of website hits with a spokesman noting the "unprecedented level of demand from O2 customers looking to buy 
+				tickets". Following the frenzied rush for tickets during the general sale, the UK tour had completely sold out within three minutes. Tickets for Rock in Rio 
+				became available for general sale on April 4, 2013 and within two hours, the first day of the festival, in which Beyoncé was headlining, had sold out all 
+				65,000 tickets. 20,000 tickets had already sold out from the pre-sale a few months before. On July 7, 2013, Beyoncé's performance at the Essence Music Festival 
+				broke the attendance record with over 70,000 people in attendance. On June 24, 2013, a second wave of tour dates were announced via Beyoncé's official website. 
+				Included in this was a second US leg as well as a Latin American leg, containing multiple stadium dates in Brazil. It was revealed that Beyoncé set the record 
+				for the highest number of concert attendees in Brazil for the year 2013, with more than 230,000 fans attending her 5 shows in the country. On July 7, 2013, the 
+				Australasia leg of the tour was announced, with dates set for shows in Australia and New Zealand, where Beyoncé held a concert for the first time in her career. 
+				Fan club tickets for the October 18, 2013 show in Auckland, New Zealand sold out in 3 minutes. The general sale for the New Zealand shows became available to the 
+				public on July 19, 2013 and within 15 minutes all allocations of tickets were sold out for the three shows. A fourth and final Auckland show was then added. 
+				Promoter Live Nation confirmed The Mrs. Carter Show World Tour was officially the fastest selling tour of all time at Vector Arena. It also became the concert 
+				with the highest attendance at Vector Arena by a solo artist, with 44,596 tickets sold. Beyoncé's two shows at the Perth Arena went on to hold the number one and 
+				two spots for highest attendance in a single show, dethroning previous record holder Pink. It was then announced that Beyoncé's Australasian leg of the tour was 
+				one of the most successful tours in the continent from any artist, playing for more than 220,000 fans and earning 40 million Australian dollars. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/06/cache/7OOJDw80QpAP_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> On December 11, 2013, a second European leg through 2014 was announced bringing the total number of shows to 132, 
+				thus becoming Beyoncé's longest running tour to date. Similar to the first European leg, a frenzied rush for tickets, further enhanced by the release of 
+				the singer's self-titled fifth studio album three days before ticket sales began, resulted in extra dates being added for all United Kingdom shows, Dublin, 
+				Cologne, Amsterdam and Antwerp. For the second European leg, Beyoncé had beaten the record she herself had set earlier in the year, by selling 40,000 tickets 
+				in under one hour for the two 2014 concerts at Antwerp. Pollstar ranked The Mrs. Carter Show at number 2 on its year-end chart of the top twenty grossing 
+				worldwide tours with a gross of $188.6 million from the 2013 shows. Tickets were sold with an average gross of $2,449,248 per city. In April 2014, Billboard 
+				reported that Beyoncé's 2014 European shows grossed $41.1 million and played for an audience of 384,730. This brought The Mrs. Carter Show World Tour's 
+				total gross to $229.7 million when combined with the 107 shows performed in 2013, and the total attendance to 2,082,848, averaging 15,779 attendance and 
+				$1.74 million gross per night. The tour is Beyoncé's highest grossing to date before being surpassed by The Formation World Tour which grossed over 
+				$256 milion, and one of the highest grossing tours of the decade. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/06/cache/m8MJeMS4IVe1_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "2013" class = "textcontainer">
+				<h2 id = "caption"> 2013 Shows </h2>
+				<p id = "text"> The concert opened with a pre-recorded video montage showing black and white footage of gothic architecture as well as dancers dressed 
+				in white, marching across a stage length screen, preparing to crown Beyoncé who was dressed as a queen. The montage continued as female dancers wearing 
+				hoop-skirt cages and masks started appearing on stage. The video wall raised afterwards and a brief pyrotechnics display began as Beyoncé appeared onstage 
+				standing for several seconds prior to the performance of "Run the World (Girls)" preceded by an extended timpani interlude. She sang the song while performing 
+				a choreography which included a routine of faux kicking her male dancers. "End of Time" followed with Beyoncé dancing as fireworks were also displayed on stage. 
+				"Flaws and All" was performed as the third song on the set list with Beyoncé dedicating it to her fan group, the BeyHive. "If I Were a Boy" was mashed with The 
+				Verve's song "Bitter Sweet Symphony" taking the latter's string motif and incorporating several lines. "Get Me Bodied" saw Beyoncé interacting with the audience 
+				through call and response, asking them to repeat "Hey, Mrs. Carter". "Baby Boy" was performed against a holographic background as Beyoncé and several female dancers 
+				performed synchronised moves in front of the screen which flashed realistic images of more identical dancers. The singer concluded the song with a Dutty Wine dance 
+				at the end of the performance, before immediately continuing with "Diva" which was set to the groove of "Clique". "Naughty Girl" was later performed into a neon 
+				strip-lit with a snippet of Donna Summer's "Love to Love You Baby" interpolated within it. Beyoncé also performed a seductive dance in front of an open fire display 
+				onstage. "Party" was performed after with a prominent Las Vegas showgirl theme. For "Freakum Dress" two ballerinas appeared on stage and performed a choreography 
+				along with a video projection on the screen. Beyoncé later appeared in a deep-plunging, thigh-high split long red dress performing the song along with her dancers. </p>
+			</div>			
+			<div>
+				<img src = "https://static1.squarespace.com/static/53969601e4b020ae64734ae1/54a20f9ee4b06f75a6f82203/54d958afe4b0661469ecc164/1423544948051/untitled+shoot-004.jpg?format=1000w" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> For "I Care" the singer was dressed in a black leather fedora, seated on a bar stool. Beyoncé sang "I Miss You" 
+				while shadow dancing was illustrated on the screen behind her. "Schoolin' Life" was performed with a light show complete with '80s neon lights while she 
+				performed a dance routine with her dancers. An uptempo version of "Why Don't You Love Me" with a choreography by Beyoncé and Les Twins was preceded by a video 
+				projection showing a vintage montage of her. The singer performed the song with a call and response interaction between her and the audience dressed in a 
+				1920s fringed dress. The performance of "1+1" saw Beyoncé in a blue cat-suit kneeling and laying atop a grand piano. During the end of "1+1", she was 
+				transformed from the main stage to the B-stage, located closer to the crowd with a wire through a cloud of glitter. "Irreplaceable" was performed 
+				after that with an audience sing-along. "Love on Top" and an abbreviated version of Destiny's Child's "Survivor" followed; Beyoncé dedicated 
+				the latter song to the members of the aforementioned girl group, Kelly Rowland and Michelle Williams. Beyoncé was taken back to the main stage being 
+				transferred with the same wire. "Crazy in Love" was the first song performed on the main stage with a new brassy arrangement, different from Beyoncé's other live 
+				performances of the song. During "Single Ladies (Put a Ring on It)", she integrated a snippet from the song "Movin' on Up". Images of pyramids, animated lions 
+				and elephants and a portrait of the singer wearing a Nefertiti-style crown were displayed on the screen before the performance of "Grown Woman", keeping in line 
+				with the song's African influence. During the performance, the singer and her dancers wore African-inspired costumes. A montage was shown with the song "I Was Here" 
+				being played in the background showing footage of the singer with Barack Obama, taking part in charity work, during a vacation with Jay-Z and excerpts of her 2013 
+				performance at the Super Bowl. An a cappella performance of the opening lines of "I Will Always Love You" preceded "Halo" as the closing song of the concert. 
+				"Green Light" and "Suga Mama" were used for the encore of the concert at numerous stops. </p>
+			</div>			
+			<div>
+				<img src = "http://2.bp.blogspot.com/-ZI9HxKeEhvs/UW_xROz2LbI/AAAAAAAAFks/bew5GeivKxU/s1600/mrs_carter_tour_croatia_gallery_035.jpg" id = "image">
+			</div>			
+			<div id = "2014" class = "textcontainer">
+				<h2 id = "caption"> 2014 Shows </h2>
+				<p id = "text"> The performances of the songs that had already been performed during the 2013 shows remained the same; however some of them were shortened 
+				and mixed together. Many new songs from the singer's fifth album were added to the set list with a specific staging and theme. The projections shown on the 
+				stage followed the concept behind the singer's visual album. The performance of "Flawless", the second song on the set, opened with the words from Chimamanda 
+				Ngozi Adichie's TED talk projected with big letters on the screen and later Beyoncé performed a choreography with her female dancers similarly to the song's 
+				music video. A performance of "Yoncé" followed with a new choreography with her dancers. "Blow" was merged with "Naughty Girl" (2003) and featured a burlesque 
+				and disco-era theme. During the end of the performance a projection of Pac-Man, the character of the game with the same name, eating cherries was projected on an 
+				LED screen onstage. "Partition" was performed in a similar fashion to its music video with Beyoncé appearing with a silhouette, dancing on a couch in front of a 
+				purple light. For "Drunk in Love", the singer performed a choreographed chair dance. During "Haunted", strobing lights and dancers were present on stage. "Heaven" 
+				and "XO" were performed as the concert's last songs along with "Halo". </p>
+			</div>			
+			<div>
+				<img src = "https://oneblondeandonebrunette.files.wordpress.com/2013/05/tumblr_mm8qorgtqu1rqgjz2o1_1280.jpg" id = "image">
+			</div>
+		</div>
+	</body>
+</html>

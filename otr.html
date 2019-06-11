@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+	<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+	<meta name = "HandheldFriendly" content = "true">
+	<link rel = "stylesheet" href = "style-tours.css" type = "text/css">
+	<script src = "script-tours.js"></script>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$('.trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		});
+		
+		window.onscroll = function() {scrollFunction()};
+	</script>
+	<link rel = "shortcut icon" href = "beyonce.ico" type = "image/x-icon">
+	<link rel = "icon" href = "beyonce.ico" type = "image/x-icon">
+	<title> On the Run Tour </title>
+	<style>
+		#text, #caption, .parts, .parts:hover {color: #ECF6F7!important}
+		.parts:hover {background-color: #566E72!important}
+		.button:hover {background-color: #566E72}
+	</style>
+	</head>
+	<body  onload = "myFunction0()" style = "margin:0;"> 
+	<div id = "loader"></div>
+	<div id = "loadingscreen"></div>
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a>  
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours</a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a>   
+		</div>	
+		<!--Main page-->
+		
+		<!--Navigation bar for mobile devices-->
+		<div class = "mobile">
+			<div class = "trigger-icon1">
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+			</div>
+			<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+		</div>
+		<div id = "mobilem">
+			<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+		</div>
+		<!--Navigation bar for desktop devices-->
+		<div id = "topnavi"> 
+			<div class = "trigger-icon" onclick="openNav()">
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+				<span> &nbsp; </span>
+			</div>
+			<a href = "#intro" style = "margin-left: 70px" class = "parts"> Introduction </a> 
+			<a href = "#development" class = "parts"> Development </a> 
+			<a href = "#fashion" class = "parts"> Fashion </a>
+			<a href = "#promotion" class = "parts"> Promotion  </a> 
+			<a href = "#synopsis" class = "parts"> Concert synopsis </a> 
+			<a href = "#reception" class = "parts"> Critical reception </a> 
+			<a href = "#broadcast" class = "parts"> Broadcast </a> 
+			<a href = "#performance" class = "parts"> Commercial performance </a> 
+		</div>
+		<div id = "content">
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/04/cache/H4OnPcgEf76K_1280x430_74tHK9Wi.jpg" id = "image" class = "imagecover">
+			</div>
+			<div id = "intro" class = "textcontainer">
+				<h2 id = "caption"> On the Run Tour </h2>
+				<p id = "text" style = "padding-top: 30px"> <strong>The On the Run Tour</strong> was a co-headlining stadium tour by American performer Beyoncé and rapper Jay-Z. The joint 
+				tour came shortly after the two had finished their own solo tours — Beyoncé's The Mrs. Carter Show World Tour and Jay-Z's Magna Carter World Tour (both 2013–2014). 
+				The tour's name spins off from the 2013 song "Part II (On the Run)", included on Jay-Z's album Magna Carta Holy Grail, on which Beyoncé features. An official poster 
+				for the tour was released along with the announcement of the venture, showing Beyoncé and Jay-Z embracing whilst dressed in black ski masks, following the criminal 
+				"on the lam" narrative found in the couples' 2002 first single together, "'03 Bonnie & Clyde" and "Part II (On the Run)". To promote the tour, a faux movie trailer 
+				video was premiered in May 2014 entitled "Run" (stylized as "RUN"). The video, which features eight celebrity cameo appearances, showcases the couple in a variety 
+				of Bonnie and Clyde style, action and gun packed situations. The tour itself was noted to follow this same theme throughout, with similar video interludes 
+				incorporated into the production of the show. Critics generally lauded the tour, praising the extravagant set list, dynamic and detailed theme and story of the 
+				show and both artists' performance abilities, however some felt the on stage chemistry between the couple was not what it could have been. Due to the large 
+				demand and tickets selling out in minutes in multiple locations, extra tour dates were added to the itinerary. The tour became a commercial success, grossing 
+				$96 million in the first 19 North American shows and $109.7 million in total as well as attendance totalling at 979,781. It was the fifth highest-grossing 
+				tour of 2014, according to Pollstar's annual year end tour chart. The show was broadcast in its entirety on September 20, 2014, airing on the US television 
+				network HBO, following the taping of the two concerts in Paris, France, where the tour concluded. </p>
+			</div>				
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/06/cache/CRQWFNJwszIr_800x800_74tHK9Wi.jpg" id = "image">
+			</div>				
+			<div id = "development" class = "textcontainer">
+				<h2 id = "caption"> Development </h2>
+				<p id = "text"> The tour was "conceived and launched fast compared to most stadium tours" according to Live Nation, who noted that most tours of this nature 
+				take more than a year of planning, compared to the On the Run Tour that took around one month. "It came together quite quickly, around mid-March", Omar Al-Joulani 
+				of Live Nation North America commented. "By April, we had everything together, and once the routing was in place we had about three weeks until the tour was 
+				announced." Following the general sale of tour dates, fans were left concerned as the July 11, 2014 show in East Rutherford, New Jersey remained pending to go on 
+				sale for many weeks, despite all other dates already being available to the public. Some reports stated that the reason for this was that the state of New Jersey 
+				had implemented a legislation resulting in 95% of tickets for an event having to be available to the public. The show was eventually put on sale to the public 
+				on June 4, 2014. The On the Run Tour was the first tour to be a part of "Official Events" – the collaboration of Facebook and Live Nation in which the size and 
+				scale of Ticketmaster's database is leveraged as events promoted by Live Nation are imported to Artists' Facebook Pages as "Official Events", providing fans with 
+				direct links to Ticketmaster to purchase verified tickets. </p>
+			</div>					
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/06/cache/e7kVDnZqV2ht_800x800_74tHK9Wi.jpg" id = "image">
+			</div>					
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> The tour was stated to have a running theme throughout the performances of being "on the run" by the Miami New 
+				Times, whether it is from "the media, their place in pop music, the haters, the bullshit and sometimes even each other". When explaining the concept of the 
+				tour and its accompanying videos in a telephone conversation to New York-based director Dikayal Rimmasch, Jay-Z stated "We're not trying to do this literally, 
+				it's not that we're Bonnie and Clyde. We're on the run from everything. On the run from becoming a cliché. On the run from doing the same thing again." 
+				During their individual performances, Beyoncé was often backed by both male and female dancers and Jay-Z was noted to hold the stage for multiple songs 
+				without assistance. Beyoncé was backed by an all female band during her solo songs, whilst Jay-Z was accompanied by other male instrumentalists; however 
+				both artist's musicians collaborated for the majority of the performance. Video interludes filled with "cop chases and other violent outbursts" carried the 
+				storytelling between songs. The performances of the joint tour was said to be split up similarly to Jay-Z's previous joint venture with Kanye West, 
+				the Watch the Throne Tour. Beyoncé and Jay-Z would take turn holding down the stage, beginning with several songs by Beyoncé first, followed by 
+				duets and afterwards Jay-Z rapping his songs. Both artists sported multiple outfits from a variety of fashion designers throughout the 
+				performances of the tour. In Beyoncé's case, makeup artist Sir John Barnette commented on her quick changes backstage between performances, 
+				comparing them to "Daytona 500" with every member of her team working on a separate part of her look. </p>
+			</div>					
+			<div>
+				<img src = "https://images.rapgenius.com/cf75074b729846d091f1fc60b7ac0b46.1000x589x1.jpg" id = "image">
+			</div>					
+			<div id = "fashion" class = "textcontainer">
+				<h2 id = "caption"> Fashion </h2>
+				<p id = "text"> Both Beyoncé and Jay-Z sported multiple outfits throughout the different performances of the tour. One of the more prominent designers 
+				for the tour was Versace, in which Beyoncé wore both a fishnet and leather Atelier black bodysuit (complete with a plunging neckline, a fishnet head 
+				mask and high heel combat boots), as well as a colourful Atelier bodysuit from the designer. The leather Atelier black bodysuit took approximately 
+				200 hours to craft and was used for the opening number of the tour, "'03 Bonnie & Clyde". The colourful bodysuit was commented on by Versace who 
+				stated that the team had their inspiration from the street for the colour and added various crystals and stripes to show a "baseball vibe" while 
+				also trying to capture Beyoncé's energy. Beyoncé's tour shoes were designed by Stuart Weitzman and Joker's Closet. Other outfits included a denim 
+				jumpsuit and a bedazzled leotard bodysuit that "showed off her derrière". Beyoncé also sported more thematic and dramatic pieces of clothing, 
+				including a full bridal veil and a sweeping train made of a black-and-white American flag. The American flag outfit was designed by Riccardo 
+				Tisci of Givenchy and took over 500 hours to create. The American flag train was 16.4 feet long but weighed around 500 grams allowing it to 
+				fly in the wind. The individual stars on the outfit were hand-embroidered and its inspiration was said to be "American Danger: Bonnie & Clyde with 
+				a modern twist." For the performance of "Ring the Alarm", Beyoncé returned to designer Vrettos Vrettakos (with whom she collaborated with notably 
+				on her previous solo tour). Designed by Dennis Kolpodinos, Vrettakos produced a red, "couture 'crystal spirit' bodysuit" complete with fringe 
+				details on the limbs and "embellished with Swarovski crystals for stage-ready shine". </p>
+			</div>					
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/06/cache/Loc3Dqv0ZbJS_800x800_74tHK9Wi.jpg" id = "image">
+			</div>							
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Alexander Wang designed a "bondage body suit" worn by Beyoncé during the show, as well as multiple pieces by 
+				Nicola Formichetti for Diesel. One of these included the previously mentioned denim outfit, which was "made from the company's patented Jogg Jean material, 
+				accented with hand-applied hardware and studwork, Swarovski crystal elements and black leather accessories", worn for the performance of "Run the World (Girls)". 
+				Formichetti commented on the outfit, saying "Every classic cops and robbers story blurs the lines between the good and bad, we wanted Beyoncé's to be both. 
+				Her look is one part police officer and two parts jailbait." Another piece designed by Diesel was an outfit consisting of jean-shorts and a leather jacket 
+				embroiled with the word "Texas". Biker gangs that developed in the United States after World War II served as an inspiration for the outfit; Beyoncé's was 
+				meant as a tribute to her hometown and a reminder of her roots. It took 4–5 hours to add the word Texas to the leather jacket. The bondage bodysuit was 
+				described as "a riff off of an urban bomber hoodie jacket that was cropped to expose a bondage bodysuit underneath that has graphic cutouts. When worn up, 
+				the oversized hood covers the face, adding an incognito element reminiscent of the On The Run theme." It also contained snakeskin seamed into the sleeves 
+				of the outfit. One of the more controversial pieces worn by Beyoncé during the On the Run Tour was a black, thong leotard that "put her bare rear end on display 
+				in a kind of cage-like cutout". Erica Schwiegershausen of The Cut blog wrote that the number was a "somewhat disorienting look". During the performance of 
+				"Single Ladies (Put a Ring on It)", Beyoncé revisited a leotard from the song's music video in a black and gold lace bodysuit designed by Michael Costello 
+				who wanted "Beyoncé to feel beautiful, strong, super sexy and ventilated" with the outfit. Lebanese designer Elie Saab created a bridal-themed, white long-sleeve 
+				lace-embellished jumpsuit for Beyoncé for the performances of "Resentment" and "Love On Top" which was part of his Pre-Fall 2014 collection. Jay-Z's fashion was 
+				noted to be Kanye-esque, with pieces worn by him including rotating ensembles of black leather as well as "giant, billowing pant scarves". For the opening 
+				performance, Jay-Z appeared on stage in black sunglasses, gold chains, a black and white star speckled shirt and a black jacket. During the performance of 
+				"Big Pimpin'" Jay-Z wore a fedora. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/09/cache/VyvPD7-WL7Kp_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "promotion" class = "textcontainer">
+				<h2 id = "caption"> Promotion </h2>
+				<p id = "text"> The tour was officially announced on April 28, 2014, via Jay-Z's Facebook page. Announcements shortly followed through Beyoncé's website and an 
+				official press release. Pre-sale tickets for fans to secure their seats first before the general sale were sold through Beyoncé's website and Chase credit and 
+				debit card users exclusively. A writer for Billboard noted that Chase was a surprising candidate for the official tour sponsor due to their lack of experience 
+				in the concert industry when compared to the live music sponsorship giants such as Citi and American Express. Chase allegedly scored the "11th-hour" deal due to 
+				previous connections with Roc Nation Sports (owned by Jay-Z) and a $4 million bid on the position. A promotional poster for the tour was revealed showing Jay-Z 
+				and Beyoncé embracing and wearing ski masks, following the criminals-on-the-lam narrative of the couple's two singles ("'03 Bonnie & Clyde" and "Part II 
+				(On the Run)"). Beyoncé also wore a similar ski mask in her 2013 video "Superpower" featuring Frank Ocean from her self-titled album. A second promotional 
+				poster was released on May 30, 2014, in an email to fans announcing the on sale times for certain tour dates. The poster features Beyoncé dressed in a white, 
+				short-cut wedding dress whilst sitting behind and hugging Jay-Z on a motorcycle. </p>
+			</div>			
+			<div>
+				<img src = "https://ioneglobalgrind.files.wordpress.com/2014/05/screen-shot-2014-05-22-at-10-57-55-am.png?w=1024&h=392" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Following the tour's announcement, it was revealed that $1 from each ticket sold and a portion of certain VIP 
+				ticket proceeds would go to the Shawn Carter Foundation (named based on Jay-Z's birth name), which would help and support existing students of the foundation 
+				that represent diverse backgrounds, and face significant barriers to success such as teen pregnancy, homelessness, poverty, former incarceration, sexual and 
+				domestic abuse, and gang membership. Fans in Houston, Texas were requested to bring preservable goods to a selected location by Beyoncé as part of her 
+				"#BeyGood" campaign, in association with the Houston Food Bank, Miss-A-Meal, The Bread of Life and Majic 102.1, to help work towards eradicating the nearly 
+				870,000 Houston families suffering from hunger. Fans who donated to the campaign resulted in a chance of winning some of the best tickets in the house for 
+				the On the Run Tour in Houston, at Minute Maid Park. The campaign "exceeded expectations", with 2,500 people donating over 10 tonnes of food. </p>
+			</div>			
+			<div>
+				<img src = "https://media.glamour.com/photos/5695fea216d0dc3747eeee25/master/pass/entertainment-2014-06-beyonce-jay-z-on-the-run-tour-3-main.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> On May 17, 2014, an official video in a faux movie trailer style starring Beyoncé and Jay-Z was released entitled 
+				"Run", featuring "Part II (On the Run)" serving as background music. The video, which features multiple celebrity cameos including Don Cheadle, Guillermo Díaz, 
+				Jake Gyllenhaal, Kidada Jones, Rashida Jones, Blake Lively, Emmy Rossum and Sean Penn, shows Beyoncé and Jay-Z out on a Bonnie and Clyde expedition, filled 
+				with action, crime, love and guns. Multiple other snippets of tracks from Magna Carta Holy Grail carry the video, alongside "Part II (On the Run)". 
+				The video notably ended stating "coming never", indicating that the trailer was in fact never going to be a full feature film. The video was directed by 
+				Melina Matsoukas. One of the many outfits worn by Beyoncé in the video was a Givenchy lace pant suit, and was commented to add an angelic feel to the contrasting, 
+				violent run of the narrative. </p>
+			</div>			
+			<div>
+				<img src = "http://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_675,w_1200,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492199476/articles/2014/05/18/jay-z-and-beyonce-release-epic-violent-new-short-film-for-on-the-run-tour/run-video-tease.jpg_fptzhg" id = "image">
+			</div>			
+			<div id = "synopsis" class = "textcontainer">
+				<h2 id = "caption"> Concert synopsis </h2>
+				<p id = "text"> The concert opened with a black-and-white video on the screen accompanied by sirens as Beyoncé and Jay-Z appeared onstage surrounded by smoke. The duo 
+				started performing the song "'03 Bonnie & Clyde" with Beyoncé wearing a fishnet see-through mask and Jay-Z wearing black sunglasses, a star-speckled shirt, black 
+				jacket and gold chains. The pair went on to perform "Upgrade U" as the second song during the set. The opening run from "'03 Bonnie & Clyde to "Upgrade U" set the tone. 
+				"Crazy in Love" was performed by the duo among purple lights, smoke, and strobe lights with funky horns in the background. After the performance of the song, "Diamonds 
+				from Sierra Leone" began and Beyoncé left the stage as Jay-Z continued singing. He performed "Niggas in Paris" alone on stage before being quickly joined by 
+				Beyoncé again for the performance of "Tom Ford". She returned to the stage with a military cap and sang the background vocals for the song. A performance of "Run the World 
+				(Girls)" followed with Chimamanda Ngozi Adichie's words from "Flawless" appearing on the screen and the latter song was sung by the singer while dancing with her 
+				background dancers. A short snippet of "Yoncé" was performed afterwards. An a cappella performance of "Big Pimpin'" followed accompanied by vintage videos and party 
+				scenes on the screen with Jay-Z wearing a fedora. Beyoncé performed "Naughty Girl" dressed in a bodysuit as she was immediately joined by Jay-Z for "Big Pimpin'". </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/08/cache/LsA6mvQJt5xx_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Beyoncé appeared on stage seated in a glass chair, wearing a full-length sequined bodysuit and performed dancehall 
+				choreography to "Ring the Alarm" before continuing with "On to the Next One" along with Jay-Z. "Clique" followed with Beyoncé dressed in hooded leather as montage 
+				of war images and fireballs were shown on the screen. During the song, Beyonce shortly sang a remixed version of her "Diva" and went on singing "Baby Boy". She 
+				reappeared on stage dressed in a black drop-sleeve lace for the performance of "Haunted". "Drunk in Love" was performed with Beyoncé doing a chair dance and Jay-Z 
+				appeared during the end to rap his verse. "Public Service Announcement" and "Why Don't You Love Me" followed with the latter performance being accompanied by the 
+				French dancing duo Les Twins. For "Holy Grail", Justin Timberlake's vocals in the studio version were replaced with Beyoncé's. "Partition" featured a new rap verse 
+				sung by Jay-Z and Beyoncé performed it with a pole choreography along with other female dancers. A video with allusions from "Part II (On the Run)" showing Beyoncé 
+				covered in blood in a lineup and glass shattering preceded "99 Problems". "If I Were a Boy" followed with a cover of Lauryn Hill's "Ex-Factor" afterwards. Beyoncé 
+				moved to a stage in the middle of the stadium dressed as a bride in white with a floor-length bridal veil and continued with a performance of "Resentment" seated. 
+				She continued with "Love on Top" which was performed as a tribute to Michael Jackson. </p>
+			</div>			
+			<div>
+				<img src = "http://mrkuro.com/vous/king-include/uploads/brjaotrigaasdc_-9853544407.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> "Hard Knock Life (Ghetto Anthem)" was performed by Jay-Z with black and white shots of Brooklyn. Beyoncé appeared on 
+				stage again to perform "Pretty Hurts" in a leather-studded jacket with the word "Texas" emblazoned across the back. The pair moved to the mini-stage for the 
+				performances of "Part II (On the Run)" and "Young Forever". Home videos of the couples' daughter Blue Ivy appeared on the screen and an image of "The Carters" 
+				written in the sand followed. One of the short projections on the screen showed footage of the pair's wedding ceremony in April 2008 along with their "IV" 
+				tattoos, as well as a pregnant Beyoncé showing her bare stomach, with Jay-Z behind, putting the surrogacy and fake pregnancy rumors that have appeared since 
+				2011 to rest. "Lift Off" was performed as the last song on the set, serving as an outro. During the performance, Beyoncé changed her costumes numerous times. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/08/cache/9nRKWICEqk7T_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "reception" class = "textcontainer">
+				<h2 id = "caption"> Critical reception </h2>
+				<p id = "text"> The opening night of the tour received generally positive reviews: USA Today's Erica K. Landau praised the Miami concert, summarizing it as 
+				"[a] tantalizing spectacle, [with] triumphant vocals, palpable sensuality and booty-shaking anthems". She further described the performance as integrated 
+				adding that, "the coordination is not just remarkable, it's the absolute best way that two of the world's best performers can deliver a show that proves why 
+				they're on top together". MTV News editor Rebecca Thomas praised the duo's united performance, adding that they demonstrated how to share a stage, 
+				"egos aside: They toggled, repeatedly, and mostly seamlessly from one megastar catalog to the other and took fan-favorites in surprising new directions — 
+				ones that imbued them with pathos that hadn't been there before." Miami New Times Kat Bein felt that the chemistry between the couple was not what it could 
+				have been, with Beyoncé reportedly shaking off Jay-Z's kisses or turning away during his "doting playfulness", however Bein added that this could have been 
+				merely a playful act for the stage. She felt that potential "witty banter" between the couple was lost with the use of the video pieces between the songs. 
+				Jon Caramanica in a review for The New York Times opined that each entertainer gave the other the opportunity to be the center of attention, while acknowledging 
+				their different types of success. He concluded "Jay-Z allowed for breezy enjoyment; Beyoncé demanded full and reverent attention". </p>
+			</div>			
+			<div>
+				<img src = "https://images.rapgenius.com/6e25c4bdb2c6d24ff268b254acbe8e23.1000x648x1.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> The following concerts for the duration of the tour were also met with high praise from critics: Merecedes J. 
+				Howze of New Pittsburgh Courier praised the "consistent" show in Cincinnati, stating "The duo has proven numerous times that their union, professionally and 
+				personally, is unstoppable." Howze concluded that the show was definitely a "couples concert" meant to be "enjoy[ed]" with a love partner. CityBeat's Jac Kern, 
+				who attended the same show praised the duo for performing hard while fully using both of the two stages and interacting with the crowd. However he also felt that 
+				intimate moments between the couple on stage were "possibly staged". The production of the tour was stated to be both large and minimal by The Boston Globe writer 
+				James Read who commented that only a few performers could manage to pull off a production of On The Run's scale. He continued his review, "Nor is there much to 
+				behold beyond its stars: no long catwalks, elaborate sets, or even a visible band. With Beyoncé and Jay-Z, two natural-born entertainers, you do not need much 
+				more." Mesfin Fekadu of the Associated Press reported that the set list of the show emulated a conversation told through songs; he noted that despite the 
+				concert being a collaborative tour, "it was the performers' emotional solo material that made their presence as a collaborative duo strong and resilient". 
+				The first Canadian show of the tour was again well received by critics. Graham Slaughter of the Toronto Star concluded in his review, "If there's anything 
+				to be learned from the On the Run tour, it's that tight timing, a dynamic storyline and legendary talent make a 42-song concert not just enjoyable, but rather 
+				unforgettable. Performers be warned: the bar on dual concerts has forever been raised." Lorraine Ali of the Los Angeles Times who attended the first of two 
+				shows in Pasadena, California, also gave a positive review noting that the concert showcased how a marriage should work with the spouses "balancing out each 
+				other's weaknesses with individual strengths" on stage. Ali went on praising the stage interactions between the pair such as kissing and toggling and concluded, 
+				"Whether it was a carefully orchestrated act or not, they are a great team." </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/08/cache/LpZwBIYCRTxv_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> The only European shows in Paris, France, were also lauded by critics. Lewis Corner of Digital Spy gave 
+				the second Parisian show a five star review. He praised the performance abilities of both artists, explaining "When left to [Jay-Z's] own devices 
+				on stage, the rapper is forceful and beguiling. It takes little for him to have thousands waving their hands to 'Tom Ford', as he looks dapper in 
+				honour of the designer. But when Beyoncé rises up out of the stage in a denim military outfit to the question 'bad bitch?' and then storms into 'Run 
+				The World (Girls)', the track's sentiment couldn't resound more. Without doubt, she lives up to her hype as one of the world's best performers. 
+				Slick movement, tight choreography, innocent attitude and effortless vocals instantly escalate the atmosphere of the show." Simon Harper of Clash 
+				felt that both performers had immediately apparent different performance approaches and both commanded an "incredible presence and deafening screams 
+				from the French crowd", however concluded that Beyoncé just finished on top as the better of the two, finalising his all positive review with "The 
+				music world's most powerful and influential partnership couldn't fail to demonstrate the reasons for their rise to dominance... As the On The Run 
+				tour comes to its conclusion, it's clear to see that Mrs. Carter emerges on top. But damn, it was a good race to watch." </p>
+			</div>			
+			<div>
+				<img src = "http://s1.dmcdn.net/OsmjN/1280x720-6lT.jpg" id = "image">
+			</div>			
+			<div id = "broadcast" class = "textcontainer">
+				<h2 id = "caption"> Broadcasts and recordings </h2>
+				<p id = "text"> In July 2014, it was announced that HBO would exclusively air the On the Run Tour in full at some point in September, following the upcoming 
+				filming of the concerts in Paris, France at the scheduled September 12 and 13, 2014 shows in the city. The shows were shot by music video director Jonas Åkerlund 
+				and aired on the channel on September 20, 2014. HBO used 20 different cameras to record the two shows. The concert special received a 0.5 rating of adults aged 
+				18–49, and aired to 888,000 viewers. Following the airing of the special, videos of the performances of "Young Forever" / "Halo" and "Flawless (remix)" featuring 
+				Nicki Minaj, were uploaded to Beyoncé's official YouTube and Vevo account. In September 2014, it was announced that a trilogy of videos entitled "Bang Bang" 
+				were to be released as a short film leading up to the broadcast of the tour special. The short film (in which multiple scenes are found in video interludes 
+				and backdrops throughout the tour) was directed by New York-based filmmaker and photographer Dikayl Rimmasch. Together with war photographer William Kaner, 
+				Rimmasch put together the filmmaking approach and aesthetic of the series. Inspired by French New Wave cinema, the short film was created using custom camera 
+				rigs that Rimmasch had designed, 50-year-old Russian lenses and lighting effects by Archie Ciotti and Scott Spencer and followed an incredibly fast, 
+				shoot-from-the-hip recording style. However, following the release of part one of the trilogy, the remaining two videos never came to surface on their 
+				scheduled release dates. When asked about this (and the deletion of part one from its original upload source), Rimmasch simply stated "no comment". 
+				In February 2015, all 3 videos resurfaced online, debuting on creativeexchangeagency.com. </p>
+			</div>		
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/08/cache/Cbq8Rs0-bZqT_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div id = "performance" class = "textcontainer">
+				<h2 id = "caption"> Commercial performance </h2>
+				<p id = "text"> Tickets for the tour were priced at $40 to $275, so that wherever fans were on the "ticket chain", they had an opportunity to 
+				attend the show. "We made sure we had affordable tickets as well as the higher-priced tickets that we know the market can bear. Pricing went right across 
+				the spectrum", promoters explained. Jesse Lawrence of Forbes stated that demand for the tour was "through the roof" and that the On the Run Tour was "guaranteed 
+				to be one of the biggest tours in recent years." Shortly after pre-sales for the tour began, tickets had already started to appear on the secondary ticketing market. 
+				In the same article, Lawrence explained how with an average ticket price of $342.67 on the secondary market, the On the Run Tour was "head and shoulders above 
+				the rest", having a higher average ticket price than both Beyoncé and Jay-Z's previous aforementioned solo tours, Jay-Z's previous co-headlining tours with Justin 
+				Timberlake and Eminem, as well as The Monster Tour; the then upcoming co-headlining tour from Rihanna and Eminem. Billboard reported that the On the Run Tour was 
+				"already one of the summer concert season's hottest engagements" and noted that tickets had sold out in minutes for multiple dates. Due to the large demand, extra 
+				dates were added in East Rutherford, San Francisco and Pasadena following the first shows in each city selling out. The second Rose Bowl stadium date in Pasadena, 
+				California, again had to await approval from the Pasadena City Council for the aforementioned reason that the Rose Bowl has a cap of twelve events per year and all 
+				other events exceeding this limit require approval from the city council. On June 13, 2014, two Paris dates of the tour were announced, set to be performed at the 
+				Stade de France. The dates were labelled as the exclusive, only European shows of the On the Run Tour. Within two hours of going on general sale, 90,000 tickets 
+				were sold between the two Paris shows. Stephanie Smith of Page Six reported that Beyoncé and Jay-Z were paid $4 million per show of the tour, "guaranteed and 
+				independent of ticket sales". This totalled to a $84 million total payout to the couple throughout the duration of the tour. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/08/cache/6xOOHgNC1Ue5_800x800_74tHK9Wi.jpg" id = "image">
+			</div>			
+			<div class = "textcontainer">
+				<p id = "text" style = "padding-top: 30px"> Live Nation reported to Billboard that the tour had already sold 750,000 tickets and was on pace to reach 850,000 
+				total tickets sold in North America. It was also noted that the tour was averaging close to $5.2 million per show in current sales and that the On the Run Tour 
+				would finish as "one of the most successful tours of the year". On the same day, Forbes reported that the summer tour would most likely finish as the second 
+				most successful tour of all time by one measure when looking at the average gross per show, which then stood at a predicted $5 million. In August 2014, Omar 
+				Al-Joulani of North American touring for Live Nation confirmed that the On the Run Tour had officially passed $100 million in ticket sales in the 19 North American 
+				shows alone, with attendance topping out at more than the previously predicted 850,000. Al-Joulani also noted the triumph of the tour outside of the "must play" 
+				markets such as New York City or Los Angeles, stating the tour routed into some secondary touring markets like Cincinnati, New Orleans and Seattle "that turned 
+				out to be wildly successful". "We had the greatest time in those markets" said Al-Joulani. In September 2014, the North American leg of the tour was individually 
+				reported to Billboard Boxscore. Beyoncé and Jay-Z landed atop of the Hot Tours chart with 19 sold out shows. The most commercially successful performances of 
+				the tour were venues with double bookings, found in East Rutherford, grossing $11.5 million, Pasadena grossing $10.9 million and San Francisco, generating $8.8 
+				million. The tour was announced as the 5th highest grossing tour of 2014 in Pollstar's annual highest grossing tours chart, with a total revenue of $109.7 million. 
+				The tour also had a total attendance of 979,781 and an average attendance of 57,634 per city. </p>
+			</div>			
+			<div>
+				<img src = "https://www.beyonce.com/uploads/2014/08/cache/68nhTLdK3-ll_800x800_74tHK9Wi.jpg" id = "image">
+			</div>
+		</div>
+	</body>
+</html>

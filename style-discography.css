@@ -1,0 +1,293 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Arial";
+	word-break: keep-all
+}
+
+body::-webkit-scrollbar {
+    width: 10px
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3)
+}
+ 
+body::-webkit-scrollbar-thumb {
+	background-color: grey;
+	height: 140px
+}
+
+.overflow {
+	overflow: hidden
+}
+
+#topnavi, .heading {
+	position: fixed;
+	height: 56px;
+	width: 100%;
+	z-index: 11;
+	top: 0
+}
+
+.heading {
+	background-color: white;
+	display: none;
+}
+
+.trigger-icon, #trigger-icon1 {
+	background-color: black;
+	cursor: pointer;
+    margin: 0;
+    padding: 14px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+	z-index: 20
+}
+
+.trigger-icon {
+	display: block
+}
+
+#trigger-icon1 {
+	display: none
+}
+
+.trigger-icon span, #trigger-icon1 span {
+	box-shadow: 0.9px 0px 1px #d6d6d6;
+	background-color: white;
+    width: 30px;
+    height: 4px;
+    display: block;
+    margin-bottom: 8px
+}
+
+.trigger-icon span:last-child, #trigger-icon1 span:last-child {
+    margin-bottom: 0px
+}
+
+#heading {
+	text-shadow: 0.9px 0px 1px #292c30;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	margin-top: 13px;
+	font-weight: 700
+}
+
+#mobilem {
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: white;
+	background-color: black;
+	overflow: auto;
+	position: fixed;
+	z-index: 10;
+	top: 56px
+}
+
+#mobilem a{
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+	text-shadow: 0.9px 0px 2px #d6d6d6;
+}
+
+#content {
+	display: block;
+	z-index: 5;
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+	from { bottom: -100px; opacity: 0 } 
+	to { bottom: 0px; opacity: 1 }
+}
+
+@keyframes animatebottom { 
+	from{ bottom: -100px; opacity: 0 } 
+	to{ bottom: 0; opacity: 1 }
+}
+
+.parts {
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 24px;
+	transition: 0.3s
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+	top: 0;
+    left: 0;
+    z-index: 999;
+	overflow: auto;
+    transition: 0.5s;
+    padding-top: 60px
+}
+
+.sidenav a {
+	color: white;
+	text-align: left;
+	white-space: nowrap;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px
+}
+
+#listitem {
+	font-size: 25px
+}
+
+#listitem:hover {
+	font-size: 30px
+}
+
+#mySidenavSide {
+	width: 0;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	transition: 0.5s
+}
+
+.parallax {
+	height: 100%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover
+}
+
+@media only screen and (max-width: 1024px) {
+    .parallax {
+        background-attachment: scroll
+    }
+}
+
+#image {
+	width: 100%;
+	height: 100%;
+	display: none
+}
+
+.parallaxtext {
+	width: 100%;
+	min-height: 10px
+}
+
+#albumcover {
+	position: fixed;
+	opacity: 0;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+    left: 65%;
+    margin-right: -35%;
+    transform: translate(-50%, -50%);
+	transition: 0.5s
+}
+
+#albumcover1 {
+	z-index: 2;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	display: block;
+	top: 350px;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#mobilealbum {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	margin-top: 10px
+}
+
+@media screen and (max-width: 400px) {
+	#mobilealbum {
+		width: 250px;
+		height: 250px
+	}
+}
+
+#parallaxcaption {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 10px
+}
+
+#parallaxtext {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.8;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px
+}
+
+@media screen and (max-width: 1200px) {
+	#topnavi, #albumcover, #mySidenavSide, .trigger-icon, #header  {
+		display: none
+	}
+	#head {
+		margin-top: 80px
+	}
+	#trigger-icon1 {
+		display: block
+	}
+	#albumcover1 {
+		display: none!important
+	}
+	#mobilealbum, .heading, #heading{
+		display: block
+	}		
+}
+	
+@media screen and (max-width: 900px) {
+	.parallax {
+		display: none
+	}
+	#parallaxcaption {
+		padding-top: 10px
+	}
+	#image {
+		display: block
+	}
+}

@@ -1,0 +1,267 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Arial";
+	word-break: keep-all;
+	background-color: black
+}
+
+body::-webkit-scrollbar {
+    width: 10px
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3)
+}
+ 
+body::-webkit-scrollbar-thumb {
+	background-color: grey;
+	height: 140px
+}
+
+.overflow {
+	overflow: hidden
+}
+
+#topnavi {
+	background-color: white;
+	top: 0;
+	position: fixed;
+	height: 56px;
+	width: 100%;
+	z-index: 111
+}
+
+.trigger-icon, #trigger-icon1 {
+	background-color: black;
+	cursor: pointer;
+    margin: 0;
+    padding: 14px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+	z-index: 20
+}
+
+.trigger-icon {
+	display: block
+}
+
+#trigger-icon1 {
+	display: none
+}
+
+.trigger-icon span, #trigger-icon1 span {
+	box-shadow: 0.9px 0px 1px #d6d6d6;
+	background-color: white;
+    width: 30px;
+    height: 4px;
+    display: block;
+    margin-bottom: 8px
+}
+
+.trigger-icon span:last-child, #trigger-icon1 span:last-child {
+    margin-bottom: 0px
+}
+
+#heading {
+	text-shadow: 0.9px 0px 1px #292c30;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+	margin-top: 10px;
+	font-weight: 700
+}
+
+#mobilem {
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: white;
+	background-color: black;
+	overflow: auto;
+	position: fixed;
+	margin-top: 55px;
+	z-index: 50
+}
+
+#mobilem a{
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+	text-shadow: 0.9px 0px 2px #d6d6d6;
+}
+
+#content {
+	display: block;
+	z-index: 5;
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+	from { bottom: -100px; opacity: 0 } 
+	to { bottom: 0px; opacity: 1 }
+}
+
+@keyframes animatebottom { 
+	from{ bottom: -100px; opacity: 0 } 
+	to{ bottom: 0; opacity: 1 }
+}
+
+.sidenav {
+	background-color: black;
+    height: 100%;
+    width: 0;
+    position: fixed;
+	top: 0;
+    left: 0;
+    z-index: 999;
+	overflow: auto;
+    transition: 1s;
+    padding-top: 60px
+}
+
+.sidenav a {
+	color: white;
+	text-shadow: 0.9px 0px 1px #d6d6d6;
+	text-align: center;
+	white-space: nowrap;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover:not(:first-child) {
+	font-size: 30px
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px!important
+}
+
+.parent {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -o-transition: all 10s;
+    transition: all 10s
+}
+
+#link {
+    display: none;
+	position: absolute;
+    font-size: 40px;
+    color: white!important;
+    top: 50%;
+    left: 50%;
+	text-decoration: none;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+	text-shadow: 0.4px 0px 1px #d6d6d6
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block
+}
+
+.parent:hover #link, .parent:focus a {
+    display: block
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4)
+}
+
+.first {
+	background-image: url(https://www.beyonce.com/uploads/2016/04/cache/B8lxUC95lJZw_1280x430_74tHK9Wi.jpg);
+	background-size: 100%
+}
+.second {
+	background-image: url(https://www.beyonce.com/uploads/2014/04/cache/fKSva9_219UL_1280x430_74tHK9Wi.jpg);
+	background-size: 100%
+}
+.third {
+	background-image: url(https://www.beyonce.com/uploads/2014/04/cache/7cwWVGojzeTe_1280x430_74tHK9Wi.jpg);
+	background-size: 100%
+}
+
+.fourth {
+	background-image: url(https://www.beyonce.com/uploads/2014/04/cache/_TFAvwYvO9db_1280x430_74tHK9Wi.jpg);
+	background-size: 100%
+}
+.fifth {
+	background-image: url(https://www.beyonce.com/uploads/2014/04/cache/Glm0to_-mmcD_1280x430_74tHK9Wi.jpg);
+	background-size: 100%
+}
+.sixth {
+	background-image: url(https://www.beyonce.com/uploads/2014/04/cache/gK7G79HD2rdD_1280x430_74tHK9Wi.jpg);
+	background-size: 100%
+}
+
+#mobileimages {
+	width: 100%;
+	height: 100%;
+	display: none
+}
+
+@media screen and (max-width: 800px) {
+	#link {
+		display: block;
+		font-size: 25px
+	}
+	.parent {
+		height: 100px
+	}
+	.trigger-icon {
+		display: none
+	}
+	#trigger-icon1 {
+		display: block
+	}
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no">
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge, chrome = 1">
+		<meta name = "HandheldFriendly" content = "true">
+		<link rel = "stylesheet" href = "style-discography.css" type = "text/css">
+		<script src = "script-discography.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type = "text/javascript">
+		$(document).ready(function(){
+			$('#trigger-icon1').click(function(){
+				$('#mobilem').slideToggle('slow');
+				$('body').toggleClass('overflow');
+			});
+		$("#topnavi a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1200, function(){
+				window.location.hash = hash;
+			  });
+			}
+			});
+		});
+		</script>
+		<link rel = "shortcut icon" href = "lemonade.ico" />
+		<title> Lemonade </title>
+		<style>
+			.parts, .button, .button1, #topnavi {color: white}
+			.parts:hover, .button:hover, .button1:hover {color: #7CA192}	
+			.sidenav a:hover, #listitem:hover, #currentpage {color: #5E7B76}
+			.sidenav, #container {background-color: #30575E}
+			#topnavi {border-bottom: 3px solid white; background-color: #30575E}
+			#parallaxcaption {color: #76787a}
+			.parallaxtext {background-color: white}
+			#mySidenavSide {background-color: #6D998C}
+			@media screen and (max-width: 750px) {
+				#trailer {
+					display: none
+				}
+			}
+		</style>
+	</head>
+	<body> 
+		<!--Animated side navigation --> 
+		<div id = "mySidenav" class = "sidenav">
+			<a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> &times; </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography: </a>
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-lemonade.html';" id = "currentpage"> &nbsp; &#9679; Lemonade </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-beyonce.html';" id = "listitem"> &nbsp; &#9679; Beyoncé (album) </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-4.html';" id = "listitem"> &nbsp; &#9679; 4 </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-sashafierce.html';" id = "listitem"> &nbsp; &#9679; I Am... Sasha Fierce </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-bday.html';" id = "listitem"> &nbsp; &#9679; B'Day </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-dangerouslyinlove.html';" id = "listitem"> &nbsp; &#9679; Dangerously in Love </a> 
+			<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+			<a style = "cursor: pointer; padding-bottom: 80px" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a>  
+		</div>
+		<div id = "mySidenavSide">
+			<img src = "http://media.cultura.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/0/8/0889853368228.jpeg?t=1497409788" id = "albumcover">
+		</div>
+			<!--Main page container-->
+				<!--Desktop navigation menu-->
+				<div id = "content">	
+					<div id = "topnavi"> 
+						<div class = "trigger-icon" onclick = "openNav()">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a href = "#section-intro" style = "margin-left: 55px" class = "parts"> Introduction </a>
+						<a href = "#section-background" class = "parts"> Background </a>
+						<a href = "#section-visual" class = "parts"> Visual </a> 
+						<a href = "#section-composition" class = "parts"> Composition </a> 
+						<a href = "#section-reception" class = "parts"> Critical reception </a>
+						<a href = "#section-impact" class = "parts"> Impact </a> 
+						<a href = "#trailer" class = "parts"> LEMONADE Trailer </a> 
+					</div>	
+					<!--Mobile navigation menu-->
+					<div class = "heading">
+						<div id = "trigger-icon1">
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+							<span> &nbsp; </span>
+						</div>
+						<a style = "text-decoration: none; cursor: pointer" onclick = "javascript: window.location = 'beyonce.html';"> <p id = "heading"> BEYONCÉ </p> </a>
+					</div>
+					<div id = "mobilem">
+						<a style = "cursor: pointer; padding-top: 30px" onclick = "javascript: window.location = 'beyonce.html';"> Beyoncé </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-discography.html';"> Discography </a>
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-tours.html';"> World tours </a> 
+						<a style = "cursor: pointer" onclick = "javascript: window.location = 'beyonce-honors&awards.html';"> Honors and awards </a> 
+					</div>
+					<div id = "head">
+						<img src = "lemonade.png" style = "width: 100%; height: 100%; object-fit: cover;" id = "header">
+						<img src = "https://retune-products.s3.amazonaws.com/images/38/BEYONCE_LEMONADE_800x800.jpg" id = "albumcover1">
+						<img src = "https://retune-products.s3.amazonaws.com/images/38/BEYONCE_LEMONADE_800x800.jpg" id = "mobilealbum">
+					</div>				
+					<div id = "section-intro" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Lemonade </h2>
+						<p id = "parallaxtext" style = "padding-top: 30px"> <strong>Lemonade</strong> is the sixth studio album by American singer Beyonce. It was released on April 23, 2016,
+						by Parkwood Entertainment and Columbia Records. It is Beyonce's second "visual album" following her previous eponymous 2013 album,
+						as well as a concept album accompanied upon its release by a one-hour film aired on HBO. Primarily an R&B album, Lemonade encompasses
+						a variety of genres, including pop, reggae, blues, rock, hip hop, soul, funk, Americana, country, gospel, electronic, and trap music.
+						The album features guest vocals from James Blake, Kendrick Lamar, The Weeknd, and Jack White. The album contains samples and interpolations 
+						of a number of hip-hop and rock songs. The album was made available for online streaming on April 23, 2016 through Beyonce's co-owned streaming service Tidal.
+						It was released for paid purchase the following day, and later launched for purchase by track or album to Amazon Music and the iTunes Store on April 25,
+						and at physical retailers on May 6. The album was widely acclaimed by critics, who praised it as Beyonce's boldest work to date. Lemonade debuted at 
+						number one on the US Billboard 200, selling 485,000 copies in its first week (653,000 with additional album-equivalent units), and earning Beyonce her
+						sixth consecutive number-one album in the country. The album was supported by five singles: "Formation", "Sorry", "Hold Up", "Freedom" featuring Kendrick 
+						Lamar, and "All Night"; alongside a promotional single, "Daddy Lessons" featuring Dixie Chicks. </p>
+					</div>	
+				</div>
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2016/04/cache/3eTQ0gs0dPdP_700x470_KaMXZQjO.jpg');"></div>				
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2016/04/cache/3eTQ0gs0dPdP_700x470_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-background" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Background </h2>
+						<p id = "parallaxtext"> On February 6, 2016, Beyonce released "Formation" for free on the music streaming service Tidal
+						and its accompanying music video on her official YouTube. The following day on February 7, 2016, Beyonce performed "Formation"
+						during her performance at the Super Bowl 50 halftime show. Immediately after the performance, a commercial aired announcing 
+						The Formation World Tour, which kicked off in Miami on April 27, 2016, with the first pre-sales going on sale just two days 
+						after the announcement on February 9, 2016. Leading up to the tour announcement, Beyonce was both praised and criticized over 
+						her new song and Black Panther-influenced costume for the Super Bowl halftime performance. As a result of this, the hashtags 
+						"#BoycottBeyonce" and "#IStandWithBeyonce" began trending on social media platforms such as Twitter. A group of protesters planned
+						to stage an "anti-Beyonce" rally outside of the NFL's headquarters in New York City on the day general sale of tickets went for sale,
+						but no protesters showed up and instead dozens of Beyonce supporters held a rally for her. The album title was inspired by Beyonce's grandmother
+						Agnéz Deréon, as well as her husband Jay-Z's grandmother, Hattie White. At the end of track "Freedom", an audio recording of Hattie
+						White heard speaking to a crowd at her 90th birthday party in December 2015 is played. During the speech, Hattie says "I had my ups and 
+						downs, but I always find the inner strength to pull myself up. I was served lemons, but I made lemonade."
+						Streaming service Tidal described the concept behind Lemonade as "every woman's journey of self-knowledge and healing." </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2016/04/cache/aEQ-P4GB_8uQ_1280x1280_KaMXZQjO.jpg');"></div>			
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2016/04/cache/aEQ-P4GB_8uQ_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div id = "section-visual" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Lemonade: The Visual Album </h2>
+						<p id = "parallaxtext"> The album was accompanied by the release of a 60-minute film of the same name, produced by Good Company and Jonathan Lia,
+						which premiered on HBO on April 23, 2016. Lemonade was divided into 11 chapters named Intuition, Denial, Anger, Apathy, Emptiness, Accountability, 
+						Reformation, Forgiveness, Resurrection, Hope, and Redemption. The film uses poetry and prose written by expatriate Somali poet Warsan Shire;
+						her poems which she adapted were "The Unbearable Weight of Staying", "Dear Moon", "How to Wear Your Mother's Lipstick", "Nail Technician as Palm Reader",
+						and "For Women Who Are Difficult to Love". It also features Ibeyi, Laolu Senbanjo, Amandla Stenberg, Quvenzhané Wallis, Chloe x Halle, Zendaya and Serena Williams.
+						In "Forward", the mothers of Trayvon Martin (Sybrina Fulton), Michael Brown (Lesley McFadden), and Eric Garner (Gwen Carr) are featured holding pictures of their deceased sons. 
+						Jay-Z and Beyonce's daughter Blue Ivy appear in home video footage at one point, as does Jay-Z's grandmother, Hattie (as previously mentioned), and Beyonce's mother 
+						Tina Knowles, who is shown with her second husband Richard Lawson on their wedding day in 2015. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://cdn-images-1.medium.com/max/2000/1*Y0dvm-wThZphFB6eFfbicw.png');"></div>					
+					<div>
+						<img src = "https://cdn-images-1.medium.com/max/2000/1*Y0dvm-wThZphFB6eFfbicw.png" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> The film also samples work by Malcolm X, specifically an excerpt
+						from his speech "Who Taught You to Hate Yourself", which is featured on the track "Don't Hurt Yourself". In "Hold Up", Beyonce appears as Oshun, a Yoruba 
+						water goddess of female sensuality, love and fertility. Oshun is often shown in yellow and surrounded by fresh water, and folktales of Oshun describe 
+						her malevolent temper and sinister smile when she has been wronged. Donning a flowing yellow Roberto Cavalli dress, gold jewelry and bare feet, Beyonce
+						channels the orisha, or goddess, by appearing in an underwater dreamlike state before emerging from two large golden doors with water rushing past her and down the stairs.
+						During the "Hold Up" video, a smiling, laughing and dancing Beyonce smashes store windows, cars and cameras with a baseball bat, representing Oshun's furious temper in a modern context.
+						In "Love Drought", Beyonce leads a line of black women dressed in white along a shoreline. They stand, unified, looking out into the water as they hold hands and lift them one by one. 
+						This second reference to baptism is heavy in this scene along with messages of faith and love, which are, the lyrics say, "strong enough to move a mountain" or "end a drought".
+						Comparisons have also been drawn between the imagery of "Love Drought" and the Igbo Landing, a historic location that was the site of a mass suicide by drowning of Igbo people
+						who had been taken as slaves.  </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://68.media.tumblr.com/cef06ad2321d9f01004233a382adb723/tumblr_o647w127XR1r845uoo2_1280.jpg');"></div>
+					<div>
+						<img src = "http://68.media.tumblr.com/cef06ad2321d9f01004233a382adb723/tumblr_o647w127XR1r845uoo2_1280.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Lemonade: The Visual Album </h2>
+						<h4 id = "parallaxcaption"> Fashion </h4>
+						<p id = "parallaxtext"> In the "Pray You Catch Me" visual, Beyonce wears a custom skirt by Enrique Urbina. 
+						In "Hold Up" Beyonce's yellow dress is Roberto Cavalli by Peter Dundas, from the brand's fall 2016 collection. The shoes are the "Candy" 
+						sandals by Yves Saint Laurent (but Beyonce is also seen wearing Converse All Stars when she's on the roof of a car.) Her bra is by Agent Provocateur. 
+						In the "Don't Hurt Yourself" visual Beyonce wears a Hood by Air fur coat over a Yeezy sports bra and leggings. The dagger necklace is Lynn Ban.
+						In the night vision scenes, she's seen in her wedding dress (a creation by her mom, Tina Knowles). In "Sorry", Beyonce wears a bodysuit by Yousef Al Jasmi,
+						a designer from Dubai. Tennis champion Serena Williams is wearing a lace number by Brandon Maxwell. In "6 Inch", in the scene where spins a lightbulb, Beyonce
+						wears a dress from Nicolas Jebran's fall 2016 collection, she also wears Gucci suit. In "Love Drought", Beyonce and her dancers wear silk dresses by Daniele Carlotta.
+						Beyonce's gown in "Freedom" is by Maria Lucia Hohan. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://akns-images.eonline.com/eol_images/Entire_Site/2016325/rs_1024x512-160425131634-Beyonce-glitter-body.jpg');"></div>					
+					<div>
+						<img src = "http://akns-images.eonline.com/eol_images/Entire_Site/2016325/rs_1024x512-160425131634-Beyonce-glitter-body.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Lemonade: The Visual Album </h2>
+						<h4 id = "parallaxcaption"> Reception and accolades </h4>
+						<p id = "parallaxtext"> The HBO broadcast logged 787,000 viewers. In June 2016, Matthew Fulks sued Beyonce, Sony, Columbia and Parkwood Entertainment for allegedly lifting elements 
+						of his short film, Palinoia, for Lemonade. The lawsuit specifically targets the trailer for the HBO special. Fulks had accused her of stealing nine visual elements from Palinoia.
+						The lawsuit was subsequently dismissed by New York federal judge Jed S. Rakoff, siding with the defendant. The visual was nominated for four Primetime Emmy Awards, including Outstanding
+						Variety Special and Outstanding Directing for a Variety Special. From the four categories, Beyonce was nominated in the two mentioned. The album's visuals received 11 nominations at
+						the 2016 MTV Video Music Awards. They included Breakthrough Long Form Video for Lemonade, Video of the Year, Best Pop Video, Best Direction, Best Editing, and Best Cinematography for "Formation",
+						Best Female Video and Best Art Direction for "Hold Up", and Best Choreography for "Sorry" and "Formation", she won 8 of her nominations. Lemonade won Best TV Show – Special or Limited Series at the African American Film Critics Association
+						and Outstanding Television Documentary or Special at the 2017 Black Reel Awards. </p>
+					</div>				
+					<div class = "parallax" style = "background-image: url('http://assets.teenvogue.com/photos/571e3200f401c82f344303fe/master/pass/beyonce-lemonade-film-20.png');"></div>					
+					<div>
+						<img src = "http://assets.teenvogue.com/photos/571e3200f401c82f344303fe/master/pass/beyonce-lemonade-film-20.png" id = "image">
+					</div>
+					<div id = "section-composition" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Composition </h2>
+						<p id = "parallaxtext"> The album features musicians Jack White, Kendrick Lamar, and bassist Marcus Miller, and sampling from folk music collectors John Lomax, Sr. and his son Alan Lomax on "Freedom". 
+						Beyonce and her team reference the musical memories of all those periods including a brass band, stomping blues-rock, ultraslow avant-R&B, preaching, a prison song (both collected by John and Alan Lomax),
+						and the sound of the 1960s fuzz-tone guitar psychedelia (sampling the Puerto Rican band Kaleidoscope). The Washington Post called the album a "surprisingly furious song-cycle about infidelity and revenge",
+						referencing the classical compositional genre defined in German lieder by Schumann, Schubert and Brahms. The Chicago Tribune described the album as not just a mere grab for popular music dominance, rather
+						it is a retrospective that allows the listener to explore Beyonce's personal circumstances, with musical tones from the southern United States, a harkening back towards her formative years spent in Texas.
+						AllMusic wrote that Beyonce "delights in her blackness, femininity, and Southern origin with supreme wordplay." According to The A.V. Club, the tracks "encompass and interpolate the entire continuum of R&B,
+						rock, soul, hip-hop, pop, and blues", accomplished by a deft precision "blurring eras and references with determined impunity." The Guardian and Entertainment Weekly both noted that the album touches on country music,
+						and Entertainment Weekly noticed the use of avant-garde musical elements. Consequence of Sound wrote that the album's genres span "from gospel to rock to R&B to trap"; both Isaac Hayes and Andy Williams are sampled.
+						PopMatters noticed how the album was nuanced in its theme of anger and betrayal with vast swathes of the album bathed in political context; however, it is still a pop album at its essence with darker and
+						praiseworthy tones. Melina Matsoukas, the director of the "Formation" music video, said that Beyonce invited her to her house in Los Angeles, and explained the concept behind Lemonade. 
+						"She wanted to show the historical impact of slavery on black love, and what it has done to the black family, and black men and women—how we're almost socialized not to be together."
+						In an interview with W, Beyonce's creative director Todd Tourso further explained the concept behind the album, referencing Beyonce's desire of "placing it in the context of a generational relationship". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://68.media.tumblr.com/17405ad99c764869098ee60fdaae0fe4/tumblr_o64egyZc5N1vrx5uyo6_1280.png');"></div>					
+					<div>
+						<img src = "http://68.media.tumblr.com/17405ad99c764869098ee60fdaae0fe4/tumblr_o64egyZc5N1vrx5uyo6_1280.png" id = "image">
+					</div>
+					<div id = "section-reception" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Critical reception </h2>
+						<p id = "parallaxtext"> Lemonade received widespread acclaim from critics and is also Beyonce's most critically acclaimed album to date. AllMusic writer Andy Kellman felt
+						that "the cathartic and wounded moments here resonate in a manner matched by few, if any, of Beyonce's contemporaries." In Spin, Greg Tate wrote that the album "is out to 
+						sonorously suck you into its gully gravitational orbit the old fashioned way, placing the burden of conjuration on its steamy witches' brew of beats, melodies, and
+						heavy-hearted-to-merry-pranksterish vocal seductions. In her mastery of carnal and esoteric mysteries, Queen Bey raises the spirits, sizzles the flesh, and rallies her troops." 
+						Alexis Petridis of The Guardian wrote that the album "feels like a success" and that Beyoncé sounded "genuinely imperious". The Daily Telegraph writer Jonathan Bernstein 
+						felt it was her strongest work to date and "proves there's a thin line between love and hate." Nekesa Moody and Mohamad Soliman from The Washington Post called the album
+						a "deeply personal, yet ... a bold social and political statement as well". Writing for The New York Times, Jon Pareles praised Beyonce's vocals and her courage to talk about
+						subjects that affect so many people, and noted that "the album is not beholden to radio formats or presold by a single". Greg Kot from the Chicago Tribune felt that
+						"artistic advances" seem "slight" in context towards the record's "more personal, raw and relatable" aspects, where it came out as a "clearly conceived" piece of music, meaning it
+						had a "unifying vision" for what may have lent itself to being "a prettily packaged hodgepodge". </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('http://assets.vogue.com/photos/59952dbc6ef75c55b036a1dc/master/pass/Beyonce-HTML_formation1.jpg');"></div>					
+					<div>
+						<img src = "http://assets.vogue.com/photos/59952dbc6ef75c55b036a1dc/master/pass/Beyonce-HTML_formation1.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext"  style = "padding-top: 30px"> Reviewing the album in The Independent, Everett True wrote that it "is fiery, insurgent, fiercely proud, sprawling and sharply focused in its dissatisfaction."
+						Ray Rahman wrote for Entertainment Weekly that Beyonce is way "too busy putting out her boldest, most ambitious, best album to date", declaring simply "middle fingers up." 
+						Writing a review for Rolling Stone, Rob Sheffield opined that she affirmed her "superhero status" with this album. Jillian Mapes of Pitchfork wrote that her pursuit of "realness"
+						gives the album a certain "quality to it that also invites skepticism". In The A.V. Club Annie Zaleski wrote that it was "yet another seismic step forward for Beyonce as a musician."
+						Shahzaib Hussain, writing for Clash, stated: "Lemonade is Beyonce at her most benevolent, and her most unadulterated. Treating her blackness not as an affliction but a celebratory beacon, 
+						Lemonade is a long overdue, cathartic retribution." In the NME, Larry Bartleet said the album was "sweet but with an edge". Sal Cinquemani of Slant Magazine wrote that the album "is her most
+						lyrically and thematically coherent effort to date." Maura Johnston of Time wrote that its tracks were "fresh yet instantly familiar" with an "over-the-top but intimate" sound.
+						Jamie Milton of DIY wrote that "there's so much more than an enthralling story to draw out of this all-slaying work", where "Beyoncé can count herself as a risk-taker breaking new ground, 
+						up there with the bravest." Exclaim!'s Erin Lowers wrote that "If you've ever been handed lemons, you need Lemonade." Britt Julious of Consequence of Sound described the album to a "gift" Beyonce
+						has given to the listener that is "raw yet polished, beautiful yet ugly." PopMatters writer Evan Sawdey felt few albums could ever be considered "as bold, complex, or resolute as Lemonade,"
+						and the BBC's Mark Savage noted that Beyoncé had become an albums artist, with a range extending beyond that of radio play. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://www.beyonce.com/uploads/2016/04/cache/OyH677LRT7aZ_1280x1280_KaMXZQjO.jpg');"></div>					
+					<div>
+						<img src = "https://www.beyonce.com/uploads/2016/04/cache/OyH677LRT7aZ_1280x1280_KaMXZQjO.jpg" id = "image">
+					</div>
+					<div class = "parallaxtext">
+						<p id = "parallaxtext" style = "padding-top: 30px"> Megan Carpentier of The Guardian named the album as ''a pop culture phenomenon'' and wrote:''It is not an exaggeration to say 
+						that there is no other living musical artist who could ignite such a broad and unavoidable conversation just by releasing a new album – even a visual one." Writing in the same publication, Syreeta
+						McFadden notes that the ''Formation'' video depicts archetypal southern black women "in ways that we haven't seen frequently represented in popular art or culture". Time magazine wrote: "With Lemonade—an
+						album, an Emmy-nominated film and, as America looked on, an experience—Beyoncé publicly embraced explicitly feminist blackness at a politically risky moment." Musician fans of the album included Jon Anderson. </p>
+					</div>					
+					<div class = "parallax" style = "background-image: url('https://s.yimg.com/uu/api/res/1.2/62_b4c.hkLTwK.EYPCOUjQ--/dz0xMjgwO2g9NzIwO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-US/video/video.abcnewsplus.com/1daf55218d5afd8acccca83d135f705c');"></div>					
+					<div>
+						<img src = "https://s.yimg.com/uu/api/res/1.2/62_b4c.hkLTwK.EYPCOUjQ--/dz0xMjgwO2g9NzIwO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-US/video/video.abcnewsplus.com/1daf55218d5afd8acccca83d135f705c" id = "image">
+					</div>
+					<div id = "section-impact" class = "parallaxtext">
+						<h2 id = "parallaxcaption"> Impact </h2>
+						<p id = "parallaxtext"> American rapper Snoop Dogg named his Coolaid album after Beyonce's Lemonade. Singer Florence Welch was inspired by the record: "We've been listening to Lemonade before every show. 
+						It's the record I dance around to before I go on stage." At the 59th Annual Grammy Awards, Adele dedicated her Album of the Year award to Beyonce and said: "The artist of my life is Beyonce... the Lemonade album, is just so monumental."
+						Bill Condon, director of Beauty and the Beast says the visuals behind Lemonade inspired him for the movie: "You look at Beyonce's brilliant movie Lemonade, this genre is taking on so many different forms… I do think that this very old-school
+						break-out-into-song traditional musical is something that people understand again and really want." Many critics have noted that Jay-Z's 2017 album 4:44 is a response to Lemonade, with Jay-Z referencing lines from Lemonade, such as the 
+						"You better call Becky with the good hair" line on Beyoncé's "Sorry", with Jay-Z retorting, "Leave me alone, Becky" in "Family Feud". The University of Texas at San Antonio offered a class in the Fall of 2016 based on the album.
+						The course, titled "Black Women, Beyonce and Popular Culture", explored how the visual album "is a meditation on contemporary black womanhood," before advancing and diving into the "theoretical, historical, and literary frameworks 
+						of black feminism," according to the syllabus. Museum of Design Atlanta (MODA) announced "The Lemonade Project", a 12-month series of conversations centered around the visual album. The series will explore the themes of race, gender and 
+						class addressed by the album. </p>
+					</div>
+					<div id = "trailer" style = "position: absolute; transition: opacity .5s; left: 50%; margin-right: -50%; transform: translate(-50%); margin-top: 100px" id = "section-trailer">
+					<iframe width="650" height="520" src="https://www.youtube.com/embed/BB5zLq1zcdo?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class = "parallax" style = "background-image: url('lemonade.png');"></div>
+	</body>
+</html>
